@@ -1,0 +1,1289 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:ad4:5843:0:b0:630:110f:d31c with SMTP id de3csp583369qvb;
+        Sun, 18 Jun 2023 05:57:31 -0700 (PDT)
+X-Google-Smtp-Source: ACHHUZ7bVUKYp/nrKeh0/owa/92hPoOoSphx+AmxaOdo16ZgzifNaMm2m1+z8gT34XZAFqK0vRB2
+X-Received: by 2002:a05:622a:40a:b0:3fd:dec6:eec3 with SMTP id n10-20020a05622a040a00b003fddec6eec3mr6026387qtx.15.1687093051534;
+        Sun, 18 Jun 2023 05:57:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1687093051; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OCF252ydP0HQEG3Dowz1mWFOUp+mvQxZeMhI+udaebuXql7NapIBtuAC9SThQBRwtQ
+         MsliQOsQPgMiOnfyobTHzhGVJbgpe3LPFrpGBsg11y2J3j0FjJl5OfJo21jEfNX69lwE
+         4PvZLPdXlvVtTVgt62gq5qThvpKj8rAiVAzTz2iO/vguUCFCgrqG1iP7sPJc+Iant693
+         AfwCEaezIrarp40MH+r8Ji0mS/GKaYo4XlDoJqxHxcQzMbCRs3Isuis1jhN512soMq/f
+         7EtovonDuR61nPnzBlnRsOlXsAWlbQjMvluC44EG2JvceogWUkLxHI0RZjLvZkf6TbTR
+         +h4A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:message-id:to:from:date:sender:dkim-signature
+         :dkim-signature;
+        bh=w2Iy0i8ijR4d7qGbea+NSaBk2HZS0+Y2hF+dNznkFhE=;
+        b=u0x0qPTGUgj/DjMhm/zVegdT2tWkVaoQSVwF/+UJzpm0RnFsqo5GBmg5Twnm3I2bP3
+         z9N7qxnCAxj5yNguzJ+0mGhbVLa5Yx0rmPy5XWMG6hxIMUcqotAPPMXkwB9920ZS7ed+
+         ftf/1ltxbE0KXmkDttnJO/t/vmJmjUyGjcmI59KWukxHVPYSJrNbZMmKwU5L6A6qRlz/
+         kYJn5QkUX2guSRHJtiHnsiFlN9jHdGCfzHvzGJQWiEgLEe1W1pD1e2cXnYXAw2CySe00
+         6kBFyqx5sC0jlOkEewA9/j3KNkzlD1g0t2UcdM7hm9A3JTr2lJeeVur52Cy/9gQqRuU+
+         FTGw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rts.kijiji.ca header.s=pic header.b=4m0DJPeK;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=Tk1Tuux7;
+       spf=pass (google.com: domain of bounce+64ff2a.10e496-fefe2560=gmail.com@rts.kijiji.ca designates 143.55.230.38 as permitted sender) smtp.mailfrom="bounce+64ff2a.10e496-fefe2560=gmail.com@rts.kijiji.ca"
+Return-Path: <bounce+64ff2a.10e496-fefe2560=gmail.com@rts.kijiji.ca>
+Received: from a230-38.mailgun.net (a230-38.mailgun.net. [143.55.230.38])
+        by mx.google.com with UTF8SMTPS id e22-20020a05622a111600b003f9b941e26asi12720202qty.663.2023.06.18.05.57.31
+        for <fefe2560@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 18 Jun 2023 05:57:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+64ff2a.10e496-fefe2560=gmail.com@rts.kijiji.ca designates 143.55.230.38 as permitted sender) client-ip=143.55.230.38;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rts.kijiji.ca header.s=pic header.b=4m0DJPeK;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=Tk1Tuux7;
+       spf=pass (google.com: domain of bounce+64ff2a.10e496-fefe2560=gmail.com@rts.kijiji.ca designates 143.55.230.38 as permitted sender) smtp.mailfrom="bounce+64ff2a.10e496-fefe2560=gmail.com@rts.kijiji.ca"
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=rts.kijiji.ca; q=dns/txt; s=pic; t=1687093051; x=1687100251; h=Content-Type: MIME-Version: Subject: Subject: Message-ID: To: To: From: From: Date: Sender: Sender: X-Feedback-Id; bh=w2Iy0i8ijR4d7qGbea+NSaBk2HZS0+Y2hF+dNznkFhE=; b=4m0DJPeKJ5Cwdy1jV1ZoyT62GEOTj1jn5bHedMMhc+WQpV479zryGu7nEg/sJy4IPNZZzxEEovvh8RDXhaBijECHqk50yC8Jrkej3hhiE8Tvxhx8mvRSVq40cwofmvdDtYmAjdNB71gICqczIdcQLWbA2o92KQeCj2AHKgAgJyI=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1687093051; x=1687100251; h=Content-Type: MIME-Version: Subject: Subject: Message-ID: To: To: From: From: Date: Sender: Sender: X-Feedback-Id; bh=w2Iy0i8ijR4d7qGbea+NSaBk2HZS0+Y2hF+dNznkFhE=; b=Tk1Tuux75S6FZSRUldru4Jl/Vm2sAj+GqPuC78lkIHY/KAb7RF4ixH//dkj2iyvuYe6sk6CP5DQo6UD159lSY9IPmvM5KT66ZfbP6Tu91hSt0xRfiMufDXdFs0HecTzuQRwVNmbs+/3gNqwrbC0SdblpVnijZUwsdwJCS1fNGwY=
+X-Feedback-Id: noreply@id.kijiji.ca::6410e8a725b3c7052a2d3ca8:mailgun
+X-Mailgun-Sending-Ip: 143.55.230.38
+X-Mailgun-Sid: WyI2OWZmMSIsImZlZmUyNTYwQGdtYWlsLmNvbSIsIjEwZTQ5NiJd
+Received: from cis-accounts-6858b49f85-cxx22 (209.76.203.35.bc.googleusercontent.com [35.203.76.209]) by c0b2d4d39234 with SMTP id 648eff3b410132bc90b998da; Sun, 18 Jun 2023 12:57:31 GMT
+Sender: noreply=id.kijiji.ca@rts.kijiji.ca
+Date: Sun, 18 Jun 2023 12:57:30 +0000 (GMT)
+From: Kijiji Canada <noreply@id.kijiji.ca>
+To: As <fefe2560@gmail.com>
+Message-ID: <1827156909.31583.1687093050968@cis-accounts-6858b49f85-cxx22>
+Subject: You're almost there, complete your registration
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_31580_481347005.1687093050657"
+
+------=_Part_31580_481347005.1687093050657
+Content-Type: multipart/related; boundary="----=_Part_31581_1354444548.1687093050657"
+
+------=_Part_31581_1354444548.1687093050657
+Content-Type: multipart/alternative; boundary="----=_Part_31582_1820216834.1687093050657"
+
+------=_Part_31582_1820216834.1687093050657
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+------------------------------------------------------------
+From: Kijiji
+Re: You're nearly there!
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+
+Hi As!
+
+Congratulations! You have almost completed registering on Kijiji.
+
+Type or copy and paste this URL into your browser to confirm your email add=
+ress.
+<http://email.rts.kijiji.ca/c/eJw8zj3q4zAQQPHTyJ3NaKQZSYWLheALbJXKyGNpo8Qfw=
+VZI2NMvS-Dfverxm3sNyQZuUq_ZOwgGSDe33jvLgjBnTuLAZZxz1Bkpc2AdxTel1x6dJg4QOqPJ=
+m-5nAIG9siDlbKPI_trq2bInP9mQPbXy-SA2S3-r9Xkq80vhoHB4v9_do9zLvXQSFQ7xWRQOsm_=
+na03HN3M51jatsSzKDHV_pE2ZC4bogR1G0bN1YtFE7xnZgUzRBRITsnOWCA1kmkiEExuUFAkkCC=
+tkWUra6lhmZS5fw3jbj_J332pcxry8ak3jFX_LdSpDc_Q55YTEoCz8-a_pZF__BQAA__8CLGJm>
+
+Once confirmed, you can manage your ads, email notifications, bump up / fea=
+ture notifications & much more from your My Kijiji.
+
+
+Regards,
+The Kijiji Team
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Help:
+http://email.rts.kijiji.ca/c/eJw8zDFyhSAQANDTQCezu8DKFhRpvIfBJfLV6AQz4_HTZH=
+77irdkBA3CVjNyGkE8RLRrJu9RSbkQwoIYKiBHqAFQQWSstmVMNGJkAXEeY_LuHYBwMgFK68Ncy=
+vn7ffeBU0yfQWqKQ3keIrvn9b6vbvyHocnQtOp-ua292qu5Mv_Don0zNNmfXLUqRQYT4OuY2-7K=
+efwFAAD__-ydNDk
+About:
+http://email.rts.kijiji.ca/c/eJw8zDtyhDAMANDT2B2MLNtCKlyk4R74o11v2JAJZobjp9=
+sLvJoctCBkW3LEC4iH6OwzVclIqCH7zBi0RVFeRKsndb7WZntyjIuLJCCzd5H9_AFAiE2A0s9pK=
+-W4fsY5EUfOQZTjVO4b0e7pOcav8V8GV4Prd3_1V8_78ZjLZnDd8nGN6ToNrvYvadOGkcAEeLy3=
+vs_leP8HAAD__zx4NMA
+Privacy Policy:
+http://email.rts.kijiji.ca/c/eJw8zM1u6yAQxfGngR1oGD48LFjcjd8DT-B6Eqe2glslb1=
+8prbr9naP_pThoISfdiks0QfYQnV7f6gMj95ByXyi46kPMnog6tGnRUhzh5GLKkK13kbz9C0BOp=
+AKwDFOZ98-Pc5hEkZaQO0XDzyei3sp6nsdQ_p_CWeG8tu2wN7nKVSzXX7i0cVM4H_smLG0onH8e=
+5njIV-WXeS8v_Si99YYxgQrw_15ls7zfvwMAAP__zKVBEA
+Terms of Use:
+http://email.rts.kijiji.ca/c/eJw8zD1uxCAQQOHTQAcahh8PBUUa34OMh5hdO7YWr-Tjp0=
+iU9unpW4oDCTlpKS7RBNlDdHot0WdBqBCpUQROIbUlTD5TZZSliu7FEU4upgzZehfJ238AciIVg=
+Pswlfl4f1_DJIr0GXKjaPi-EfVW1us6h_IfCmeF8yrbaZ_90R_dcv0Li4ynwvk8ts5dhsL59zCX=
+vPZhjmbeQ_SrNGmCMYEK8LXXvlk-9p8AAAD__3iGQFo
+Contact Kijiji:
+http://email.rts.kijiji.ca/c/eJw8zDtywyAQANDTQCdml5_YgiKN7gGrJcKWLU_AMz5-mk=
+zaV7w9I4inqCVjTCuQg4D6yLIi11prhB3Q1xRbCUzo9iLiSVbdMya7YogEZByG5Mx_ABST8sB9L=
+IX5ej_nWGIKqXpqKSz8-Virz3zM-RrKfSm7Kbsdcr7Mvd_6rRsuf7DLuCu78fWchefyHspu-ic3=
+aWJDBOXh-1H6afh6_AYAAP__wz46Zg
+
+=C2=A9 2023 Marktplaats BV
+Operated by: Kijiji Canada Ltd. | 500 King Street West, Suite 200 | Toronto=
+, Ontario | M5V 1L9 | Canada
+
+
+
+
+To unsubscribe click: <http://email.rts.kijiji.ca/u/eJwEwEGOgzAMBdDTkB3ox4k=
+de5HFHCVjQhupFKlQieP3rTWiZ5PwrKknX40U0gtnkYIGJ4OzogkojBqVSmQx2JIia1qiaIElME=
+x0yvBxzs39-L6vcxZl_c-2Kc9-30ThU7e-dWLBlPHY23gtfuzhqhP9_QIAAP__UkAkRQ>
+
+
+------=_Part_31582_1820216834.1687093050657
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<?xml version=3D"1.0" encoding=3D"UTF-8" standalone=3D"no"?><html xmlns=3D"=
+http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:o=
+ffice" xmlns:v=3D"urn:schemas-microsoft-com:vml" lang=3D"en"><head>
+    <meta charset=3D"utf-8"/>
+    <!-- utf-8 works for most cases -->
+    <meta content=3D"width=3Ddevice-width" name=3D"viewport"/>
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible"/>
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name=3D"x-apple-disable-message-reformatting"/>
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+
+    <!-- CSS Reset : BEGIN -->
+   =20
+    <!-- CSS Reset : END -->
+    <!-- Reset list spacing because Outlook ignores much of our inline CSS.=
+ -->
+    <!--[if mso]>
+    <style>
+        ul,
+        ol {
+            margin: 0 !important;
+        }
+        li {
+            margin-left: 30px !important;
+        }
+        li.list-item-first {
+            margin-top: 0 !important;
+        }
+        li.list-item-last {
+            margin-bottom: 10px !important;
+        }
+    </style>
+    <![endif]-->
+    <style>
+/* Media Queries */
+
+/* What it does: Hover styles for buttons */
+.button-td,
+.button-a {
+  transition: all 100ms ease-in;
+}
+.button-td-primary:hover,
+.button-a-primary:hover {
+  background: #6966c0 !important;
+  border-color: #6966c0 !important;
+  text-decoration: none !important;
+}
+    </style>
+   =20
+    <!-- What it does: Makes background images in 72ppi Outlook render at c=
+orrect size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <style>
+body {
+  font-family: 'HelveticaNeue', Helvetica, Arial;
+}
+
+.email-container {
+  background-color: transparent;
+  border-spacing: 0;
+  border: none;
+  color: #6F727F;
+  font-family: 'HelveticaNeue', Helvetica, Arial;
+  font-size: 15px;
+  mso-line-height-rule:exactly;
+  line-height: 1.33;
+  max-width: 600px;
+  padding: 0;
+  text-align: left;
+  width:100%;
+}
+
+.full-width {
+  background: #f8f9f9;
+  Margin: 0;
+  mso-line-height-rule: exactly;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.font-size-small {
+  font-size: 12px;
+}
+
+.font-family-medium {
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+table td {
+  padding: 0 20px;
+}
+
+table td td {
+  padding: 0;
+}
+
+table.no-padding td {
+  padding: 0;
+}
+
+td.no-padding {
+  padding: 0;
+}
+
+/**************/
+/* Typography */
+/**************/
+
+h1,h2,h3,h4,h5 {
+  font-weight: 700;
+  color: #373373;
+}
+
+h1 {
+  line-height: 24px;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+h3 {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+pre {
+  font-family: 'HelveticaNeue', Helvetica, Arial;
+  white-space: pre-wrap;
+}
+
+p, pre, .copy {
+  mso-line-height-rule:exactly;
+  line-height: 20px;
+  font-size: 15px;
+  color: #3E4153;
+}
+
+p.blue, .copy-blue {
+  color: #373373;
+}
+
+p.black, .copy-black {
+  color: #3E4153;
+}
+
+p.bold, .copy-bold {
+  font-weight: 700;
+}
+
+p.bigger, .copy-bigger {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+p.small, .copy-small {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+p.smaller, .copy-smaller {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p.smallest, .copy-smallest {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+p.secondary, .copy-secondary {
+  color: #6F727F;
+}
+
+p.no-break, .copy-no-break {
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: #2681DB;
+}
+
+.long-url {
+  overflow-wrap: break-word;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.list-item {
+  width: 100%;
+  Margin: 0 0 5px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.list-item-bullet {
+  vertical-align: top;
+  color: #a5ce4f;
+  width: 25px !important;
+  max-width: 25px;
+}
+
+.list-item-copy {
+  padding-bottom: 10px;
+}
+
+.chevron {
+  display: inline-block;
+  text-decoration: none;
+  white-space: pre;
+}
+
+.double-chevron {
+  display: inline-block;
+  color: #A4CF57;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: pre;
+}
+
+.no-wrap {
+  white-space: normal;
+}
+
+.no-left-margin {
+  margin-left: 0!important;
+}
+
+a.accordion_link:hover {
+  text-decoration: none!important;
+}
+
+.accordion_sub-header {
+  color: #2681DB;
+  text-decoration: none;
+}
+
+table.accordion_container {
+  border-radius: 2px;
+  border: 1px solid #F8F9F9;
+}
+
+table.accordion_container tr {
+  height: 40px;
+}
+
+table.accordion_container td {
+  background: #ffffff;
+  padding: 15px 30px;
+}
+
+.infobar-container {
+  background-color: #F1F1F2;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  font-weight: 300;
+}
+
+.infobar-container td {
+  padding: 10px;
+}
+
+@media (min-device-width: 600px) {
+  .no-wrap {
+    white-space: nowrap !important;
+  }
+}
+.header_top-bar {
+  border-top: 5px solid #373373;
+}
+
+.header_wrapper {
+  Margin-bottom: 25px;
+}
+
+.header_container {
+  background-color: #fff;
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.header_link_container {
+  height: 80px;
+  vertical-align: middle;
+}
+
+.header_logo {
+  border: none;
+  max-width: 90px;
+  width: 100%;
+}
+
+.subheader-container {
+  background-color: #F8F9F9;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  font-weight: 300;
+}
+
+.subheader-container td {
+  padding: 10px;
+}
+.hr {
+    background: transparent;
+    min-width: 100%;
+    width: 100%;
+}
+
+.hr .top-spacing,
+.hr .bottom-spacing {
+    width: 100%;
+    min-width: 100%;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.hr .bottom-spacing {
+    border-top: 1px #F1F1F2 solid;
+}
+table.container {
+    border-spacing: 25px 50px;
+}
+
+table.container .body-content {
+    padding: 25px;
+    background: white;
+    border: 1px solid #F1F1F2;
+    text-align: left;
+}
+
+table.container .bottom-spacing {
+    height: 25px;
+}
+#footer-spacing td {
+  height: 40px;
+}
+
+#footer {
+  display: table;
+  background-color: #fff;
+}
+
+#footer .with-whitespace {
+  padding-top: 35px;
+}
+
+#footer .top-links,
+#footer .app-links,
+#footer .social-links {
+  width: 100%;
+  min-width: 100%;
+}
+
+#footer .bottom-links {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 10px !important;
+}
+
+
+.no-word-break {
+  word-break: normal;
+}
+
+#footer .social-link {
+  width: 45px;
+  max-width: 45px;
+}
+
+#footer .social-link-spacer {
+  width: 10px;
+  max-width: 10px;
+}
+
+#footer .social-link a img {
+  border: none;
+  outline: none;
+}
+
+#footer .app-logo {
+  vertical-align: top;
+  width: 46px;
+}
+
+#footer .app-link {
+  text-align: left;
+  white-space: nowrap;
+}
+
+#footer .legal {
+  text-align: center;
+  Margin: 20px 0 30px;
+}
+
+#footer table.bottom-links tbody tr td{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#footer .top-links tbody tr td {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#footer .top-links tbody tr td td {
+  padding: 0;
+}
+
+#footer table.app-links tbody tr td{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#footer table.app-links tbody tr td td {
+  padding: 0;
+}
+
+    </style>
+</head><body class=3D"full-width" style=3D"background-color:#f8f9f9;backgro=
+und-repeat:repeat;background-image:none;height:100.0%;background-position:0=
+.0% 0.0%;margin-right:auto;padding-right:0.0px;padding-left:0.0px;margin-le=
+ft:auto;font-family:'HelveticaNeue' , 'Helvetica' , 'Arial';margin-top:0.0p=
+x;padding-top:0.0px;padding-bottom:0.0px;background-attachement:scroll;widt=
+h:100.0%;margin-bottom:0.0px;">
+<center class=3D"full-width header_top-bar" style=3D"background-color:#f8f9=
+f9;background-repeat:repeat;border-top-color:#373373;background-image:none;=
+background-position:0.0% 0.0%;border-top-style:solid;margin-right:0.0px;pad=
+ding-right:0.0px;border-top-width:5.0px;padding-left:0.0px;margin-left:0.0p=
+x;margin-top:0.0px;padding-top:0.0px;padding-bottom:0.0px;background-attach=
+ement:scroll;width:100.0%;margin-bottom:0.0px;">
+    <!--[if mso | IE]>
+    <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" bgcolor=3D"#f8f9f9" style=3D"background-color: #f8f9f=
+9;border-top: 5px solid #403e7c;">
+        <tr>
+            <td>
+    <![endif]-->
+    <!-- Email Header : BEGIN -->
+    <div class=3D"header_wrapper" style=3D"Margin-bottom:25.0px;">
+        <table class=3D"header_container" style=3D"background-color:#ffffff=
+;border-collapse:collapse;text-align:center;margin-right:auto;table-layout:=
+fixed;margin-left:auto;margin-top:0.0px;border-spacing:0.0 0.0;display:tabl=
+e;width:100.0%;margin-bottom:0.0px;">
+            <tbody xmlns=3D""><tr height=3D"80" xmlns=3D"http://www.w3.org/=
+1999/xhtml">
+                <td class=3D"header_link_container" style=3D"height:80.0px;=
+padding-right:20.0px;padding-left:20.0px;padding-top:0.0px;vertical-align:m=
+iddle;padding-bottom:0.0px;">
+                    <a class=3D"header_link" href=3D"http://email.rts.kijij=
+i.ca/c/eJw8zDF2wyAMANDTwGaeJJAiBoYuuQdG0JDGdV_tvufjd8sFvhWEnrL4XlD0BjkCo38U=
+qYZZh9DKYFjXzh1MrauxqQH5WVDphiwZcojIGsMbgCzqErR5LLW1_e_7PBZR1jXloby06yLyr_I=
+4zx8XPxzdHd2_5nM-Z2jV_5bRRycWcAk-tzpfoe3bfwAAAP__u8cuyg" rel=3D"noopener no=
+referrer" style=3D"color:#2681db;text-decoration:none;" target=3D"_blank" t=
+itle=3D"Kijiji">
+                        <img alt=3D"Kijiji" class=3D"header_logo" src=3D"ht=
+tps://ca.classistatic.com/static/V/current/img/emails/kijiji-logo-new.png" =
+style=3D"border-top-color:null;border-right-width:medium;border-right-color=
+:null;border-top-style:none;border-bottom-width:medium;border-right-style:n=
+one;border-top-width:medium;border-bottom-color:null;border-left-color:null=
+;border-left-style:none;border-left-width:medium;max-width:90.0px;width:100=
+.0%;border-bottom-style:none;" width=3D"90"/>
+                    </a>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <!-- Email Header : END -->
+
+    <div class=3D"email-container" style=3D"background-color:transparent;bo=
+rder-top-color:null;text-align:left;border-right-width:medium;border-right-=
+color:null;line-height:1.33;border-top-style:none;margin-right:auto;border-=
+bottom-width:medium;padding-right:0.0px;border-right-style:none;border-top-=
+width:medium;border-bottom-color:null;color:#6f727f;padding-left:0.0px;bord=
+er-left-color:null;font-size:15.0px;margin-left:auto;border-left-style:none=
+;font-family:'HelveticaNeue' , 'Helvetica' , 'Arial';margin-top:0.0px;paddi=
+ng-top:0.0px;border-spacing:0.0 0.0;padding-bottom:0.0px;border-left-width:=
+medium;max-width:600.0px;width:100.0%;border-bottom-style:none;margin-botto=
+m:0.0px;">
+        <!--[if mso]>
+        <table align=3D"center" role=3D"presentation" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0" width=3D"600" bgcolor=3D"#f8f9f9" style=3D"back=
+ground-color: #f8f9f9;">
+            <tr>
+                <td>
+        <![endif]-->
+
+    <!-- Email Body : BEGIN -->
+
+<table align=3D"center" border=3D"0" cellpadding=3D"25" cellspacing=3D"0" c=
+lass=3D"container" role=3D"presentation" style=3D"border-collapse:collapse;=
+margin-right:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;bord=
+er-spacing:0.0 0.0;margin-bottom:0.0px;" width=3D"100%">
+    <tbody xmlns=3D""><tr xmlns=3D"http://www.w3.org/1999/xhtml">
+        <td class=3D"no-padding" style=3D"padding-right:0.0px;padding-left:=
+0.0px;padding-top:0.0px;padding-bottom:0.0px;" width=3D"20">=C2=A0</td>
+        <td class=3D"body-content" style=3D"background-color:#ffffff;backgr=
+ound-repeat:repeat;border-top-color:#f1f1f2;background-image:none;text-alig=
+n:left;border-right-width:1.0px;border-right-color:#f1f1f2;background-posit=
+ion:0.0% 0.0%;border-top-style:solid;border-bottom-width:1.0px;padding-righ=
+t:25.0px;border-right-style:solid;border-top-width:1.0px;border-bottom-colo=
+r:#f1f1f2;padding-left:25.0px;border-left-color:#f1f1f2;border-left-style:s=
+olid;padding-top:25.0px;padding-bottom:25.0px;border-left-width:1.0px;backg=
+round-attachement:scroll;border-bottom-style:solid;">
+                <h1 class=3D"center-text" style=3D"font-weight:700;text-ali=
+gn:center;line-height:24.0px;color:#373373;font-size:20.0px;">You're nearly=
+ there!</h1>
+
+    <p class=3D"center-text" style=3D"text-align:center;line-height:20.0px;=
+color:#3e4153;font-size:15.0px;">
+        You=E2=80=99re right at the finish line!<br/>
+        Confirm your email address to sign up for Kijiji successfully and s=
+tart exploring our features both on the app and online!<br/>
+    </p>
+    <p class=3D"center-text" style=3D"text-align:center;line-height:20.0px;=
+color:#3e4153;font-size:15.0px;">
+        <a href=3D"http://email.rts.kijiji.ca/c/eJw8zj3q4zAQQPHTyJ3NaKQZSYW=
+LheALbJXKyGNpo8QfwVZI2NMvS-Dfverxm3sNyQZuUq_ZOwgGSDe33jvLgjBnTuLAZZxz1Bkpc2=
+AdxTel1x6dJg4QOqPJm-5nAIG9siDlbKPI_trq2bInP9mQPbXy-SA2S3-r9Xkq80vhoHB4v9_do=
+9zLvXQSFQ7xWRQOsm_na03HN3M51jatsSzKDHV_pE2ZC4bogR1G0bN1YtFE7xnZgUzRBRITsnOW=
+CA1kmkiEExuUFAkkCCtkWUra6lhmZS5fw3jbj_J332pcxry8ak3jFX_LdSpDc_Q55YTEoCz8-a_=
+pZF__BQAA__8CLGJm" style=3D"color:#2681db;text-decoration:none;"><button st=
+yle=3D"background-color:#373373;border-top-left-radius:5.0px 5.0px;border-t=
+op-right-radius:5.0px 5.0px;padding-right:5.0%;color:#ffffff;padding-left:5=
+.0%;border-bottom-right-radius:5.0px 5.0px;border-bottom-left-radius:5.0px =
+5.0px;padding-top:2.0%;padding-bottom:2.0%;">Activate now</button></a>
+    </p>
+
+        </td>
+        <td class=3D"no-padding" style=3D"padding-right:0.0px;padding-left:=
+0.0px;padding-top:0.0px;padding-bottom:0.0px;" width=3D"20">=C2=A0</td>
+    </tr>
+    <tr xmlns=3D"http://www.w3.org/1999/xhtml">
+        <td class=3D"no-padding bottom-spacing" height=3D"25" style=3D"heig=
+ht:25.0px;padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-=
+bottom:0.0px;" width=3D"20">=C2=A0</td>
+        <td class=3D"no-padding bottom-spacing" height=3D"25" style=3D"heig=
+ht:25.0px;padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-=
+bottom:0.0px;">=C2=A0</td>
+        <td class=3D"no-padding bottom-spacing" height=3D"25" style=3D"heig=
+ht:25.0px;padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-=
+bottom:0.0px;" width=3D"20">=C2=A0</td>
+    </tr>
+</tbody></table>
+<table align=3D"center" border=3D"0" cellpadding=3D"25" cellspacing=3D"0" c=
+lass=3D"container" role=3D"presentation" style=3D"border-collapse:collapse;=
+margin-right:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;bord=
+er-spacing:0.0 0.0;margin-bottom:0.0px;" width=3D"100%">
+    <tbody xmlns=3D""><tr xmlns=3D"http://www.w3.org/1999/xhtml">
+        <td class=3D"no-padding" style=3D"padding-right:0.0px;padding-left:=
+0.0px;padding-top:0.0px;padding-bottom:0.0px;" width=3D"20">=C2=A0</td>
+        <td class=3D"body-content" style=3D"background-color:#ffffff;backgr=
+ound-repeat:repeat;border-top-color:#f1f1f2;background-image:none;text-alig=
+n:left;border-right-width:1.0px;border-right-color:#f1f1f2;background-posit=
+ion:0.0% 0.0%;border-top-style:solid;border-bottom-width:1.0px;padding-righ=
+t:25.0px;border-right-style:solid;border-top-width:1.0px;border-bottom-colo=
+r:#f1f1f2;padding-left:25.0px;border-left-color:#f1f1f2;border-left-style:s=
+olid;padding-top:25.0px;padding-bottom:25.0px;border-left-width:1.0px;backg=
+round-attachement:scroll;border-bottom-style:solid;">
+                <p style=3D"line-height:20.0px;color:#3e4153;font-size:15.0=
+px;">
+        Post your listings easily, save your searches, and so much more!<br=
+/>
+        Download the app to shop, sell, and save anytime, anywhere.<br/>
+    </p>
+
+        </td>
+        <td class=3D"no-padding" style=3D"padding-right:0.0px;padding-left:=
+0.0px;padding-top:0.0px;padding-bottom:0.0px;" width=3D"20">=C2=A0</td>
+    </tr>
+    <tr xmlns=3D"http://www.w3.org/1999/xhtml">
+        <td class=3D"no-padding bottom-spacing" height=3D"25" style=3D"heig=
+ht:25.0px;padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-=
+bottom:0.0px;" width=3D"20">=C2=A0</td>
+        <td class=3D"no-padding bottom-spacing" height=3D"25" style=3D"heig=
+ht:25.0px;padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-=
+bottom:0.0px;">=C2=A0</td>
+        <td class=3D"no-padding bottom-spacing" height=3D"25" style=3D"heig=
+ht:25.0px;padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-=
+bottom:0.0px;" width=3D"20">=C2=A0</td>
+    </tr>
+</tbody></table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"border-collapse:collapse;margin-right:auto;tab=
+le-layout:fixed;margin-left:auto;margin-top:0.0px;border-spacing:0.0 0.0;ma=
+rgin-bottom:0.0px;" width=3D"100%">
+    <tbody xmlns=3D""><tr xmlns=3D"http://www.w3.org/1999/xhtml">
+        <td style=3D"padding-right:20.0px;padding-left:20.0px;padding-top:0=
+.0px;padding-bottom:0.0px;">
+            <p class=3D"secondary" style=3D"line-height:20.0px;color:#6f727=
+f;font-size:15.0px;">
+                If the above link does not work, please click on this URL o=
+r copy and paste it into your browser.<br/>
+                <a class=3D"long-url" href=3D"http://email.rts.kijiji.ca/c/=
+eJw8zj3q4zAQQPHTyJ3NaKQZSYWLheALbJXKyGNpo8QfwVZI2NMvS-Dfverxm3sNyQZuUq_ZOwg=
+GSDe33jvLgjBnTuLAZZxz1Bkpc2AdxTel1x6dJg4QOqPJm-5nAIG9siDlbKPI_trq2bInP9mQPb=
+Xy-SA2S3-r9Xkq80vhoHB4v9_do9zLvXQSFQ7xWRQOsm_na03HN3M51jatsSzKDHV_pE2ZC4bog=
+R1G0bN1YtFE7xnZgUzRBRITsnOWCA1kmkiEExuUFAkkCCtkWUra6lhmZS5fw3jbj_J332pcxry8=
+ak3jFX_LdSpDc_Q55YTEoCz8-a_pZF__BQAA__8CLGJm" style=3D"color:#2681db;text-d=
+ecoration:none;">https://www.kijiji.ca/api/consumer/confirm-email?token=3D2=
+9a80672ac1d47c423a8862670cba795c39f77455230f5b5cc6e632cea50c9c6&amp;client_=
+id=3Dkijiji_horizontal_flutte_Y2ScYbiF</a>
+            </p>
+
+
+
+<table cellpadding=3D"0" cellspacing=3D"0" class=3D"hr" role=3D"presentatio=
+n" style=3D"background-color:transparent;background-repeat:repeat;backgroun=
+d-image:none;border-collapse:collapse;background-position:0.0% 0.0%;margin-=
+right:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;border-spac=
+ing:0.0 0.0;background-attachement:scroll;width:100.0%;margin-bottom:0.0px;=
+min-width:100.0%;" width=3D"100%">
+    <tbody>
+        <tr>
+            <td class=3D"top-spacing" style=3D"line-height:0.0px;padding-ri=
+ght:0.0px;padding-left:0.0px;font-size:0.0px;padding-top:0.0px;padding-bott=
+om:0.0px;width:100.0%;min-width:100.0%;"><img height=3D"30" src=3D"https://=
+ca.classistatic.com/static/V/current/img/emails/spacer.gif"/></td>
+        </tr>
+        <tr>
+            <td class=3D"bottom-spacing" style=3D"border-top-color:#f1f1f2;=
+line-height:0.0px;border-top-style:solid;padding-right:0.0px;border-top-wid=
+th:1.0px;padding-left:0.0px;font-size:0.0px;padding-top:0.0px;padding-botto=
+m:0.0px;width:100.0%;min-width:100.0%;"><img height=3D"30" src=3D"https://c=
+a.classistatic.com/static/V/current/img/emails/spacer.gif"/></td>
+        </tr>
+    </tbody>
+</table>
+
+
+   =20
+    <div class=3D"signature_container">
+        <p style=3D"line-height:20.0px;color:#666974;font-size:15.0px;">
+            Regards,
+            <br/>
+            The Kijiji Team
+        </p>
+
+    </div>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Email Body : END -->
+    <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </div>
+    <!-- Email Footer : BEGIN -->
+    <table id=3D"footer-spacing" style=3D"border-collapse:collapse;margin-r=
+ight:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;border-spaci=
+ng:0.0 0.0;margin-bottom:0.0px;">
+        <tbody>
+        <tr>
+            <td height=3D"40" style=3D"height:40.0px;padding-right:20.0px;p=
+adding-left:20.0px;padding-top:0.0px;padding-bottom:0.0px;">=C2=A0</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class=3D"full-width" id=3D"footer" style=3D"background-color:#ff=
+ffff;background-repeat:repeat;background-image:none;border-collapse:collaps=
+e;background-position:0.0% 0.0%;margin-right:auto;padding-right:0.0px;table=
+-layout:fixed;padding-left:0.0px;margin-left:auto;margin-top:0.0px;padding-=
+top:0.0px;border-spacing:0.0 0.0;display:table;padding-bottom:0.0px;backgro=
+und-attachement:scroll;width:100.0%;margin-bottom:0.0px;">
+        <tbody>
+        <tr>
+            <td class=3D"with-whitespace" style=3D"padding-right:20.0px;pad=
+ding-left:20.0px;padding-top:35.0px;padding-bottom:0.0px;">
+                <!--[if mso]>
+                <table align=3D"center" role=3D"presentation" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" width=3D"600">
+                    <tr>
+                        <td>
+                <![endif]-->
+                <table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"email-container" role=3D"presentation" style=3D"back=
+ground-color:transparent;border-top-color:null;border-collapse:collapse;tex=
+t-align:left;border-right-width:medium;border-right-color:null;line-height:=
+1.33;border-top-style:none;margin-right:auto;border-bottom-width:medium;pad=
+ding-right:0.0px;border-right-style:none;border-top-width:medium;border-bot=
+tom-color:null;color:#6f727f;table-layout:fixed;padding-left:0.0px;border-l=
+eft-color:null;font-size:15.0px;margin-left:auto;border-left-style:none;fon=
+t-family:'HelveticaNeue' , 'Helvetica' , 'Arial';margin-top:0.0px;padding-t=
+op:0.0px;border-spacing:0.0 0.0;padding-bottom:0.0px;border-left-width:medi=
+um;max-width:600.0px;width:100.0%;border-bottom-style:none;margin-bottom:0.=
+0px;">
+                    <tbody>
+                    <tr>
+                        <td style=3D"padding-right:0.0px;padding-left:0.0px=
+;padding-top:0.0px;padding-bottom:0.0px;">
+
+                            <table class=3D"top-links center-text" style=3D=
+"border-collapse:collapse;text-align:center;margin-right:auto;table-layout:=
+fixed;margin-left:auto;margin-top:0.0px;border-spacing:0.0 0.0;width:100.0%=
+;margin-bottom:0.0px;min-width:100.0%;" width=3D"100%">
+                                <tbody>
+                                    <tr>
+                                        <td style=3D"padding-right:5.0px;pa=
+dding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;" width=3D"33.33%">=
+<a class=3D"no-word-break copy-bigger copy-secondary" href=3D"http://email.=
+rts.kijiji.ca/c/eJw8zD12gzAMAODTmM1-svCfBg9duIciRHAKJS-4j_T23XKBb64eNFAatPp=
+UMtAI0Q9rTXOmKMTMt4JZaAZkXVLGkLPGwEOrvmD2MRGQG30so_sAQKmYANJOyyLH708_bSqx3A=
+ItJVp5vxGHra69P08zfhmcDE7Xdbnv9miP5oQNTk976qbSrXDX-_H6c2vft-FVF10UYwIT4L5z2=
+5wc-38AAAD__9xtOaY" rel=3D"noopener noreferrer" style=3D"line-height:20.0px=
+;color:#6f727f;font-size:15.0px;text-decoration:none;" target=3D"_blank"><s=
+pan style=3D"white-space:nowrap;">Post</span> <span style=3D"white-space:no=
+wrap;">Ad=C2=A0<span class=3D"double-chevron" style=3D"white-space:pre;colo=
+r:#a4cf57;font-size:16.0px;display:inline-block;text-decoration:none;">=C2=
+=BB</span></span></a></td>
+                                        <td style=3D"padding-right:5.0px;pa=
+dding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;" width=3D"33.33%">=
+<a class=3D"no-word-break copy-bigger copy-secondary" href=3D"http://email.=
+rts.kijiji.ca/c/eJw8zD1yhSAQAODTQCezu8CyFBRpvAfyk4fRmIlm9Pjp3gW-mhCai6xbQpY=
+A0YJH_UpZQhBvlypoQ6-Ba0UA7oHYLd0VPRIKBfQcIRqLXqx5AxBZlIMyzimXcvx9X-fE4mVxsY=
+ufyvMQ6S29ruvnVPZD0axovu_bfI11rMOUrGjWv6m33sgzKAefex6bKcf-HwAA___kfjC6" rel=
+=3D"noopener noreferrer" style=3D"line-height:20.0px;color:#6f727f;font-siz=
+e:15.0px;text-decoration:none;" target=3D"_blank"><span style=3D"white-spac=
+e:nowrap;">Browse</span> <span style=3D"white-space:nowrap;">Categories=C2=
+=A0<span class=3D"double-chevron" style=3D"white-space:pre;color:#a4cf57;fo=
+nt-size:16.0px;display:inline-block;text-decoration:none;">=C2=BB</span></s=
+pan></a></td>
+                                        <td style=3D"padding-right:5.0px;pa=
+dding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;" width=3D"33.33%">=
+<a class=3D"no-word-break copy-bigger copy-secondary" href=3D"http://email.=
+rts.kijiji.ca/c/eJw8zD12wyAMAODTwAZPEj-RBoYu3AML3JDGTV_t1untu-UCXy8II0q2o2D=
+mC0iAhPZaFsEA0ikHQc6D1thIe194KA0VsLMg0wVTFhAfMHHwLwAks4mgc3dN9fHzeewuc-Ilys=
+rJ6fNJZO_lehxfuwlvhqqhep6n_5i3eZtem6G6ue3Ptb4bqk2P-TsMVbTfZR3roJTBRHjf2rx7f=
+Wz_AQAA__9laDfb" rel=3D"noopener noreferrer" style=3D"line-height:20.0px;co=
+lor:#6f727f;font-size:15.0px;text-decoration:none;" target=3D"_blank"><span=
+ style=3D"white-space:nowrap;">My</span> <span style=3D"white-space:nowrap;=
+">Kijiji=C2=A0<span class=3D"double-chevron" style=3D"white-space:pre;color=
+:#a4cf57;font-size:16.0px;display:inline-block;text-decoration:none;">=C2=
+=BB</span></span></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+
+<table cellpadding=3D"0" cellspacing=3D"0" class=3D"hr" role=3D"presentatio=
+n" style=3D"background-color:transparent;background-repeat:repeat;backgroun=
+d-image:none;border-collapse:collapse;background-position:0.0% 0.0%;margin-=
+right:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;border-spac=
+ing:0.0 0.0;background-attachement:scroll;width:100.0%;margin-bottom:0.0px;=
+min-width:100.0%;" width=3D"100%">
+    <tbody>
+        <tr>
+            <td class=3D"top-spacing" style=3D"line-height:0.0px;padding-ri=
+ght:0.0px;padding-left:0.0px;font-size:0.0px;padding-top:0.0px;padding-bott=
+om:0.0px;width:100.0%;min-width:100.0%;"><img height=3D"30" src=3D"https://=
+ca.classistatic.com/static/V/current/img/emails/spacer.gif"/></td>
+        </tr>
+        <tr>
+            <td class=3D"bottom-spacing" style=3D"border-top-color:#f1f1f2;=
+line-height:0.0px;border-top-style:solid;padding-right:0.0px;border-top-wid=
+th:1.0px;padding-left:0.0px;font-size:0.0px;padding-top:0.0px;padding-botto=
+m:0.0px;width:100.0%;min-width:100.0%;"><img height=3D"30" src=3D"https://c=
+a.classistatic.com/static/V/current/img/emails/spacer.gif"/></td>
+        </tr>
+    </tbody>
+</table>
+
+
+                            <table class=3D"center-text app-links" style=3D=
+"border-collapse:collapse;text-align:center;margin-right:auto;table-layout:=
+fixed;margin-left:auto;margin-top:0.0px;border-spacing:0.0 0.0;width:100.0%=
+;margin-bottom:0.0px;min-width:100.0%;" width=3D"100%">
+                                <tbody>
+                                <tr>
+                                    <td class=3D"left-column" style=3D"padd=
+ing-right:15.0px;padding-left:15.0px;padding-top:0.0px;padding-bottom:0.0px=
+;" width=3D"50%">    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" class=3D"app-link" role=3D"presentation" style=3D"white-space:nowrap;bord=
+er-collapse:collapse;text-align:left;margin-right:auto;table-layout:fixed;m=
+argin-left:auto;margin-top:0.0px;border-spacing:0.0 0.0;margin-bottom:0.0px=
+;">
+        <tbody>
+            <tr>
+                <td class=3D"app-logo" style=3D"padding-right:0.0px;padding=
+-left:0.0px;padding-top:0.0px;vertical-align:top;padding-bottom:0.0px;width=
+:46.0px;"><img height=3D"38" src=3D"https://ca.classistatic.com/static/V/cu=
+rrent/img/emails/app-iphone-logo.jpg" width=3D"32"/></td>
+                <td style=3D"padding-right:0.0px;padding-left:0.0px;padding=
+-top:0.0px;padding-bottom:0.0px;"><a class=3D"no-word-break no-wrap copy-bi=
+gger copy-secondary" href=3D"http://email.rts.kijiji.ca/c/eJw8zDuSwjAMANDTO=
+J0zsvyJVLjYJvcwiryYNSSDwwzH36HhAO9t2YEGTpNml2gB9hDddM2VwlYTLxdRJlcSgxcXnC6c=
+oJagU8uOcHExMfDsXSQ_fwPgRCaAtGGLyP56nMMminQJXClaeb8Rp56v53kM438MrgbXdr4eOuZ=
+yHF1n2e8GVykG13IcBte_dmu3ZutT1fZdSrfSyxitNt3GR2_eES8cEaZnrloVYwIT4PdeWv98_w=
+EAAP__TeBD9A" style=3D"white-space:normal;line-height:20.0px;color:#6f727f;=
+font-size:15.0px;text-decoration:none;"><span style=3D"white-space:nowrap;"=
+>iPhone=C2=A0<span class=3D"double-chevron" style=3D"white-space:pre;color:=
+#a4cf57;font-size:16.0px;display:inline-block;text-decoration:none;">=C2=BB=
+</span></span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</td>
+                                    <td class=3D"right-column" style=3D"pad=
+ding-right:15.0px;padding-left:15.0px;padding-top:0.0px;padding-bottom:0.0p=
+x;" width=3D"50%">    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"app-link" role=3D"presentation" style=3D"white-space:nowrap;bor=
+der-collapse:collapse;text-align:left;margin-right:auto;table-layout:fixed;=
+margin-left:auto;margin-top:0.0px;border-spacing:0.0 0.0;margin-bottom:0.0p=
+x;">
+        <tbody>
+            <tr>
+                <td class=3D"app-logo" style=3D"padding-right:0.0px;padding=
+-left:0.0px;padding-top:0.0px;vertical-align:top;padding-bottom:0.0px;width=
+:46.0px;"><img height=3D"36" src=3D"https://ca.classistatic.com/static/V/cu=
+rrent/img/emails/app-android-logo.jpg" width=3D"34"/></td>
+                <td style=3D"padding-right:0.0px;padding-left:0.0px;padding=
+-top:0.0px;padding-bottom:0.0px;"><a class=3D"no-word-break no-wrap copy-bi=
+gger copy-secondary" href=3D"http://email.rts.kijiji.ca/c/eJw8zEtuwyAQANDTD=
+LugYfgYFiwqVdwD83FIcbEClZLbV930Ai97gUU5w4oXxm7oJGrB7n431eSNpEbMOeu6V9RbFVnZ=
+6GqiwpoXljahjUPHpdBW8n8AnbGgMLV5iymNn-81b8ZquytXrb6l14uIdX9f65ogP4ACULh6fPN=
+jjKMXnsYJFOYazwIU4nVNoJDLiq1PkKFlkJ9pnLzs8c2_2qM9Gk-RPX0ttZA2CAqPM7b-J_0GAA=
+D__9m8QvA" style=3D"white-space:normal;line-height:20.0px;color:#6f727f;fon=
+t-size:15.0px;text-decoration:none;"><span style=3D"white-space:nowrap;">An=
+droid=C2=A0<span class=3D"double-chevron" style=3D"white-space:pre;color:#a=
+4cf57;font-size:16.0px;display:inline-block;text-decoration:none;">=C2=BB</=
+span></span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+
+<table cellpadding=3D"0" cellspacing=3D"0" class=3D"hr" role=3D"presentatio=
+n" style=3D"background-color:transparent;background-repeat:repeat;backgroun=
+d-image:none;border-collapse:collapse;background-position:0.0% 0.0%;margin-=
+right:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;border-spac=
+ing:0.0 0.0;background-attachement:scroll;width:100.0%;margin-bottom:0.0px;=
+min-width:100.0%;" width=3D"100%">
+    <tbody>
+        <tr>
+            <td class=3D"top-spacing" style=3D"line-height:0.0px;padding-ri=
+ght:0.0px;padding-left:0.0px;font-size:0.0px;padding-top:0.0px;padding-bott=
+om:0.0px;width:100.0%;min-width:100.0%;"><img height=3D"30" src=3D"https://=
+ca.classistatic.com/static/V/current/img/emails/spacer.gif"/></td>
+        </tr>
+        <tr>
+            <td class=3D"bottom-spacing" style=3D"border-top-color:#f1f1f2;=
+line-height:0.0px;border-top-style:solid;padding-right:0.0px;border-top-wid=
+th:1.0px;padding-left:0.0px;font-size:0.0px;padding-top:0.0px;padding-botto=
+m:0.0px;width:100.0%;min-width:100.0%;"><img height=3D"30" src=3D"https://c=
+a.classistatic.com/static/V/current/img/emails/spacer.gif"/></td>
+        </tr>
+    </tbody>
+</table>
+
+                            <table class=3D"social-links center-text" style=
+=3D"border-collapse:collapse;text-align:center;margin-right:auto;table-layo=
+ut:fixed;margin-left:auto;margin-top:0.0px;border-spacing:0.0 0.0;width:100=
+.0%;margin-bottom:0.0px;min-width:100.0%;" width=3D"100%">
+                                <tbody>
+                                <tr>
+                                    <td style=3D"padding-right:0.0px;paddin=
+g-left:0.0px;padding-top:0.0px;padding-bottom:0.0px;">=C2=A0</td>
+                                    <td class=3D"social-link" style=3D"padd=
+ing-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-bottom:0.0px;m=
+ax-width:45.0px;width:45.0px;" width=3D"45"><a href=3D"http://email.rts.kij=
+iji.ca/c/eJw8zLEOgyAQANCvgU1zd8ABA0MXl36FIFSM1kZp6uc3XTq_5E0BIWvPMgdkZ8ErMC=
+jnYCmyVYlYZyhTMWApxsmDQhoRc5I1oCOLhj34XqFxqv8H4NkJDame3ZjS_n62s2NnXNS-ONOl6=
+yKSa5hbe51C3QQNgob2qa3lo0_7Jmi416UuVR6h5JLJMAgNj22s68-_AQAA___E3TKm" rel=3D=
+"noopener noreferrer" style=3D"color:#2681db;text-decoration:none;" target=
+=3D"_blank"><img alt=3D"Twitter" src=3D"https://ca.classistatic.com/static/=
+V/current/img/emails/social-twitter-logo.jpg" style=3D"border-top-color:nul=
+l;border-right-width:medium;border-right-color:null;border-top-style:none;o=
+utline-color:invert;outline-width:medium;border-bottom-width:medium;border-=
+right-style:none;border-top-width:medium;border-bottom-color:null;border-le=
+ft-color:null;border-left-style:none;border-left-width:medium;border-bottom=
+-style:none;outline-style:none;" width=3D"45"/></a></td>
+                                    <td class=3D"social-link-spacer" style=
+=3D"padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-bottom=
+:0.0px;max-width:10.0px;width:10.0px;" width=3D"10">=C2=A0</td>
+                                    <td class=3D"social-link" style=3D"padd=
+ing-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-bottom:0.0px;m=
+ax-width:45.0px;width:45.0px;" width=3D"45"><a href=3D"http://email.rts.kij=
+iji.ca/c/eJw8zDtuwzAMANDTSJsFUh-aHDR08dJTyAzVKE3qonbhHL_okv3hXSqCZSFvFYlnkA=
+QF_bV2LpxawznTDGi0WovIq4leQKyYHxU5zlhIQELCwim8AhBil0HHPjXV7ffr2CfiwmuWzmXS5=
+zNGf6_X4_jeXXpzcXFxOc8z9Ka2bttn0O3h4vI-buM2gjb_U7t1i4XAZfh4tHH_J38BAAD__4-3=
+NZo" rel=3D"noopener noreferrer" style=3D"color:#2681db;text-decoration:non=
+e;" target=3D"_blank"><img alt=3D"Facebook" src=3D"https://ca.classistatic.=
+com/static/V/current/img/emails/social-facebook-logo.jpg" style=3D"border-t=
+op-color:null;border-right-width:medium;border-right-color:null;border-top-=
+style:none;outline-color:invert;outline-width:medium;border-bottom-width:me=
+dium;border-right-style:none;border-top-width:medium;border-bottom-color:nu=
+ll;border-left-color:null;border-left-style:none;border-left-width:medium;b=
+order-bottom-style:none;outline-style:none;" width=3D"45"/></a></td>
+                                    <td class=3D"social-link-spacer" style=
+=3D"padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-bottom=
+:0.0px;max-width:10.0px;width:10.0px;" width=3D"10">=C2=A0</td>
+                                    <td class=3D"social-link" style=3D"padd=
+ing-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-bottom:0.0px;m=
+ax-width:45.0px;width:45.0px;" width=3D"45"><a href=3D"http://email.rts.kij=
+iji.ca/c/eJw8zLFygzAMANCvsTc4SbaMPHjown8oikmcBtIL7sHn97pkf_euBaHGnHwtmGSCHI=
+DR3wvTxWARZI3JAqqlCSITaWRFwepbQaEJOWXIY0CWMH4CyElcBGv7oGav363vQxKWS8yL8GDnS=
+eSf5d77z-7Cl6PZ0Xwcx9i2vevtretor9XR_N0e7dFMN72qo9m_y1KXSpzARbit2p7_8C8AAP__=
+w1M3nA" rel=3D"noopener noreferrer" style=3D"color:#2681db;text-decoration:=
+none;" target=3D"_blank"><img alt=3D"Instagram" src=3D"https://ca.classista=
+tic.com/static/V/current/img/emails/social-instagram-logo.jpg" style=3D"bor=
+der-top-color:null;border-right-width:medium;border-right-color:null;border=
+-top-style:none;outline-color:invert;outline-width:medium;border-bottom-wid=
+th:medium;border-right-style:none;border-top-width:medium;border-bottom-col=
+or:null;border-left-color:null;border-left-style:none;border-left-width:med=
+ium;border-bottom-style:none;outline-style:none;" width=3D"45"/></a></td>
+                                    <td class=3D"social-link-spacer" style=
+=3D"padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-bottom=
+:0.0px;max-width:10.0px;width:10.0px;" width=3D"10">=C2=A0</td>
+                                    <td class=3D"social-link" style=3D"padd=
+ing-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-bottom:0.0px;m=
+ax-width:45.0px;width:45.0px;" width=3D"45"><a href=3D"http://email.rts.kij=
+iji.ca/c/eJw8zDtuwzAMANDTSJsNkvqYHDR08T0kWmqUJnEQ23B6-6JL9oe3JITqJdqaMPIE4i=
+CgvaQyLYLRFRTPbanCYWIsXp02ruSz7QmZJgxRQEaHgd34CUAiGw_atyGrrsdj34bIgYuXxmHQ9=
+5vI3tJl35-bcV-GZkPzeZ7j73rsR6mjrndD80-_9mvX_MhL1vX1tK_UaqsUIhgP3_fcb__yLwAA=
+___tjTiG" rel=3D"noopener noreferrer" style=3D"color:#2681db;text-decoratio=
+n:none;" target=3D"_blank"><img alt=3D"Youtube" src=3D"https://ca.classista=
+tic.com/static/V/current/img/emails/social-youtube-logo.jpg" style=3D"borde=
+r-top-color:null;border-right-width:medium;border-right-color:null;border-t=
+op-style:none;outline-color:invert;outline-width:medium;border-bottom-width=
+:medium;border-right-style:none;border-top-width:medium;border-bottom-color=
+:null;border-left-color:null;border-left-style:none;border-left-width:mediu=
+m;border-bottom-style:none;outline-style:none;" width=3D"45"/></a></td>
+                                    <td class=3D"social-link-spacer" style=
+=3D"padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-bottom=
+:0.0px;max-width:10.0px;width:10.0px;" width=3D"10">=C2=A0</td>
+                                    <td class=3D"social-link" style=3D"padd=
+ing-right:0.0px;padding-left:0.0px;padding-top:0.0px;padding-bottom:0.0px;m=
+ax-width:45.0px;width:45.0px;" width=3D"45"><a href=3D"http://email.rts.kij=
+iji.ca/c/eJw8zMFqhDAQxvGniTclmZjs5JBDYSuUPsQSJ2M3W2OKRtzHL7awtw_-P77oleTe2Y=
+a9sniRTkujmrvXEVQfgdAyj2MYCRwr5BAj4oQjNckrhIsy1knXaWVQd68D6SyKXlLa2kBU9qVur=
+UWDY-8mNC09nwDN7O-1_mxCvwkYBAzHcXTf6ZEeqaMgYPjfxEtdw3wSPew137ayr8RCXz__-u09=
+hzQLsGfLHNOehb4OpVReP6gszeonnhiMlaKXXyfuqOTfAAAA__8WaUt3" rel=3D"noopener n=
+oreferrer" style=3D"color:#2681db;text-decoration:none;" target=3D"_blank">=
+<img alt=3D"Kijiji Central" src=3D"https://ca.classistatic.com/static/V/cur=
+rent/img/emails/social-kijijicentral-logo.jpg" style=3D"border-top-color:nu=
+ll;border-right-width:medium;border-right-color:null;border-top-style:none;=
+outline-color:invert;outline-width:medium;border-bottom-width:medium;border=
+-right-style:none;border-top-width:medium;border-bottom-color:null;border-l=
+eft-color:null;border-left-style:none;border-left-width:medium;border-botto=
+m-style:none;outline-style:none;" width=3D"45"/></a></td>
+                                    <td style=3D"padding-right:0.0px;paddin=
+g-left:0.0px;padding-top:0.0px;padding-bottom:0.0px;">=C2=A0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+
+<table cellpadding=3D"0" cellspacing=3D"0" class=3D"hr" role=3D"presentatio=
+n" style=3D"background-color:transparent;background-repeat:repeat;backgroun=
+d-image:none;border-collapse:collapse;background-position:0.0% 0.0%;margin-=
+right:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;border-spac=
+ing:0.0 0.0;background-attachement:scroll;width:100.0%;margin-bottom:0.0px;=
+min-width:100.0%;" width=3D"100%">
+    <tbody>
+        <tr>
+            <td class=3D"top-spacing" style=3D"line-height:0.0px;padding-ri=
+ght:0.0px;padding-left:0.0px;font-size:0.0px;padding-top:0.0px;padding-bott=
+om:0.0px;width:100.0%;min-width:100.0%;"><img height=3D"30" src=3D"https://=
+ca.classistatic.com/static/V/current/img/emails/spacer.gif"/></td>
+        </tr>
+        <tr>
+            <td class=3D"bottom-spacing" style=3D"border-top-color:#f1f1f2;=
+line-height:0.0px;border-top-style:solid;padding-right:0.0px;border-top-wid=
+th:1.0px;padding-left:0.0px;font-size:0.0px;padding-top:0.0px;padding-botto=
+m:0.0px;width:100.0%;min-width:100.0%;"><img height=3D"30" src=3D"https://c=
+a.classistatic.com/static/V/current/img/emails/spacer.gif"/></td>
+        </tr>
+    </tbody>
+</table>
+                           =20
+                            <table style=3D"border-collapse:collapse;margin=
+-right:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;border-spa=
+cing:0.0 0.0;margin-bottom:0.0px;" width=3D"100%">
+                                <tbody>
+                                    <tr>
+                                        <td class=3D"center-text" style=3D"=
+text-align:center;padding-right:0.0px;padding-left:0.0px;padding-top:0.0px;=
+padding-bottom:0.0px;">
+                                            <table class=3D"bottom-links ce=
+nter-text" style=3D"border-collapse:collapse;text-align:center;margin-right=
+:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;border-spacing:0=
+.0 0.0;max-width:350.0px;width:100.0%;margin-bottom:10.0px;" width=3D"350">
+                                                <tbody>
+                                                <tr>
+                                                    <td style=3D"padding-ri=
+ght:5.0px;padding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;" width=
+=3D"33.3%"><a class=3D"no-word-break no-wrap copy-smaller copy-secondary" h=
+ref=3D"http://email.rts.kijiji.ca/c/eJw8zLFywyAMANCvgc2cJCwsBoYu-Q8iRE3iNLn=
+i3uXzu_S6vuG1gmBrTt4KJtkgR2D0e4lG7aq4aa_MjClL5VaFUcDIFPwoKLQhpww5RGSJ4T-AnM=
+StoGMuVfX583XOJQnLdc1deNH3m8gfZT_P13Txw9HF0WW34xXu4zZuI2j9g2bz7r9Lt27ECdwKn=
+486jqDPx28AAAD__-8INJw" rel=3D"noopener noreferrer" style=3D"white-space:no=
+rmal;line-height:18.0px;color:#6f727f;font-size:13.0px;text-decoration:none=
+;" target=3D"_blank"><span style=3D"white-space:nowrap;">Help</span></a></t=
+d>
+                                                    <td style=3D"padding-ri=
+ght:5.0px;padding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;" width=
+=3D"33.3%"><a class=3D"no-word-break no-wrap copy-smaller copy-secondary" h=
+ref=3D"http://email.rts.kijiji.ca/c/eJw8zDtyhDAMANDT2B2MLNtCKlyk4R74o11v2JA=
+JZobjp9sLvJoctCBkW3LEC4iH6OwzVclIqCH7zBi0RVFeRKsndb7WZntyjIuLJCCzd5H9_AFAiE=
+2A0s9pK-W4fsY5EUfOQZTjVO4b0e7pOcav8V8GV4Prd3_1V8_78ZjLZnDd8nGN6ToNrvYvadOGk=
+cAEeLy3vs_leP8HAAD__zx4NMA" rel=3D"noopener noreferrer" style=3D"white-spac=
+e:normal;line-height:18.0px;color:#6f727f;font-size:13.0px;text-decoration:=
+none;" target=3D"_blank"><span style=3D"white-space:nowrap;">About</span></=
+a></td>
+                                                    <td style=3D"padding-ri=
+ght:5.0px;padding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;" width=
+=3D"33.3%"><a class=3D"no-word-break no-wrap copy-smaller copy-secondary" h=
+ref=3D"http://email.rts.kijiji.ca/c/eJw8zM1u6yAQxfGngR1oGD48LFjcjd8DT-B6Eqe=
+2glslb18prbr9naP_pThoISfdiks0QfYQnV7f6gMj95ByXyi46kPMnog6tGnRUhzh5GLKkK13kb=
+z9C0BOpAKwDFOZ98-Pc5hEkZaQO0XDzyei3sp6nsdQ_p_CWeG8tu2wN7nKVSzXX7i0cVM4H_smL=
+G0onH8e5njIV-WXeS8v_Si99YYxgQrw_15ls7zfvwMAAP__zKVBEA" rel=3D"noopener nore=
+ferrer" style=3D"white-space:normal;line-height:18.0px;color:#6f727f;font-s=
+ize:13.0px;text-decoration:none;" target=3D"_blank"><span style=3D"white-sp=
+ace:nowrap;">Privacy</span> <span style=3D"white-space:nowrap;">Policy</spa=
+n></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class=3D"bottom-links ce=
+nter-text" style=3D"border-collapse:collapse;text-align:center;margin-right=
+:auto;table-layout:fixed;margin-left:auto;margin-top:0.0px;border-spacing:0=
+.0 0.0;max-width:350.0px;width:100.0%;margin-bottom:10.0px;" width=3D"350">
+                                                <tbody xmlns=3D""><tr xmlns=
+=3D"http://www.w3.org/1999/xhtml">
+                                                    <td style=3D"padding-ri=
+ght:5.0px;padding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;">=C2=
+=A0</td>
+                                                    <td style=3D"padding-ri=
+ght:5.0px;padding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;" width=
+=3D"33.3%"><a class=3D"no-word-break no-wrap copy-smaller copy-secondary" h=
+ref=3D"http://email.rts.kijiji.ca/c/eJw8zD1uxCAQQOHTQAcahh8PBUUa34OMh5hdO7Y=
+Wr-Tjp0iU9unpW4oDCTlpKS7RBNlDdHot0WdBqBCpUQROIbUlTD5TZZSliu7FEU4upgzZehfJ23=
+8AciIVgPswlfl4f1_DJIr0GXKjaPi-EfVW1us6h_IfCmeF8yrbaZ_90R_dcv0Li4ynwvk8ts5dh=
+sL59zCXvPZhjmbeQ_SrNGmCMYEK8LXXvlk-9p8AAAD__3iGQFo" rel=3D"noopener norefer=
+rer" style=3D"white-space:normal;line-height:18.0px;color:#6f727f;font-size=
+:13.0px;text-decoration:none;" target=3D"_blank"><span style=3D"white-space=
+:nowrap;">Terms</span> <span style=3D"white-space:nowrap;">of</span> <span =
+style=3D"white-space:nowrap;">Use</span></a></td>
+                                                    <td style=3D"padding-ri=
+ght:5.0px;padding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;" width=
+=3D"33.3%"><a class=3D"no-word-break no-wrap copy-smaller copy-secondary" h=
+ref=3D"http://email.rts.kijiji.ca/c/eJw8zDtywyAQANDTQCdml5_YgiKN7gGrJcKWLU_=
+AMz5-mkzaV7w9I4inqCVjTCuQg4D6yLIi11prhB3Q1xRbCUzo9iLiSVbdMya7YogEZByG5Mx_AB=
+ST8sB9LIX5ej_nWGIKqXpqKSz8-Virz3zM-RrKfSm7Kbsdcr7Mvd_6rRsuf7DLuCu78fWchefyH=
+spu-ic3aWJDBOXh-1H6afh6_AYAAP__wz46Zg" rel=3D"noopener noreferrer" style=3D=
+"white-space:normal;line-height:18.0px;color:#6f727f;font-size:13.0px;text-=
+decoration:none;" target=3D"_blank"><span style=3D"white-space:nowrap;">Con=
+tact</span> <span style=3D"white-space:nowrap;">Kijiji</span></a></td>
+                                                    <td style=3D"padding-ri=
+ght:5.0px;padding-left:5.0px;padding-top:0.0px;padding-bottom:0.0px;">=C2=
+=A0</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class=3D"legal copy-smallest copy-secondar=
+y" style=3D"text-align:center;line-height:20.0px;margin-right:0.0px;color:#=
+6f727f;font-size:12.0px;margin-left:0.0px;margin-top:20.0px;margin-bottom:3=
+0.0px;">
+                                =C2=A92023 Marktplaats BV<br/>
+                                Operated by: Kijiji Canada Ltd. | 500 King =
+Street West, Suite 200 | Toronto, Ontario | M5V 1L9 | Canada
+                            </div>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Email Footer : END -->
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+</center>
+
+
+
+<br>
+<p><a href=3D"http://email.rts.kijiji.ca/u/eJwEwEGOgzAMBdDTkB3ox4kde5HFHCVj=
+QhupFKlQieP3rTWiZ5PwrKknX40U0gtnkYIGJ4OzogkojBqVSmQx2JIia1qiaIElMEx0yvBxzs3=
+9-L6vcxZl_c-2Kc9-30ThU7e-dWLBlPHY23gtfuzhqhP9_QIAAP__UkAkRQ">unsubscribe</a=
+></p>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.rts.kijiji.c=
+a/o/eJw8zMGtgzAMANBpyA3kmNixDxkmOPb_SKVIpZUYv7cu8EbL4EU5ecssFXQFyum_oW5YbQh=
+qHWJBnaNqbENHF-ruaW9ZsGZiBV3WTLIuPwCUZSpg-zV3s_PzfF8zC8lWNIRmu2_E9Grh4UgMU4=
+G_o--Pxc7jGwAA__-lAydL"></body></html>
+------=_Part_31582_1820216834.1687093050657--
+------=_Part_31581_1354444548.1687093050657--
+------=_Part_31580_481347005.1687093050657--
