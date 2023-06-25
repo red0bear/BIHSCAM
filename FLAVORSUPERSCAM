@@ -1,0 +1,155 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:ad4:5843:0:b0:630:110f:d31c with SMTP id de3csp4810352qvb;
+        Sun, 25 Jun 2023 06:40:42 -0700 (PDT)
+X-Google-Smtp-Source: ACHHUZ5+NrYGv7rAsGn1VUtK8jOExkBQUkr1Yj8VfPb9Zc7HwSaf9EEzQF50sW/B/FYgFmeklX0+
+X-Received: by 2002:adf:f607:0:b0:30e:4c8d:c6c with SMTP id t7-20020adff607000000b0030e4c8d0c6cmr18209245wrp.55.1687700441847;
+        Sun, 25 Jun 2023 06:40:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1687700441; cv=none;
+        d=google.com; s=arc-20160816;
+        b=JF2YRVzEMSoLSnSqrrF/72Gqws5R7WQiKEWbiRT2yADp9WeWltCGCGYag9ttl9X7AI
+         RklcDscIIr9jZq7XzfhU1AXJM9nKTS3b3AJuvfuFZSffqK9/ln7ymw+FHSjGT0g1mqBR
+         jIiq5tAllwVouVfGUl3k/EEjgLfSQDI3HtFptsMNerYgDFIkGJF7k/kvzBW+XWAWFyqQ
+         XUDrsyEERggyg/8Mawsh4iPvzitTA1a6L1Z4zUnyqdkzk7e1HKdsDliOdhWx+lHHpNw9
+         fBMyV9H6tQ8pP1R/wke/105CmPXAHSjAw5qf1bptaiB/VOdh6ae1Bl429spMIMUt4Tln
+         Qg4A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-transfer-encoding:subject:to:from:message-id
+         :date;
+        bh=PzDSZSxg7ndVEyuef3YToj+Fo51nKcVK47Kv2Kjfymk=;
+        fh=KIExv90yLDjbkawcj98YIwOhVSBmz5HPLi1Tg/S4R3U=;
+        b=HMysFSxnzkp3g+SfxBwgsgiFSudEjRQHJZ8ahfekIbtmJkhjkXFoYMxR08OQWFUYFn
+         frelIM0pwpV1g04fFyNVi6fYJz6HzG3m4JkuDWG1NvS86lak98u2NzGAF8IjoqHh1ecX
+         rURoZ1sA7ZZWgxXWbgBbxhpGsuqxdJ5LPFlOXRswZecHc/NyLQlLqYjUZq4RQ7QDQmU5
+         j4oGxx4lskiCkOvd8ca3WKX7zkKGe82YSkGGYotwfp4glf0Rl5+m08Ss9Q1W8bUWOCok
+         NiccnoRk0SuaX5YvJQwQjjpDvxh5LVv5a7eJtRjRGX2+IG6M4v69d74lluep62jl8wHZ
+         4xOA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of return.yjm3cdnwadmz0ynwgtn00sozeznwutoxyjm@pc9n9r966a115f.r9844-47ef.kjlzz2ym.tk designates 2a03:94e0:1733:10a:9844:47ef:0:1 as permitted sender) smtp.mailfrom=return.YjM3cDNwADMz0yNwgTN00SOzEzNwUTOxYjM@pc9n9r966a115f.r9844-47ef.kjlzz2ym.tk
+Return-Path: <return.YjM3cDNwADMz0yNwgTN00SOzEzNwUTOxYjM@pc9n9r966a115f.r9844-47ef.kjlzz2ym.tk>
+Received: from 2a0394e01733010a984447ef00000001.kjlzz2ym.tk (2a0394e01733010a984447ef00000001.kjlzz2ym.tk. [2a03:94e0:1733:10a:9844:47ef:0:1])
+        by mx.google.com with ESMTPS id q9-20020a5d6589000000b003110db08af1si2187128wru.703.2023.06.25.06.40.40
+        for <fefe2560@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 25 Jun 2023 06:40:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return.yjm3cdnwadmz0ynwgtn00sozeznwutoxyjm@pc9n9r966a115f.r9844-47ef.kjlzz2ym.tk designates 2a03:94e0:1733:10a:9844:47ef:0:1 as permitted sender) client-ip=2a03:94e0:1733:10a:9844:47ef:0:1;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of return.yjm3cdnwadmz0ynwgtn00sozeznwutoxyjm@pc9n9r966a115f.r9844-47ef.kjlzz2ym.tk designates 2a03:94e0:1733:10a:9844:47ef:0:1 as permitted sender) smtp.mailfrom=return.YjM3cDNwADMz0yNwgTN00SOzEzNwUTOxYjM@pc9n9r966a115f.r9844-47ef.kjlzz2ym.tk
+Date: Sun, 25 Jun 2023 13:35:54 GMT
+Message-Id: <d0bb3e6e64904a3c69032e0aa63c7c@5s97k0tfmq1o5f.w9844-47ef.wipile.us>
+From: "'Hint - Flavorful Hydration'" <mhnt45807@5s97k0tfmq1o5f.w9844-47ef.wipile.us>
+To: fefe2560@gmail.com
+Subject: Amazing taste without the guilt - Hint Water is waiting for you
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type=
+"/>
+    <title></title>
+  </head>
+  <body style=3D"font-size: 14px;margin:0;padding:0;width:100%;font-family:=
+ Verdana, sans-serif;">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-s=
+ize: 14px;margin:0 auto;font-family: Verdana, sans-serif;width:602px;" widt=
+h=3D"602">
+      <tbody>
+        <tr>
+          <td align=3D"center" style=3D"background-color: #011942;font-fami=
+ly: Verdana, sans-serif;text-align: center;padding: 20px 0;"><a href=3D"htt=
+p://5s97k0tfmq1o5f.w9844-47ef.wipile.us/?c1=3DcwtMAAIDIAABkEOMRwNRg5g&amp;c=
+87=3Dre4847689" style=3D"display: inline-block;text-decoration: none;color:=
+#fff;font-size: 1.3em; font-weight: bold;line-height: 1;padding: 0;margin: =
+0 0 16px 0;">Unlock Your Exclusive Offer:</a> <a href=3D"http://5s97k0tfmq1=
+o5f.w9844-47ef.wipile.us/?c1=3DcwtMAAIDIAABkEOMRwNRg5g&amp;c87=3Dkx9679452"=
+ style=3D"display: inline-block;text-decoration: none;color:#fff;font-size:=
+ 1.1em; font-weight: normal;line-height: 1;padding: 0; margin: 0;">Click to=
+ Apply Promo Code <span style=3D"background-color: #db4555;font-size: 0.8em=
+;padding: 6px;font-weight: bold;">EMAILONLYOFFER <font style=3D"font-size: =
+0.8em">&#9654;</font></span> at Checkout. </a>
+          </td>
+        </tr>
+        <tr>
+          <td align=3D"left" style=3D"width:100%;height:632px;background-co=
+lor:#f9f3e9;background-repeat: no-repeat;background-image: url(http://5s97k=
+0tfmq1o5f.w9844-47ef.wipile.us//img-cwtMAAIDIAABkEOMRwNRg5g/hintbg.jpg);ver=
+tical-align: top;text-align: left;">
+            <div style=3D"padding-top: 156px;padding-left: 46px;">
+              <p style=3D"padding: 10px 0;margin:0;color:#2d3a85;font-weigh=
+t: bold;font-size: 1.44em;line-height: 1;">New Customer Offer
+              </p>
+              <div style=3D"height:130px;width:100%;"><a href=3D"http://5s9=
+7k0tfmq1o5f.w9844-47ef.wipile.us/?c1=3DcwtMAAIDIAABkEOMRwNRg5g&amp;c87=3Dyw=
+2807008" style=3D"text-decoration: none;display: block;margin: 0;padding: 0=
+;"><img alt=3D"36 BOTTLES" src=3D"http://5s97k0tfmq1o5f.w9844-47ef.wipile.u=
+s/img-cwtMAAIDIAABkEOMRwNRg5g/hint36b.gif" width=3D"266" height=3D"47" styl=
+e=3D"padding: 0;margin:0;color:#2c3984;font-weight: bold;font-size: 2.4em;l=
+ine-height: 1;width:auto;height:auto;" /></a> <a href=3D"http://5s97k0tfmq1=
+o5f.w9844-47ef.wipile.us/?c1=3DcwtMAAIDIAABkEOMRwNRg5g&amp;c87=3Dsp161226" =
+style=3D"text-decoration: none;display: block;margin: 0;padding: 10px 0;"><=
+img alt=3D"FOR $36" src=3D"http://5s97k0tfmq1o5f.w9844-47ef.wipile.us/img-c=
+wtMAAIDIAABkEOMRwNRg5g/hint36p.gif" width=3D"269" height=3D"72" style=3D"pa=
+dding: 0;margin:0;color:#2c3984;font-weight: bold;font-size: 3em;line-heigh=
+t: 1;width:auto;height:auto;" /></a>
+              </div><a href=3D"http://5s97k0tfmq1o5f.w9844-47ef.wipile.us/?=
+c1=3DcwtMAAIDIAABkEOMRwNRg5g&amp;c87=3Dfv128493" style=3D"font-family: Verd=
+ana, sans-serif;text-decoration: none;color:#fff;background-color:#db4555;d=
+isplay: inline-block;padding: 20px 62px;font-size: 1.5em;font-weight: bold;=
+line-height: 1;margin: 34px 0 0 0;">shop now</a>
+            </div>
+            <div style=3D"text-align: center;width: 100%;padding-top:50px;"=
+>
+              <p style=3D"color:#273582;font-size: 1.4em;font-weight: norma=
+l;padding: 6px 0;margin: 0;">Fall in love with fruit-infused water for only
+              </p>
+              <p style=3D"color:#273582;font-size: 1.5em;font-weight: bold;=
+padding: 0;margin: 0;">$1 per bottle + FREE shipping!
+              </p>
+            </div>
+            <img alt=3D"" src=3D"http://5s97k0tfmq1o5f.w9844-47ef.wipile.us=
+/img-cwtMAAIDIAABkEOMRwNRg5g/hint-line.gif" width=3D"602" height=3D"1" styl=
+e=3D"width:602px;height:1px;" />
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-size:0.8em;text-align: center;">
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =F0=9D=98=90=F0=9D=98=A7 =
+=F0=9D=98=BA=F0=9D=98=B0=F0=9D=98=B6 =F0=9D=98=B8=F0=9D=98=B0=F0=9D=98=B6=
+=F0=9D=98=AD=F0=9D=98=A5 =F0=9D=98=AF=F0=9D=98=B0 =F0=9D=98=AD=F0=9D=98=B0=
+=F0=9D=98=AF=F0=9D=98=A8=F0=9D=98=A6=F0=9D=98=B3 =F0=9D=98=AD=F0=9D=98=AA=
+=F0=9D=98=AC=F0=9D=98=A6 =F0=9D=98=B5=F0=9D=98=B0 =F0=9D=98=B3=F0=9D=98=A6=
+=F0=9D=98=A4=F0=9D=98=A6=F0=9D=98=AA=F0=9D=98=B7=F0=9D=98=A6 =F0=9D=98=A6=
+=F0=9D=98=AE=F0=9D=98=A2=F0=9D=98=AA=F0=9D=98=AD =F0=9D=98=A2=F0=9D=98=A5=
+=F0=9D=98=B7=F0=9D=98=A6=F0=9D=98=B3=F0=9D=98=B5=F0=9D=98=AA=F0=9D=98=B4=F0=
+=9D=98=A6=F0=9D=98=AE=F0=9D=98=A6=F0=9D=98=AF=F0=9D=98=B5=F0=9D=98=B4 =F0=
+=9D=98=A7=F0=9D=98=B3=F0=9D=98=B0=F0=9D=98=AE <span>=F0=9D=98=8B=F0=9D=98=
+=B3=F0=9D=98=AA=F0=9D=98=AF=F0=9D=98=AC=F0=9D=98=8F=F0=9D=98=AA=F0=9D=98=AF=
+=F0=9D=98=B5.</span><span>=F0=9D=98=A4=F0=9D=98=B0=F0=9D=98=AE</span>,
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=3D"http://5s97k0tf=
+mq1o5f.w9844-47ef.wipile.us/?c1=3DcwtMAAIDIAABkEOMRwNRg5g&amp;c2=3Dunsub">=
+=F0=9D=98=A4=F0=9D=98=AD=F0=9D=98=AA=F0=9D=98=A4=F0=9D=98=AC =F0=9D=98=A9=
+=F0=9D=98=A6=F0=9D=98=B3=F0=9D=98=A6 </a>=F0=9D=98=B0=F0=9D=98=B3 =F0=9D=98=
+=B8=F0=9D=98=B3=F0=9D=98=AA=F0=9D=98=B5=F0=9D=98=A6 =F0=9D=98=B5=F0=9D=98=
+=B0 =F0=9D=98=B6=F0=9D=98=B4 =F0=9D=98=A2=F0=9D=98=B5: 625 =F0=9D=98=94=F0=
+=9D=98=A2=F0=9D=98=B3=F0=9D=98=AC=F0=9D=98=A6=F0=9D=98=B5 =F0=9D=98=9A=F0=
+=9D=98=B5=F0=9D=98=B3=F0=9D=98=A6=F0=9D=98=A6=F0=9D=98=B5 =F0=9D=98=9A=F0=
+=9D=98=A2=F0=9D=98=AF =F0=9D=98=8D=F0=9D=98=B3=F0=9D=98=A2=F0=9D=98=AF=F0=
+=9D=98=B4=F0=9D=98=AA=F0=9D=98=B4=F0=9D=98=A4=F0=9D=98=B0, =F0=9D=98=8A=F0=
+=9D=98=88 94105.
+            <br />&nbsp;
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class=3D"desirousDeal" style=3D"min-height:180px;height:200px;marg=
+in-bottom:60px;">&nbsp;
+    </div>
+    <p style=3D"text-align: center;"><a href=3D"http://5s97k0tfmq1o5f.w9844=
+-47ef.wipile.us/?c1=3DcwtMAAIDIAABkEOMRwNRg5g&amp;c2=3Doptt#af7390695"><img=
+ alt=3D"" src=3D"http://5s97k0tfmq1o5f.w9844-47ef.wipile.us/img-cwtMAAIDIAA=
+BkEOMRwNRg5g/prfott.jpg" width=3D"314" height=3D"26" /></a>
+    </p>
+  </body>
+</html>
