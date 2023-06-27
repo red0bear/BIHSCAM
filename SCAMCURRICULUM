@@ -1,0 +1,1052 @@
+OBS: 17 YEARS THIS COMPANY JUST LIE TO PEOPLE. LEGIT SCAM PAY TO WIN.
+
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:ad4:5843:0:b0:630:110f:d31c with SMTP id de3csp6286647qvb;
+        Tue, 27 Jun 2023 16:03:37 -0700 (PDT)
+X-Google-Smtp-Source: ACHHUZ6+yA+VYHdZ9E1I75ehCO/KnzqkgiFc/cp5TuX6gdkQDFyT7Cn3qJT0vyxnkXdQDtehTXhu
+X-Received: by 2002:a05:6870:d341:b0:1a9:8ec0:c5c3 with SMTP id h1-20020a056870d34100b001a98ec0c5c3mr18588821oag.25.1687907017505;
+        Tue, 27 Jun 2023 16:03:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1687907017; cv=none;
+        d=google.com; s=arc-20160816;
+        b=l0zB4+OuCbc3h8G3ByZgXPDVUbijZW9+Q7/KQFx5SSKhFN27WfyLAYqPYJIscazQhC
+         kFT67etvN8wE/82q+pZj5YfexSCtf4/uz90JtsSWInjVgRJ3N6Z2rJhyO1qqUY2vYBKj
+         egGSPT0BFSiLr8AYEu995ES4N2EtaIRSrAe1GsTUiRx8Os141O8S5yq9KezyTVXW50S3
+         U4oX77z5r7JEa7H9ayZVCWxcbUzMq2NQhimDYQKilHjBTmsI9A8VExSHNcLvMC6vdBPp
+         mVxvs5ZMGd+qtP9CjwQIUIv0Z90VnXaR55kCmehiT7HTlPQdQGipnnnPJTwlMl1IpgpJ
+         CATQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=em-task:em-campaign:precedence:mime-version:importance:date:subject
+         :reply-to:to:from:message-id:domainkey-signature:dkim-signature;
+        bh=jLNQ6qTOWKiCJ0h+cku3LsQc8W9rU9hyf7KfPAY1fl0=;
+        fh=x9Sd09vfe0ltHY5goUmqfW3CInPWawWSEuMYhREYdvI=;
+        b=BIWB/ywV2kCPYlpap4PeJ85DiaedWr/1tZKSuSyy8BdyJAZyzL1X6sRGbFsGUoMPev
+         XziCuT71fB8aD3KuOBVMM1zwNrklyTjgJZXMdgDs2vya7v5DpS5chF4gwIljluPvx/ni
+         yATxVHzmDl4Jx2pLGleBO1d2iFTylUDS1Yt8e2uSjna1R0EUYXzxhv8JFcB68us9pHkD
+         GRZhL3VchEhy4oSNq1VxXBgmoCnLNRl/Kvq4f5nqNIRIiPplGwY7Sn/SI4ZguQX4Rsgl
+         f8w0nbIlrVHE6gDqIiIblzim31TIlbBkbPBmfH8Xu6vqx+TT00enkO6HcdgN3n+H5nuf
+         Xngw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@curriculum.com.br header.s=curriculum header.b=pJUAGrpG;
+       spf=pass (google.com: domain of comunicado@email.candidatos.curriculum.com.br designates 66.232.27.155 as permitted sender) smtp.mailfrom=comunicado@email.candidatos.curriculum.com.br;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=email.candidatos.curriculum.com.br
+Return-Path: <comunicado@email.candidatos.curriculum.com.br>
+Received: from smtp-mia-155.curriculum.com.br (smtp-mia-155.curriculum.com.br. [66.232.27.155])
+        by mx.google.com with ESMTP id q9-20020a056870328900b001b040ec8aa8si2341237oac.315.2023.06.27.16.03.37
+        for <fefe2560@gmail.com>;
+        Tue, 27 Jun 2023 16:03:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of comunicado@email.candidatos.curriculum.com.br designates 66.232.27.155 as permitted sender) client-ip=66.232.27.155;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@curriculum.com.br header.s=curriculum header.b=pJUAGrpG;
+       spf=pass (google.com: domain of comunicado@email.candidatos.curriculum.com.br designates 66.232.27.155 as permitted sender) smtp.mailfrom=comunicado@email.candidatos.curriculum.com.br;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=email.candidatos.curriculum.com.br
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=curriculum; d=curriculum.com.br; h=Message-ID:From:To:Reply-To:Subject:Date:MIME-Version:Content-Type; i=comunicado@email.candidatos.curriculum.com.br; bh=tLJMXQpSfaiaOwtAwC+vG6yKCL8=; b=pJUAGrpGq+/3VrdZly6eO8kQD7xlVajS6EqpaU9Jy0H5OsXdXKBx8Dg0+f0USQ9bWHxJ2pgrnkuy
+   W62fx/Frh3617gV5pGFCboyKBriVHvg5kO74Oh+3V8EdMhE3eIjJ6RbdA/DSdsIhvEJf6mkuPvhu
+   lMQ1ZV4F2WR6xamDSMI=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=curriculum; d=curriculum.com.br; b=J5PdAy2tnJCbOlLUJE3MtycM7KKsFwStJrZvCagy7QdMCX0gZmvRB3jaSPlFndI3YAHMw5TJbdd/
+   8obcuIcRpI4vw6zjHwuMOvt+Uas1/lBQJFE8gd2PbQIOrO0V5WyPwj2GA7PFijMldE/6scLYRZBF
+   aikZCCJ0GXScrc8yc/k=;
+Received: from SND02 (66.232.27.242) by smtp-mia-155.curriculum.com.br id hjdo1q1mtro5 for <fefe2560@gmail.com>; Tue, 27 Jun 2023 13:24:29 -0300 (envelope-from <comunicado@email.candidatos.curriculum.com.br>)
+Message-ID: <271eb001dd0c5a22.1mup3hu5@email.candidatos.curriculum.com.br>
+From: Curriculum <comunicado@email.candidatos.curriculum.com.br>
+To: <fefe2560@gmail.com>
+Reply-To: Curriculum <comunicado@email.candidatos.curriculum.com.br>
+Return-Path: <comunicado@email.candidatos.curriculum.com.br>
+Subject: Grandes empresas estão contratando
+Date: Tue, 27 Jun 2023 13:02:32 -0300
+Importance: Normal
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_NextPart_526_6160_43173050.78979035"
+Precedence: Bulk
+X-campaignid: 20220629-CAN-ATV
+X-mailer: CurricMailerV1.0
+X-report-abuse: comunicado@email.candidatos.curriculum.com.br
+EM-Campaign: {5336A896-6D30-4196-90D5-D7B782B3D714}
+EM-Task: 10
+
+------=_NextPart_526_6160_43173050.78979035
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
++400 vagas
+A Michael Page =C3=A9 um dos maiores players mundiais em recrutamento espec=
+ializado
+
+Vagas para mais de 5 cargos
+A Oggi Sorvetes se tornou a primeira rede de franquias no formato lojas de =
+f=C3=A1brica
+
+
+=E2=80=8A
+
+
+
+
+Vagas para mais de 12 cargos
+Uma das maiores fabricantes de artigos de cama, mesa e banho da Am=C3=A9ric=
+a Latina
+
++60 vagas
+H=C3=A1 mais de 20 anos contribuem com o desenvolvimento tecnol=C3=B3gico d=
+o Brasil
+
+
+=E2=80=8A
+
+
+
+
+
+
+
+
+
+
+
+
+Est=C3=A1 participando de entrevistas de emprego mas n=C3=A3o est=C3=A1 se =
+saindo bem nelas?
+J=C3=A1 se perguntou porque alguns demoram tanto para arrumar um novo empre=
+go enquanto outros encontram rapidamente?
+=C3=89 poss=C3=ADvel mudar essa realidade e encontrar uma solu=C3=A7=C3=A3o=
+ para isso!
+Participe do Programa Curriculum Emprega, conquiste seu novo emprego e s=C3=
+=B3 pague quando for contratado!
+QUERO PARTICIPAR
+=E2=80=8A
+
+Email enviado pela Curriculum.com.br. Para n=C3=A3o receber mais, desinscre=
+va-se
+
+------=_NextPart_526_6160_43173050.78979035
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+
+<html lang=3D"en" xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns=
+:v=3D"urn:schemas-microsoft-com:vml">
+<head>
+<title>Grandes empresas est=C3=A3o contratando</title>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type"/>
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewpor=
+t"/>
+<style>
+=09=09* {
+=09=09=09box-sizing: border-box;
+=09=09}
+
+=09=09body {
+=09=09=09margin: 0;
+=09=09=09padding: 0;
+=09=09}
+
+=09=09a[x-apple-data-detectors] {
+=09=09=09color: inherit !important;
+=09=09=09text-decoration: inherit !important;
+=09=09}
+
+=09=09#MessageViewBody a {
+=09=09=09color: inherit;
+=09=09=09text-decoration: none;
+=09=09}
+
+=09=09p {
+=09=09=09line-height: inherit
+=09=09}
+
+=09=09.desktop_hide,
+=09=09.desktop_hide table {
+=09=09=09mso-hide: all;
+=09=09=09display: none;
+=09=09=09max-height: 0px;
+=09=09=09overflow: hidden;
+=09=09}
+
+=09=09.image_block img+div {
+=09=09=09display: none;
+=09=09}
+
+=09=09@media (max-width:660px) {
+
+=09=09=09.image_block img.big,
+=09=09=09.row-content {
+=09=09=09=09width: 100% !important;
+=09=09=09}
+
+=09=09=09.mobile_hide {
+=09=09=09=09display: none;
+=09=09=09}
+
+=09=09=09.stack .column {
+=09=09=09=09width: 100%;
+=09=09=09=09display: block;
+=09=09=09}
+
+=09=09=09.mobile_hide {
+=09=09=09=09min-height: 0;
+=09=09=09=09max-height: 0;
+=09=09=09=09max-width: 0;
+=09=09=09=09overflow: hidden;
+=09=09=09=09font-size: 0px;
+=09=09=09}
+
+=09=09=09.desktop_hide,
+=09=09=09.desktop_hide table {
+=09=09=09=09display: table !important;
+=09=09=09=09max-height: none !important;
+=09=09=09}
+=09=09}
+=09</style>
+</head>
+<body style=3D"background-color: #FFFFFF; margin: 0; padding: 0; -webkit-te=
+xt-size-adjust: none; text-size-adjust: none;">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"nl-con=
+tainer" role=3D"presentation" style=3D"mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; background-color: #FFFFFF;" width=3D"100%">
+       =20
+            <tr>
+                <td>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-1" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000=
+000; width: 640px;" width=3D"640">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: t=
+op; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0p=
+x;" width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-top:5px;width:100%;padding-right:0px;padding-left:0px;"=
+>
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/premium/&tipo_pedido_origem_cod=3D2595&utm_source=3Dcurriculum&utm_=
+medium=3Demail&utm_term=3Datv-can-ema-ema-0002&utm_campaign=3Dvagas-top" st=
+yle=3D"outline:none" tabindex=3D"-1" target=3D"_blank"><img src=3D"https://=
+www.curriculum.com.br/images/emails/ATV-CAN-EMA-EMA-0002/images/logo.png" s=
+tyle=3D"display: block; height: auto; border: 0; width: 128px; max-width: 1=
+00%;" width=3D"128" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-2" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000=
+000; width: 640px;" width=3D"640">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: t=
+op; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0p=
+x;" width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"width:100%;padding-right:0px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/vagas-emprego-empresas.asp&tipo_pedido_origem_cod=3D2595&utm_source=
+=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-ema-0002&utm_campai=
+gn=3Dvagas-top" style=3D"outline:none" tabindex=3D"-1" target=3D"_blank"><i=
+mg class=3D"big" src=3D"https://www.curriculum.com.br/images/emails/ATV-CAN=
+-EMA-EMA-0002/images/ce_6_1.jpg" style=3D"display: block; height: auto; bor=
+der: 0; width: 640px; max-width: 100%;" width=3D"640" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-3" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000=
+000; width: 640px;" width=3D"640">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: m=
+iddle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left:=
+ 0px;" width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:10px;padding-left:15px;padding-right:15px;width:=
+100%;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/candidatos/vagas-emprego/michael-page/&tipo_pedido_origem_cod=3D259=
+5&utm_source=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-ema-000=
+2&utm_campaign=3Dvagas-top" style=3D"outline:none" tabindex=3D"-1" target=
+=3D"_blank"><img alt=3D"Michael Page" src=3D"https://www.curriculum.com.br/=
+images/emails/ATV-CAN-EMA-EMA-0002/images/michael_page.png" style=3D"displa=
+y: block; height: auto; border: 0; width: 144px; max-width: 100%;" title=3D=
+"Michael Page" width=3D"144" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"text_block block-2" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break:=
+ break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:5px;padding-left:10px;padding-right:10px;padding=
+-top:5px;">
+                                                                <div style=
+=3D"font-family: Arial, sans-serif">
+                                                                    <div cl=
+ass=3D"" style=3D"font-size: 12px; font-family: 'Open Sans', 'Helvetica Neu=
+e', Helvetica, Arial, sans-serif; mso-line-height-alt: 14.399999999999999px=
+; color: #555555; line-height: 1.2;">
+                                                                        <p =
+style=3D"margin: 0; font-size: 16px; text-align: center; mso-line-height-al=
+t: 19.2px;"><span style=3D"font-size:18px;"><strong>+400 vagas</strong></sp=
+an></p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"10" cellspacing=3D"0" class=3D"text_block block-3" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break=
+: break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d">
+                                                                <div style=
+=3D"font-family: sans-serif">
+                                                                    <div cl=
+ass=3D"" style=3D"font-size: 12px; font-family: Lato, Tahoma, Verdana, Sego=
+e, sans-serif; mso-line-height-alt: 14.399999999999999px; color: #555555; l=
+ine-height: 1.2;">
+                                                                        <p =
+style=3D"margin: 0; font-size: 14px; text-align: center; mso-line-height-al=
+t: 16.8px;">A Michael Page =C3=A9 um dos maiores players mundiais em recrut=
+amento especializado</p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class=3D"column column-=
+2" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: m=
+iddle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left:=
+ 0px;" width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:10px;padding-left:20px;padding-right:20px;paddin=
+g-top:10px;width:100%;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/candidatos/vagas-emprego/Oggi/&tipo_pedido_origem_cod=3D2595&utm_so=
+urce=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-ema-0002&utm_ca=
+mpaign=3Dvagas-top" style=3D"outline:none" tabindex=3D"-1" target=3D"_blank=
+"><img alt=3D"Oggi" src=3D"https://www.curriculum.com.br/images/emails/ATV-=
+CAN-EMA-EMA-0002/images/df82d0ea71135843c3a33bd5e1d7c881_1.png" style=3D"di=
+splay: block; height: auto; border: 0; width: 176px; max-width: 100%;" titl=
+e=3D"Oggi" width=3D"176" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"text_block block-2" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break:=
+ break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:5px;padding-left:10px;padding-right:10px;padding=
+-top:10px;">
+                                                                <div style=
+=3D"font-family: Arial, sans-serif">
+                                                                    <div cl=
+ass=3D"" style=3D"font-size: 12px; font-family: 'Open Sans', 'Helvetica Neu=
+e', Helvetica, Arial, sans-serif; mso-line-height-alt: 14.399999999999999px=
+; color: #555555; line-height: 1.2;">
+                                                                        <p =
+style=3D"margin: 0; font-size: 16px; text-align: center; mso-line-height-al=
+t: 19.2px;"><span style=3D"font-size:18px;"><strong>Vagas para mais de 5 ca=
+rgos</strong></span></p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"text_block block-3" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break:=
+ break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:10px;padding-left:10px;padding-right:10px;paddin=
+g-top:15px;">
+                                                                <div style=
+=3D"font-family: sans-serif">
+                                                                    <div cl=
+ass=3D"" style=3D"font-size: 12px; font-family: Lato, Tahoma, Verdana, Sego=
+e, sans-serif; mso-line-height-alt: 14.399999999999999px; color: #555555; l=
+ine-height: 1.2;">
+                                                                        <p =
+style=3D"margin: 0; font-size: 14px; text-align: center; mso-line-height-al=
+t: 16.8px;">A Oggi Sorvetes&nbsp;se tornou a&nbsp;primeira rede de franquia=
+s no formato lojas de f=C3=A1brica</p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-4" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000=
+000; width: 640px;" width=3D"640">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: t=
+op; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0p=
+x;" width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"5" cellspacing=3D"0" class=3D"divider_block block-1" role=3D"pr=
+esentation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=
+=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" styl=
+e=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                                                                        <tr=
+>
+                                                                           =
+ <td class=3D"divider_inner" style=3D"font-size: 1px; line-height: 1px; bor=
+der-top: 1px solid #D2D2D2;"><span>=E2=80=8A</span></td>
+                                                                        </t=
+r>
+                                                                    </table=
+>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-5" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000=
+000; width: 640px;" width=3D"640">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: m=
+iddle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left:=
+ 0px;" width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:20px;padding-left:25px;padding-right:25px;paddin=
+g-top:10px;width:100%;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/candidatos/vagas-emprego/teka/&tipo_pedido_origem_cod=3D2595&utm_so=
+urce=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-ema-0002&utm_ca=
+mpaign=3Dvagas-top" style=3D"outline:none" tabindex=3D"-1" target=3D"_blank=
+"><img alt=3D"Teka" src=3D"https://www.curriculum.com.br/images/emails/ATV-=
+CAN-EMA-EMA-0002/images/logo-teka.png" style=3D"display: block; height: aut=
+o; border: 0; width: 176px; max-width: 100%;" title=3D"Teka" width=3D"176" =
+/></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"10" cellspacing=3D"0" class=3D"text_block block-2" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break=
+: break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d">
+                                                                <div style=
+=3D"font-family: Arial, sans-serif">
+                                                                    <div cl=
+ass=3D"" style=3D"font-size: 12px; font-family: 'Open Sans', 'Helvetica Neu=
+e', Helvetica, Arial, sans-serif; mso-line-height-alt: 14.399999999999999px=
+; color: #555555; line-height: 1.2;">
+                                                                        <p =
+style=3D"margin: 0; font-size: 16px; text-align: center; mso-line-height-al=
+t: 19.2px;"><span style=3D"font-size:18px;"><strong>Vagas para mais de 12 c=
+argos</strong></span></p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"text_block block-3" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break:=
+ break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:5px;padding-left:10px;padding-right:10px;padding=
+-top:10px;">
+                                                                <div style=
+=3D"font-family: sans-serif">
+                                                                    <div cl=
+ass=3D"" style=3D"font-size: 12px; font-family: Lato, Tahoma, Verdana, Sego=
+e, sans-serif; mso-line-height-alt: 14.399999999999999px; color: #555555; l=
+ine-height: 1.2;">
+                                                                        <p =
+style=3D"margin: 0; font-size: 14px; text-align: center; mso-line-height-al=
+t: 16.8px;">Uma das maiores fabricantes de artigos de cama, mesa e banho da=
+ Am=C3=A9rica Latina</p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class=3D"column column-=
+2" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: m=
+iddle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left:=
+ 0px;" width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:20px;padding-left:20px;padding-right:20px;paddin=
+g-top:15px;width:100%;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/candidatos/vagas-emprego/empresa-INSTITUTO-DE-PESQUISAS-ELDORADO/&t=
+ipo_pedido_origem_cod=3D2595&utm_source=3Dcurriculum&utm_medium=3Demail&utm=
+_term=3Datv-can-ema-ema-0002&utm_campaign=3Dvagas-top" style=3D"outline:non=
+e" tabindex=3D"-1" target=3D"_blank"><img alt=3D"Eldorado" src=3D"https://w=
+ww.curriculum.com.br/images/emails/ATV-CAN-EMA-EMA-0002/images/logo-eldorad=
+o.png" style=3D"display: block; height: auto; border: 0; width: 192px; max-=
+width: 100%;" title=3D"Eldorado" width=3D"192" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"text_block block-2" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break:=
+ break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:10px;padding-left:10px;padding-right:10px;paddin=
+g-top:5px;">
+                                                                <div style=
+=3D"font-family: Arial, sans-serif">
+                                                                    <div cl=
+ass=3D"" style=3D"font-size: 12px; font-family: 'Open Sans', 'Helvetica Neu=
+e', Helvetica, Arial, sans-serif; mso-line-height-alt: 14.399999999999999px=
+; color: #555555; line-height: 1.2;">
+                                                                        <p =
+style=3D"margin: 0; font-size: 16px; text-align: center; mso-line-height-al=
+t: 19.2px;"><span style=3D"font-size:18px;"><strong>+60 vagas</strong></spa=
+n></p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"text_block block-3" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break:=
+ break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:5px;padding-left:10px;padding-right:10px;padding=
+-top:10px;">
+                                                                <div style=
+=3D"font-family: sans-serif">
+                                                                    <div cl=
+ass=3D"" style=3D"font-size: 12px; font-family: Lato, Tahoma, Verdana, Sego=
+e, sans-serif; mso-line-height-alt: 14.399999999999999px; color: #555555; l=
+ine-height: 1.2;">
+                                                                        <p =
+style=3D"margin: 0; font-size: 14px; text-align: center; mso-line-height-al=
+t: 16.8px;">H=C3=A1 mais de 20 anos contribuem com o desenvolvimento tecnol=
+=C3=B3gico&nbsp;do&nbsp;Brasil</p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-6" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000=
+000; width: 640px;" width=3D"640">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-top: 5px; vertical-align: top; border-top: 0px; =
+border-right: 0px; border-bottom: 0px; border-left: 0px;" width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"divider_block block-1" role=3D"pr=
+esentation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=
+=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:15px;padding-left:10px;padding-right:10px;paddin=
+g-top:10px;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" styl=
+e=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                                                                        <tr=
+>
+                                                                           =
+ <td class=3D"divider_inner" style=3D"font-size: 1px; line-height: 1px; bor=
+der-top: 1px solid #D2D2D2;"><span>=E2=80=8A</span></td>
+                                                                        </t=
+r>
+                                                                    </table=
+>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-7" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000=
+000; width: 640px;" width=3D"640">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; vertical-align: middle; border-top: 0px; border-right: 0=
+px; border-bottom: 0px; border-left: 0px;" width=3D"25%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:10px;width:100%;padding-right:0px;padding-left:0=
+px;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/candidatos/vagas-emprego/locaweb/&tipo_pedido_origem_cod=3D2595&utm=
+_source=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-ema-0002&utm=
+_campaign=3Dvagas-top" style=3D"outline:none" tabindex=3D"-1" target=3D"_bl=
+ank"><img alt=3D"Locaweb" src=3D"https://www.curriculum.com.br/images/email=
+s/ATV-CAN-EMA-EMA-0002/images/logo-locaweb_1.png" style=3D"display: block; =
+height: auto; border: 0; width: 128px; max-width: 100%;" title=3D"Locaweb" =
+width=3D"128" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class=3D"column column-=
+2" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: m=
+iddle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left:=
+ 0px;" width=3D"25%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:10px;padding-top:10px;width:100%;padding-right:0=
+px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/candidatos/vagas-emprego/fundacao-pro-rim/&tipo_pedido_origem_cod=
+=3D2595&utm_source=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-e=
+ma-0002&utm_campaign=3Dvagas-top" style=3D"outline:none" tabindex=3D"-1" ta=
+rget=3D"_blank"><img alt=3D"Pro Rim" src=3D"https://www.curriculum.com.br/i=
+mages/emails/ATV-CAN-EMA-EMA-0002/images/logo-pro-rim.png" style=3D"display=
+: block; height: auto; border: 0; width: 96px; max-width: 100%;" title=3D"P=
+ro Rim" width=3D"96" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class=3D"column column-=
+3" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: m=
+iddle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left:=
+ 0px;" width=3D"25%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:10px;padding-top:10px;width:100%;padding-right:0=
+px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/candidatos/vagas-emprego/sicoob/&tipo_pedido_origem_cod=3D2595&utm_=
+source=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-ema-0002&utm_=
+campaign=3Dvagas-top" style=3D"outline:none" tabindex=3D"-1" target=3D"_bla=
+nk"><img alt=3D"Sicoob" src=3D"https://www.curriculum.com.br/images/emails/=
+ATV-CAN-EMA-EMA-0002/images/logo-sicoob.png" style=3D"display: block; heigh=
+t: auto; border: 0; width: 136px; max-width: 100%;" title=3D"Sicoob" width=
+=3D"136" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class=3D"column column-=
+4" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: m=
+iddle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left:=
+ 0px;" width=3D"25%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:20px;padding-top:10px;width:100%;padding-right:0=
+px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/candidatos/vagas-emprego/empresa-polishop/&tipo_pedido_origem_cod=
+=3D2595&utm_source=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-e=
+ma-0002&utm_campaign=3Dvagas-top" style=3D"outline:none" tabindex=3D"-1" ta=
+rget=3D"_blank"><img alt=3D"Polishop" src=3D"https://www.curriculum.com.br/=
+images/emails/ATV-CAN-EMA-EMA-0002/images/logo-polishop.png" style=3D"displ=
+ay: block; height: auto; border: 0; width: 120px; max-width: 100%;" title=
+=3D"Polishop" width=3D"120" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-8" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000=
+000; width: 640px;" width=3D"640">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: t=
+op; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0p=
+x;" width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"image_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"=
+100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"width:100%;padding-right:0px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment" style=3D"line-height:10px"><a href=3D"https=
+://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D6456466&conca=
+tena=3D/premium/curriculum-emprega/&tipo_pedido_origem_cod=3D2595&utm_sourc=
+e=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-ema-0002&utm_campa=
+ign=3Dvagas-top" style=3D"outline:none" tabindex=3D"-1" target=3D"_blank"><=
+img class=3D"big" src=3D"https://www.curriculum.com.br/images/emails/ATV-CA=
+N-EMA-EMA-0002/images/ce_3_1.jpg" style=3D"display: block; height: auto; bo=
+rder: 0; width: 640px; max-width: 100%;" width=3D"640" /></a></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-9" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto;" width=3D"10=
+0%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-=
+size: auto; color: #000000; width: 640px;" width=3D"640">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: t=
+op; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0p=
+x;" width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"paragraph_block block-1" role=3D"=
+presentation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-b=
+reak: break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d" style=3D"padding-bottom:15px;padding-left:10px;padding-right:10px;paddin=
+g-top:10px;">
+                                                                <div style=
+=3D"color:#101112;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', =
+Helvetica, Arial, sans-serif;font-size:15px;font-weight:400;letter-spacing:=
+0px;line-height:120%;text-align:left;mso-line-height-alt:18px;">
+                                                                    <p styl=
+e=3D"margin: 0; margin-bottom: 16px;">Est=C3=A1 participando de entrevistas=
+ de emprego mas n=C3=A3o est=C3=A1 se saindo bem nelas?</p>
+                                                                    <p styl=
+e=3D"margin: 0; margin-bottom: 16px;">J=C3=A1 se perguntou porque alguns de=
+moram tanto para arrumar um novo emprego enquanto outros encontram rapidame=
+nte?</p>
+                                                                    <p styl=
+e=3D"margin: 0; margin-bottom: 16px;"><strong>=C3=89 poss=C3=ADvel mudar es=
+sa realidade e encontrar uma solu=C3=A7=C3=A3o para isso!</strong></p>
+                                                                    <p styl=
+e=3D"margin: 0;">Participe do Programa Curriculum Emprega, conquiste seu no=
+vo emprego <b>e s=C3=B3 pague quando for contratado!</b></p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"10" cellspacing=3D"0" class=3D"button_block block-2" role=3D"pr=
+esentation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=
+=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d">
+                                                                <div align=
+=3D"center" class=3D"alignment"><!--[if mso]><v:roundrect xmlns:v=3D"urn:sc=
+hemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+href=3D"https://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D=
+6456466&concatena=3D/premium/curriculum-emprega/&tipo_pedido_origem_cod=3D2=
+595&utm_source=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-ema-0=
+002&utm_campaign=3Dvagas-top" style=3D"height:42px;width:189px;v-text-ancho=
+r:middle;" arcsize=3D"10%" stroke=3D"false" fillcolor=3D"#143964"><w:anchor=
+lock/><v:textbox inset=3D"0px,0px,0px,0px"><center style=3D"color:#ffffff; =
+font-family:Tahoma, Verdana, sans-serif; font-size:16px"><![endif]--><a hre=
+f=3D"https://www.curriculum.com.br/il/click.asp?esp=3D4575&curric_cod=3D645=
+6466&concatena=3D/premium/curriculum-emprega/&tipo_pedido_origem_cod=3D2595=
+&utm_source=3Dcurriculum&utm_medium=3Demail&utm_term=3Datv-can-ema-ema-0002=
+&utm_campaign=3Dvagas-top" style=3D"text-decoration:none;display:inline-blo=
+ck;color:#ffffff;background-color:#143964;border-radius:4px;width:auto;bord=
+er-top:0px solid transparent;font-weight:undefined;border-right:0px solid t=
+ransparent;border-bottom:0px solid transparent;border-left:0px solid transp=
+arent;padding-top:5px;padding-bottom:5px;font-family:Lato, Tahoma, Verdana,=
+ Segoe, sans-serif;font-size:16px;text-align:center;mso-border-alt:none;wor=
+d-break:keep-all;" target=3D"_blank"><span style=3D"padding-left:20px;paddi=
+ng-right:20px;font-size:16px;display:inline-block;letter-spacing:normal;"><=
+span style=3D"margin: 0; word-break: break-word; line-height: 32px;"><stron=
+g>QUERO PARTICIPAR</strong></span></span></a><!--[if mso]></center></v:text=
+box></v:roundrect><![endif]--></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class=3D"spacer_bl=
+ock block-3" style=3D"height:20px;line-height:20px;font-size:1px;">=E2=80=
+=8A</div>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-5" role=3D"presentation" style=3D"mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; background-color: #eeeeee;" width=
+=3D"100%">
+                       =20
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content stack" role=3D"prese=
+ntation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-=
+color: eeeeee; color: #000000; width: 600px;" width=3D"600">
+                                       =20
+                                            <tr>
+                                                <td class=3D"column column-=
+1" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400;=
+ text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: t=
+op; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0p=
+x;" width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"10" cellspacing=3D"0" class=3D"text_block block-1" role=3D"pres=
+entation" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break=
+: break-word;" width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d">
+                                                                <div style=
+=3D"font-family: sans-serif">
+                                                                    <div cl=
+ass=3D"" style=3D"font-size: 12px; font-family: Lato, Tahoma, Verdana, Sego=
+e, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;=
+">
+                                                                        <p =
+style=3D"margin: 0; text-align: center; mso-line-height-alt: 18px;"><span s=
+tyle=3D"font-size:12px;">Email enviado pela Curriculum.com.br. Para n=C3=A3=
+o receber mais, <span style=3D"color:#000000;"><a href=3D"https://www.curri=
+culum.com.br/00_opt_in_out.asp?opt=3Dout&curric_id=3D61DDEE5C-DE61-4674-84B=
+9-3A0598AB2AEA&tipo_email_id=3D06EC1740-F009-4C83-ACF9-0275FE45F408&email=
+=3Dfefe2560@gmail.com" rel=3D"noopener" style=3D"text-decoration:underline;=
+color:#000000;" target=3D"_blank"><span style=3D"color:#555555;text-decorat=
+ion:underline;">desinscreva-se</span></a></span></span></p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                       =20
+                                    </table>
+                                </td>
+                            </tr>
+                       =20
+                    </table>
+
+                </td>
+            </tr>
+       =20
+    </table><!-- End -->
+    <img height=3D1 src=3D"https://www.curriculum.com.br/il/visualizacao.as=
+p?esp=3D4575&curric_cod=3D6456466" width=3D1 border=3D0>
+
+</body>
+</html>
+
+------=_NextPart_526_6160_43173050.78979035--
