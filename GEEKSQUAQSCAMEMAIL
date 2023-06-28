@@ -1,0 +1,95 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:ad4:5843:0:b0:630:110f:d31c with SMTP id de3csp6704840qvb;
+        Wed, 28 Jun 2023 08:08:56 -0700 (PDT)
+X-Received: by 2002:a2e:6e07:0:b0:2b0:573a:3c69 with SMTP id j7-20020a2e6e07000000b002b0573a3c69mr23328461ljc.23.1687964936248;
+        Wed, 28 Jun 2023 08:08:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1687964936; cv=none;
+        d=google.com; s=arc-20160816;
+        b=z7KMSk2o5ozuAOaWvjYxHb5Eg4ZXvy62VAJOqEBRAPzvY2qUdafTzYbelLQus+svK5
+         TeqDGN5ENYZom9/xhQVQ+scWwNHwPKxCM2+Ot2HEH1nDT5eUe5yrnzp2RDpCdy19TbM7
+         3ZefmAMsHv85LOBhwru7jKYdQ28EEb4MgOINkAOl6gbSnAosHIxYGzch831C2N5t1DWB
+         TZIRRutSaXgPy0bYnLi3Dotc0QObEBQmDKpGztzhTw2KK3vgGPTf0+YQT051SwVZgDB2
+         xN4s5AGdOhHKHxikAeHBp9e2JXlKBJkFZm23jfxPkRla31A5gahPaZCuL1MjiZXXUvYR
+         r4yg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=uzS1/WXbmkSZbcixLRx7t07ofvbnD9RcyLuoyXWgF6k=;
+        fh=Pr2plYkJn0ovdHybgHvE53243CPsqSX0NRPDPDnAMwQ=;
+        b=KHwy1sQrWFVBVruyJL5sj1qUMyFyvLT/F4SEPPr9jLpgPN3UTEZJKbEwIKzLosO6Ga
+         EMqrr8VgUxBwT56RUaGSyDW9brqSdogzdWvfAiyVZL4TgzGYuvTiZAxt6SLWzC8BwflL
+         jemoosyNpw9WCzsZk0jQgFiZcNlvLQWV/mrvkpvOw1fBJlquh0HMI3c0PWUmTdVJwO4Q
+         mqnVq36ZH7bnCbMJtBjTGYJV19pOwaKWypbnF5Oi5E3sLILqDn17VJfPqtxQcvMfEn2Q
+         apu7n26c55voKU2i/O4HAiV9Bv9qyHT9KLOLDi3jy0oJIVQbOclN51B1C0ZqtC/s7RbN
+         DqyQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=Xv3DYBJE;
+       spf=pass (google.com: domain of samuelsimmonsvgh776@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=samuelsimmonsvgh776@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <samuelsimmonsvgh776@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e2-20020a05651c038200b002b4778ff192sor3428220ljp.8.2023.06.28.08.08.55
+        for <fefe2560@gmail.com>
+        (Google Transport Security);
+        Wed, 28 Jun 2023 08:08:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of samuelsimmonsvgh776@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=Xv3DYBJE;
+       spf=pass (google.com: domain of samuelsimmonsvgh776@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=samuelsimmonsvgh776@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1687964935; x=1690556935;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=uzS1/WXbmkSZbcixLRx7t07ofvbnD9RcyLuoyXWgF6k=;
+        b=Xv3DYBJE5RAb19v/P0p8QXPc7jtwfuZmdxD26nPHW5KJbfL/qr1Jpts6oGycrV11IQ
+         iDzUCZlOT8uBhhS1R3YWCl0EGfbY4dvVxvwiZpi4F/pnWaPBVSP4UAddCvgtJJbZ1pSl
+         4WMLZ5BGOfFZxurJ46DC5lf3SBrOFqzTSzUgiE/Pmhl8yhzuKWwTVwDW5yDGETS6uFH4
+         A8mIXp3wXyt9nekcY0lYXtU43Dtn5tVwaIdMEGU+ixqnj8+q+eN9TmvTc6+sqZepZRwi
+         iazoU9dhTWKcq0tmVrkURvARIzYwcFjlKHwrSYBrNHOI2whcczFrcXGiymdC5hTt7wQb
+         AIOA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1687964935; x=1690556935;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=uzS1/WXbmkSZbcixLRx7t07ofvbnD9RcyLuoyXWgF6k=;
+        b=U0k2oFKnF56GV2EYUl4oRDjhT6dJ22YuxzvV2XL4IERhk3EHViK9xakOvXU4n7h18J
+         q+JS5vseB0uUUmBGRNb+uYQ8TX8ssHCELOnmchpIahRjTDC+mzeJ81JBuHpZe8x+8aQD
+         3LUk0Yo1SHMPURkrN6+fm/u7G5Yt6HOwqbMGDquqY89Y/Tpv0oTAuUJjtS4YftzKU2sl
+         hDg7S80PrjMpKB54Qm100z6iXzvfIS17M1c3sBzKdUtGk7/w6wBbOH8pLtvhrRg0KFC3
+         z3LKZcS6WBo9j0G3OYs4qf9Ow/7yKYfd4VIhQwMKF7skKyodPGu58vYQtlpQ1upIE5E4
+         JCbw==
+X-Gm-Message-State: AC+VfDwFfarM36hG6B9mIV9yWJNph8toNHwyRR5OZ6bw4arM1todtL2G msbNmM3fcL5M+/6wcbA89QiuvYSkbkhd0KZlYKY=
+X-Google-Smtp-Source: ACHHUZ48hJ8hMUu3fGCExjnEgxT/CKd+yN2XOdUoGXSH36juAnnqZs32V8tcTN5ZqV6KuIYdLu1/265YvgDQ3qcwI48=
+X-Received: by 2002:a2e:8912:0:b0:2b6:bbb9:b560 with SMTP id d18-20020a2e8912000000b002b6bbb9b560mr1762999lji.0.1687964933102; Wed, 28 Jun 2023 08:08:53 -0700 (PDT)
+MIME-Version: 1.0
+From: Samuel Simmons <samuelsimmonsvgh776@gmail.com>
+Date: Wed, 28 Jun 2023 20:38:40 +0530
+Message-ID: <CAC2wTEX7FwVjSL6WWu5N7HHybdtz9x6Yx+aGZcJEkoCts2EQrA@mail.gmail.com>
+Subject: Regarding your payment information
+To: undisclosed-recipients:;
+Content-Type: multipart/mixed; boundary="0000000000003b710905ff31f6d5"
+Bcc: fefe2560@gmail.com
+
+--0000000000003b710905ff31f6d5
+Content-Type: multipart/alternative; boundary="0000000000003b710805ff31f6d3"
+
+--0000000000003b710805ff31f6d3
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--0000000000003b710805ff31f6d3
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr"><br></div>
+
+--0000000000003b710805ff31f6d3--
+--0000000000003b710905ff31f6d5
+Content-Type: image/jpeg; name="Monthly Plans Documents.jpg"
+Content-Disposition: attachment; filename="Monthly Plans Documents.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <f_ljfupix00>
+X-Attachment-Id: f_ljfupix00
+
+
+--0000000000003b710905ff31f6d5--
