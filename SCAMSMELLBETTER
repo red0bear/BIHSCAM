@@ -1,0 +1,235 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:ad4:5843:0:b0:630:110f:d31c with SMTP id de3csp7791019qvb;
+        Fri, 30 Jun 2023 02:16:20 -0700 (PDT)
+X-Google-Smtp-Source: APBJJlHm+1YbygT3fwakkQmk5ax0lhnlfU74XuegKNXEJb7oYY3oeTMZ3IaHbpHrQ/jD+Uvp8mBo
+X-Received: by 2002:a7b:c3c1:0:b0:3fb:c77e:80f6 with SMTP id t1-20020a7bc3c1000000b003fbc77e80f6mr1126599wmj.36.1688116580596;
+        Fri, 30 Jun 2023 02:16:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1688116580; cv=none;
+        d=google.com; s=arc-20160816;
+        b=rZbL4irihMrcfydfwK9YRI3L5nIQjNsyNVgP0FMCWh0clPwjtvPWqZ+7RsvrDucwx0
+         8dNUpFENGjbZYHPK4MOQIMWzZ75DP716VR7v12j7jBOxxE1o4tBPDO0IzMW7u0SmIB4R
+         1IhWXICybPxFqGFj2/cEBYFrHjfNlY1m+U6QPvdmq6SR0Y/Y4AfVBSsSoOxsQOZotwll
+         AR0wZzjs4SYf2Vc1aFFcoCnYwhc/3wsPUsk2ZStNVFpl9V17TdmxMmM61tzW4batNU8O
+         I0k250qTzwzzuCOh2Od5B28tZcVIL2x8IF/+NApN2SrIkEPNQCvDy2BmwFYi0HFcgqCQ
+         vXDg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-transfer-encoding:subject:to:from:message-id
+         :date;
+        bh=C9CUMQpGD8qan0gtnwOEjp7YPXEcnTIvQ+k+ArgoDhM=;
+        fh=KIExv90yLDjbkawcj98YIwOhVSBmz5HPLi1Tg/S4R3U=;
+        b=KTf5bnF6l+Uupv1YXF8vcLIeMuWSeBQ2BVPl4TBqeIoWOcdUVAGyXzmZrkl76PHwXR
+         hdp/aN/1bTOyfdG7gsS/D3MW92mRgFl/a5EjLJWrV+0hGg+8434Bau3uRJGvDOGmweFc
+         gGjtVZyLo4QjU/QMEWO2YdLD+TAC2sdemVV0eVy4FFvocAfmo9PGRvYzECDdYOtYhpda
+         zHNwsouZw90bzaxrvY9jaqfi+ZfLRgDaS+a+PibOy8n9qRlUOwhzPMHXpjf4Mvsr/AIf
+         ivUN/QJxwaSmBKeMSjcufQupyHcGAjmmvXcrGfxv2D6CtGATuh+8GkopsjUpHYvOs5jK
+         7eMw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of return.yjm3cdnwadmz0cmwgtn00in1gtnwuzn0yjm@gai9nfk4u1080c.rb8f2-198f.awta7vg.tk designates 2a03:94e0:1733:10a:b8f2:198f:0:1 as permitted sender) smtp.mailfrom=return.YjM3cDNwADMz0CMwgTN00iN1gTNwUzN0YjM@gai9nfk4u1080c.rb8f2-198f.awta7vg.tk
+Return-Path: <return.YjM3cDNwADMz0CMwgTN00iN1gTNwUzN0YjM@gai9nfk4u1080c.rb8f2-198f.awta7vg.tk>
+Received: from 2a0394e01733010ab8f2198f00000001.awta7vg.tk (2a0394e01733010ab8f2198f00000001.awta7vg.tk. [2a03:94e0:1733:10a:b8f2:198f:0:1])
+        by mx.google.com with ESMTPS id d12-20020adfe2cc000000b0030fd05a1325si9391066wrj.41.2023.06.30.02.16.19
+        for <fefe2560@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 30 Jun 2023 02:16:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return.yjm3cdnwadmz0cmwgtn00in1gtnwuzn0yjm@gai9nfk4u1080c.rb8f2-198f.awta7vg.tk designates 2a03:94e0:1733:10a:b8f2:198f:0:1 as permitted sender) client-ip=2a03:94e0:1733:10a:b8f2:198f:0:1;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of return.yjm3cdnwadmz0cmwgtn00in1gtnwuzn0yjm@gai9nfk4u1080c.rb8f2-198f.awta7vg.tk designates 2a03:94e0:1733:10a:b8f2:198f:0:1 as permitted sender) smtp.mailfrom=return.YjM3cDNwADMz0CMwgTN00iN1gTNwUzN0YjM@gai9nfk4u1080c.rb8f2-198f.awta7vg.tk
+Date: Fri, 30 Jun 2023 09:11:23 GMT
+Message-Id: <8e3a9df376f70966bc9881f31ea679@ke9nk1m7u12cqc.wb8f2-198f.kunupe.us>
+From: "'Lume Deodorant Ad'" <lmd45800@ke9nk1m7u12cqc.wb8f2-198f.kunupe.us>
+To: fefe2560@gmail.com
+Subject: Ready to smell your best everywhere?
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link href=3D"https://fonts.googleapis.com/css2?family=3DPoppins:wght@4=
+00;700&amp;display=3Dswap" rel=3D"stylesheet" />
+  </head>
+  <body style=3D" padding: 0;margin: 0; background-color:#ffffff; font-size=
+: 14px;">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 600px;font-size: 14px; font-family: Poppins, Verdana, 'Arial', sans-serif;=
+ margin:0 auto;padding-bottom: 40px;">
+      <tbody>
+        <tr>
+          <td style=3D"background-color: #29348e;text-align: center;padding=
+: 10px 0;"><a href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/?c1=3DcfDc=
+BAHPIAABdEOMRzz4lPxg&amp;c7=3Doy2122526"><img alt=3D"" src=3D"http://ke9nk1=
+m7u12cqc.wb8f2-198f.kunupe.us/img-cfDcBAHPIAABdEOMRzz4lPxg/lmstars.gif" wid=
+th=3D"auto" height=3D"auto" style=3D"display:inline-block;width:auto;height=
+:auto;" /> </a>
+            <p style=3D"color:#fff;line-height: 1;font-size: 2em;margin:0;p=
+adding:0;">125,000 5-star reviews and counting
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"background-color: #34b3e6;text-align: center;padding=
+-top: 20px;font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;"><=
+center><a href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/?c1=3DcfDcBAHP=
+IAABdEOMRzz4lPxg&amp;c7=3Del2443983"><img alt=3D"" src=3D"http://ke9nk1m7u1=
+2cqc.wb8f2-198f.kunupe.us/img-cfDcBAHPIAABdEOMRzz4lPxg/lmblogo.gif" width=
+=3D"auto" height=3D"auto" style=3D"display:block;width:auto;height:auto;" /=
+></a></center>
+            <a  href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/?c1=3Dcf=
+DcBAHPIAABdEOMRzz4lPxg&amp;c7=3Dec5486275" style=3D"display:block;color:#ff=
+f;line-height: 1;font-size: 5em;margin:0;padding:14px 0 0 0;font-weight: bo=
+ld;text-shadow: 2px 4px #2f92bb;text-decoration:none;">Smell Better
+            </a>
+            <a   href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/?c1=3Dc=
+fDcBAHPIAABdEOMRzz4lPxg&amp;c7=3Dse9758811" style=3D"display:block;text-dec=
+oration:none;color:#fff;line-height: 1;font-size: 5em;margin:0;padding:8px =
+0;font-weight: bold;text-shadow: 2px 4px #2f92bb;">Naked
+           </a>
+            <p style=3D"color:#fff;line-height: 1;font-size: 2em;margin:0;p=
+adding:4px 0;font-weight: bold;text-shadow: 2px 4px #2f92bb;">With the Worl=
+d&#39;s <span style=3D"font-size:1.4em;">1</span><sup>st</sup>
+            </p>
+            <p style=3D"color:#fff;line-height: 1;font-size: 2em;margin:0;p=
+adding:4px 0;font-weight: bold;text-shadow: 2px 4px #2f92bb;">Aluminum-Free
+            </p>
+            <p style=3D"color:#fff;line-height: 1;font-size: 2em;margin:0;p=
+adding:4px 0;font-weight: bold;text-shadow: 2px 4px #2f92bb;">Whole Body De=
+odorant
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"background-color: #34b3e6;text-align: center;padding=
+-top: 20px;"><a href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/?c1=3Dcf=
+DcBAHPIAABdEOMRzz4lPxg&amp;c7=3Dhy9708143" style=3D" text-decoration:none; =
+display:inline-block; background-color: #df1583; color: #f6fff8;font-size: =
+3em; line-height:1; font-weight: bold;padding: 10px 30px;letter-spacing: 0p=
+x;border-left:1px solid #951b8c;margin-top:30px;white-space: nowrap;border-=
+radius: 30px; box-shadow: 1px 2px #2b98c3;">GET OFFER</a>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"background-color: #34b3e6;text-align: center;padding=
+: 20px 0;"><a href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/?c1=3DcfDc=
+BAHPIAABdEOMRzz4lPxg&amp;c7=3Dft8460955" style=3D" text-decoration:none; di=
+splay:inline-block; background-color: #fff; color: #ef532b;font-size: 2em; =
+line-height:1; font-weight: bold;padding: 10px 30px;letter-spacing: 0px;mar=
+gin-top:30px;white-space: nowrap;font-style: italic;">SPECIAL OFFER:</a>
+            <p style=3D"line-height: 1.2;font-size: 2em;color: #fdf2f6;font=
+-weight: normal;text-shadow: 1px 2px #2f92bb;">Get over 30% off a Starter P=
+ack
+              <br />Bundle that comes with a
+              <br />Deodorant Stick, Cream
+              <br />Deodorant Tube, <span style=3D"font-style: italic;font-=
+weight: bold;">Free</span> Mini
+              <br />Acidified Body Wash, <span style=3D"font-style: italic;=
+font-weight: bold;">Free</span> 15ct
+              <br />Deodorant Wipes, &amp; <span style=3D"font-style: itali=
+c;font-weight: bold;">Free</span> Shipping.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"text-align: center;"><a href=3D"http://ke9nk1m7u12cq=
+c.wb8f2-198f.kunupe.us/?c1=3DcfDcBAHPIAABdEOMRzz4lPxg&amp;c7=3Dsx1231498"><=
+img alt=3D"" src=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/img-cfDcBAHP=
+IAABdEOMRzz4lPxg/lmmainc.jpg" width=3D"600" height=3D"auto" style=3D"min-he=
+ight-200px;display:block;width:600px;height:auto;" /> </a>
+          </td>
+        </tr>
+        <tr>
+          <td align=3D"center">
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width:100%;padding-top: 20px;">
+              <tbody>
+                <tr>
+                  <td align=3D"center"><a href=3D"http://ke9nk1m7u12cqc.wb8=
+f2-198f.kunupe.us/?c1=3DcfDcBAHPIAABdEOMRzz4lPxg&amp;c7=3Dxq2028580" style=
+=3D"text-decoration: none;"><img alt=3D"" src=3D"http://ke9nk1m7u12cqc.wb8f=
+2-198f.kunupe.us/img-cfDcBAHPIAABdEOMRzz4lPxg/lml1.gif" width=3D"92" height=
+=3D"92" /> </a>
+                  </td>
+                  <td align=3D"center"><a href=3D"http://ke9nk1m7u12cqc.wb8=
+f2-198f.kunupe.us/?c1=3DcfDcBAHPIAABdEOMRzz4lPxg&amp;c7=3Dkt1259790" style=
+=3D"text-decoration: none;"><img alt=3D"" src=3D"http://ke9nk1m7u12cqc.wb8f=
+2-198f.kunupe.us/img-cfDcBAHPIAABdEOMRzz4lPxg/lm2.gif" width=3D"92" height=
+=3D"92" /> </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align=3D"center" style=3D"vertical-align: top;">
+                    <p style=3D"line-height: 1.3;font-size: 1.5em;color:#00=
+a1dd;margin:0;padding:0;"><a href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunup=
+e.us/?c1=3DcfDcBAHPIAABdEOMRzz4lPxg&amp;c7=3Dgw6400756" style=3D"text-decor=
+ation: none;">Clinically
+                      <br />Proven 72 Hours
+                      <br />Odor Control </a>
+                    </p>
+                  </td>
+                  <td align=3D"center" style=3D"vertical-align: top;">
+                    <p style=3D"line-height: 1.3;font-size: 1.5em;color:#cc=
+1a7a;margin:0;padding:0;"><a href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunup=
+e.us/?c1=3DcfDcBAHPIAABdEOMRzz4lPxg&amp;c7=3Dlx1399992" style=3D"text-decor=
+ation: none;">Stops Odor
+                      <br />BEFORE
+                      <br />it Starts </a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td align=3D"center" style=3D"padding-top: 30px;"><a href=
+=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/?c1=3DcfDcBAHPIAABdEOMRzz4lP=
+xg&amp;c7=3Dmb2367021" style=3D"text-decoration: none;"><img alt=3D"" src=
+=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/img-cfDcBAHPIAABdEOMRzz4lPxg=
+/lml3.gif" width=3D"92" height=3D"92" /> </a>
+                  </td>
+                  <td align=3D"center" style=3D"padding-top: 30px;"><a href=
+=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/?c1=3DcfDcBAHPIAABdEOMRzz4lP=
+xg&amp;c7=3Dod4421782" style=3D"text-decoration: none;"><img alt=3D"" src=
+=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/img-cfDcBAHPIAABdEOMRzz4lPxg=
+/lml4.gif" width=3D"92" height=3D"92" /> </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align=3D"center">
+                    <p style=3D"line-height: 1.3;font-size: 1.5em;color:#f6=
+4b13;margin:0;padding:0;"><a href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunup=
+e.us/?c1=3DcfDcBAHPIAABdEOMRzz4lPxg&amp;c7=3Daj2212877" style=3D"text-decor=
+ation: none;">Unique
+                      <br />Skin-Safe
+                      <br />Formula </a>
+                    </p>
+                  </td>
+                  <td align=3D"center">
+                    <p style=3D"line-height: 1.3;font-size: 1.5em;color:#aa=
+1e89;margin:0;padding:0;"><a href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunup=
+e.us/?c1=3DcfDcBAHPIAABdEOMRzz4lPxg&amp;c7=3Dwy8310583" style=3D"text-decor=
+ation: none;">pH Optimized
+                      <br />&amp; Safe for
+                      <br />Whole Body </a>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p align=3D"center" style=3D"text-align: center;">If you would no longe=
+r like to receive email advertisements from Lum=C4=93 Deodorant, LLC,
+      <br /><a href=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/?c1=3DcfD=
+cBAHPIAABdEOMRzz4lPxg&amp;c2=3Dunsub">click here</a> or write to us at: 299=
+ S Main St, Suite 1300, PMB 95814, Salt Lake City, UT 8411.
+    </p>
+    <div class=3D"OtherwiseAnd" style=3D"min-height:180px;height:200px;marg=
+in-bottom:60px;">&nbsp;
+    </div>
+    <p style=3D"text-align: center;"><a href=3D"http://ke9nk1m7u12cqc.wb8f2=
+-198f.kunupe.us/?c1=3DcfDcBAHPIAABdEOMRzz4lPxg&amp;c2=3Doptt#bb5193115"><im=
+g alt=3D"" src=3D"http://ke9nk1m7u12cqc.wb8f2-198f.kunupe.us/img-cfDcBAHPIA=
+ABdEOMRzz4lPxg/prfott.jpg" width=3D"314" height=3D"26" /></a>
+    </p>
+  </body>
+</html>
