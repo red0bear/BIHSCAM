@@ -1,0 +1,161 @@
+Delivered-To: felipe.fernandes.costa99@gmail.com
+Received: by 2002:a05:6358:5783:b0:134:d718:4adf with SMTP id m3csp4117949rwf;
+        Tue, 4 Jul 2023 04:41:51 -0700 (PDT)
+X-Received: by 2002:a05:6512:2250:b0:4fb:81f2:422b with SMTP id i16-20020a056512225000b004fb81f2422bmr9800338lfu.54.1688470910865;
+        Tue, 04 Jul 2023 04:41:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1688470910; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Msg36oyd4TYsn3GcQsxYZm+7f8RJ7aIPKDP+HF/wiVo/qATNFJiomlRdtuo9ct3ijZ
+         mrFRUEepG642uyEXoiEWU5wNpcAIx7ayR0ibEqPsZf53UztH03P7R3o09DRlC/+BXgK2
+         cMqVxXe6cTWoHTICDTMnrwbUWAmUcwPNl7wx02HDAiP6s9o4+nQTqAPpZXU86H7pXHWi
+         tfjkYMuOmRO8Y2dzn1+Pv3f6ja1Wz8Ek3jVO3uTAkBE9z9CClyGz8vowI1WfhRWe4kew
+         cah/+IMy6O28ygFnpkASa6eadN9EqDXGz/xVAUNCw3Q1Awqp4020makTVPXz4w/ALgvH
+         eg/Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:mime-version:from:dkim-signature;
+        bh=CD19/03f2WchBKC4bgt5t6cfzJ0207GPvG1rm8ZH1wU=;
+        fh=bzgv11rlGW5/M17JepYvwtyGL0bAqIfvuZbzjH74DzU=;
+        b=XqAESLSLi4iv9qLuoLiV51Af9V5qMrs7QzeYD48UAU/DtSBxyJQnjs29JEGR1H1LFP
+         bKV1bbWJA5Wwq4UOFN906UORaDc3l4N+F8z+ZvEXLHqZN/oEug+3YdhG5iY1eGYBk9e/
+         +nvgnvGSEfDtRK29TUUEKQybBHK92dfQi2lZxWVKO2wDhHvd9Z5t9zVwQT+DRUoKmten
+         MxXHpMlYH97KMzE3cmDDQIhNKD4aw2UGz+M48efPBIK7BuCdOMNeUbFqocEGpi5gcfpE
+         KnwtnFbKB8NB2faN2d5qGOO5KvFoeck0qWhqidAGxL5URs2NFQ18rnw/R7QU+lx/ANzv
+         GFxw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=temperror (no key for signature) header.i=@100ms.live header.s=google header.b=X6lw+xxP;
+       spf=pass (google.com: domain of jay@100ms.live designates 209.85.220.41 as permitted sender) smtp.mailfrom=jay@100ms.live;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=100ms.live
+Return-Path: <jay@100ms.live>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id z10-20020a19650a000000b004e368cba82dsor8319354lfb.1.2023.07.04.04.41.50
+        for <felipe.fernandes.costa99@gmail.com>
+        (Google Transport Security);
+        Tue, 04 Jul 2023 04:41:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jay@100ms.live designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=temperror (no key for signature) header.i=@100ms.live header.s=google header.b=X6lw+xxP;
+       spf=pass (google.com: domain of jay@100ms.live designates 209.85.220.41 as permitted sender) smtp.mailfrom=jay@100ms.live;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=100ms.live
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=100ms.live; s=google; t=1688470909; x=1691062909;
+        h=to:subject:message-id:date:mime-version:from:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=CD19/03f2WchBKC4bgt5t6cfzJ0207GPvG1rm8ZH1wU=;
+        b=X6lw+xxPON6PCgcpo/q9PTtL7cD6F4z7o52EpZ1ReDwe4lPY6H6YEfiT342yYqPOKU
+         nvReQQXh/6QIelY4wmk5vOxaXwrUZx75DVQ932r1Uj5GVF0pls3sGTUyoQautddZTa0i
+         yQZwOaZLHMgY04pXLrOZTaii1UX7lSF1T1pz7X7EN/OqcwytXlYpNHboQZa0NMEQi1m5
+         1kD2O3avBqQ5L5uc3/RPLYg45V9Uh9xULxfMXTXC2niKZ1QdlJ0SiWQeMLVpHjbPnndi
+         2lmbw+F0MoZrRmiNeJIW2TIN9XBt9hPIM4wl7cmWrWvK4neGA09S7Kv51qOLBdsTdlfn
+         HZ2w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1688470909; x=1691062909;
+        h=to:subject:message-id:date:mime-version:from:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=CD19/03f2WchBKC4bgt5t6cfzJ0207GPvG1rm8ZH1wU=;
+        b=hXyh63CzknF6TculfPrN3LO2VfTKNjd3+CBRUcrCGM5lzxaV5QvEyILfN/Mzyb8a2H
+         W+jfOfNkGBcjoHZSOEvwZPf1B8JyAB92Rb+WBNbIxfqMxh5iyLfbUgL1pJC/M9uaVkHr
+         Esz2UF9RMYy0yo7sjpmPkC3em10RmcbNhPoHGtLFxfJ93av31hSwGjkAeCCtj0Kxboh+
+         I2YGQl1MaNh90cd2A1Pyx18Hr0s4PqVAQ6pVkUCCOeV/YBHUEmpr5zw1RzFNcFKrMmJu
+         eZMNeZzg3BOSrGkFjblblLZ+yCxMvTVC9RDfmEy3DBxOGjAYj8gEq3l6M40k3jj5g524
+         Glkg==
+X-Gm-Message-State: ABy/qLZ+Gr+0IxRijISd1uNLOixv2Crhd+LBqlooxZ4+m/J3oLioJ9kf w1EjOtYmwtGVpdd3IsVJbdSSmx6QgM10Og3Mg53Vw8LW55z62HGq
+X-Google-Smtp-Source: APBJJlFbZTwOkk3zvalLlgVtngoToajn9Af542I5/ZIH5BQt4Jcj8Rx2HqUecTWAjOZDlwmptb7YyuyFEiQaMalTPKA=
+X-Received: by 2002:a05:6512:360a:b0:4f8:75ac:c4e8 with SMTP id f10-20020a056512360a00b004f875acc4e8mr8087718lfs.43.1688470909498; Tue, 04 Jul 2023 04:41:49 -0700 (PDT)
+Received: from 193155701165 named unknown by gmailapi.google.com with HTTPREST; Tue, 4 Jul 2023 04:41:49 -0700
+From: Jay K <jay@100ms.live>
+Mime-Version: 1.0
+X-OUTREACH-SENT: true
+Date: Tue, 4 Jul 2023 04:41:49 -0700
+Message-ID: <CALzemmFgM=KFa2Bkq_D8zaVdxnFoA1vv=Wutd6RrgBbNQLWS2g@mail.gmail.com>
+Subject: Video SDK
+To: "Felipe jitsi/jitsi-meet" <felipe.fernandes.costa99@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000c64c1105ffa7c434"
+
+--000000000000c64c1105ffa7c434
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hey Felipe,
+
+Reaching out to see if 100ms can help with in-app video
+conferencing/streaming,
+
+100ms is a SaaS platform that allows devs to add video conferencing &
+streaming to your Web, Android and iOS apps. We are used by Circle, Byjus,
+Kutumb, Circle and dozens of enterprises because:
+
+1. Native SDK -- Easy to use conferencing, recording, streaming, chat,
+interactivity in a single SDK
+2. Works everywhere - Built by ex-Disney team to ensure it works seamlessly
+for across conditions
+3. Quick integration - Go live within days using pre-built apps, roles and
+components
+4. No maintenance - Our team is in charge of scaling, security, upgrades
+and reliability
+
+If you see it relevant, can we schedule a quick 20 mins intro meeting?
+
+Thanks in advance,
+Jay Kanakiya,
+Account Executive, 100ms <https://100ms.live>
++916366360349
+If you'd like me to stop sending you emails, please click here
+<https://100ms.getoutreach.com/api/mailings/unsubscribe/PMRGSZBCHIYTSMBWHAW=
+CE33SM4RDUIRVMQ4TAMBZMVTC2YLEG42C2NDDMMYS2YJXHA4C2NTEHA4WGNJZMZSGMNBWEIWCE5=
+TFOJZWS33OEI5CENBCFQRHG2LHEI5CE5KQJF3TEM3WJVVTM4L2NQ3HMZLML5RE6UTQIJYWWYTWI=
+NZUG3CGIRCHMVBSNYZWITDGO46SE7I=3D>
+
+--000000000000c64c1105ffa7c434
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div><span style=3D"font-family:Helvetica Neue,Liberation Sans,Arial,sans s=
+erif;font-size:13px">Hey Felipe,</span></div><div><div style=3D"font-family=
+:Helvetica Neue,Liberation Sans,Arial,sans serif;font-size:13px"><br></div>=
+<div><span style=3D"font-family:Helvetica Neue,Liberation Sans,Arial,sans s=
+erif;font-size:13px">Reaching out to see if 100ms can help with in-app vide=
+o conferencing/streaming,</span></div><div style=3D"font-family:Helvetica N=
+eue,Liberation Sans,Arial,sans serif;font-size:13px"><br></div><div><span s=
+tyle=3D"font-family:Helvetica Neue,Liberation Sans,Arial,sans serif;font-si=
+ze:13px">100ms is a SaaS platform that allows devs to add video conferencin=
+g &amp; streaming to your Web, Android and iOS apps. We are used by Circle,=
+ Byjus, Kutumb, Circle and dozens of enterprises because:</span></div><div =
+style=3D"font-family:Helvetica Neue,Liberation Sans,Arial,sans serif;font-s=
+ize:13px"><br></div><div><div><div><span style=3D"font-family:Helvetica Neu=
+e,Liberation Sans,Arial,sans serif;font-size:13px">1. Native SDK -- Easy to=
+ use conferencing, recording, streaming, chat, interactivity in a single SD=
+K</span></div><div><span style=3D"font-family:Helvetica Neue,Liberation San=
+s,Arial,sans serif;font-size:13px">2. Works everywhere - Built by ex-Disney=
+ team to ensure it works seamlessly for across conditions=C2=A0</span></div=
+><div><span style=3D"font-family:Helvetica Neue,Liberation Sans,Arial,sans =
+serif;font-size:13px">3. Quick integration - Go live within days using pre-=
+built apps, roles and components=C2=A0</span></div></div><div><span style=
+=3D"font-family:Helvetica Neue,Liberation Sans,Arial,sans serif;font-size:1=
+3px">4. No maintenance - Our team is in charge of scaling, security, upgrad=
+es and reliability</span></div><div style=3D"font-family:Helvetica Neue,Lib=
+eration Sans,Arial,sans serif;font-size:13px"><br></div><div><span style=3D=
+"font-family:Helvetica Neue,Liberation Sans,Arial,sans serif;font-size:13px=
+">If you see it relevant, can we schedule a quick 20 mins intro meeting?</s=
+pan></div></div></div><div><br></div><div class=3D"outreach-signature"><div=
+><span style=3D"font-family:Helvetica Neue,Liberation Sans,Arial,sans serif=
+;font-size:13px">Thanks in advance,=C2=A0</span></div><div><span style=3D"f=
+ont-family:Helvetica Neue,Liberation Sans,Arial,sans serif;font-size:13px">=
+Jay Kanakiya,</span></div><div><span style=3D"font-family:Helvetica Neue,Li=
+beration Sans,Arial,sans serif;font-size:13px">Account Executive,=C2=A0</sp=
+an><a href=3D"https://100ms.live" target=3D"_blank" rel=3D"noopener norefer=
+rer"><span style=3D"font-family:Helvetica Neue,Liberation Sans,Arial,sans s=
+erif;font-size:13px">100ms</span></a></div><div><span style=3D"font-family:=
+Helvetica Neue,Liberation Sans,Arial,sans serif;font-size:13px">+9163663603=
+49</span></div></div><div class=3D"outreach-signature outreach-unsubscribe"=
+ style=3D"font-size:10px;color:#999">If you&#39;d like me to stop sending y=
+ou emails, please <a href=3D"https://100ms.getoutreach.com/api/mailings/uns=
+ubscribe/PMRGSZBCHIYTSMBWHAWCE33SM4RDUIRVMQ4TAMBZMVTC2YLEG42C2NDDMMYS2YJXHA=
+4C2NTEHA4WGNJZMZSGMNBWEIWCE5TFOJZWS33OEI5CENBCFQRHG2LHEI5CE5KQJF3TEM3WJVVTM=
+4L2NQ3HMZLML5RE6UTQIJYWWYTWINZUG3CGIRCHMVBSNYZWITDGO46SE7I=3D">click here</=
+a></div><img src=3D"https://100ms.getoutreach.com/api/mailings/opened/PMRGS=
+ZBCHIYTSMBWHAWCE33SM4RDUIRVMQ4TAMBZMVTC2YLEG42C2NDDMMYS2YJXHA4C2NTEHA4WGNJZ=
+MZSGMNBWEIWCE5TFOJZWS33OEI5CENBCFQRHG2LHEI5CEMDTOI3FARKLK5QUMS3FIJGEUMSFGFG=
+W22TTPJZXC43YGJ5GERCINVAXAMDNJFGGURSJHA6SE7I=3D.gif" alt=3D"" width=3D"1" h=
+eight=3D"1">
+
+--000000000000c64c1105ffa7c434--
