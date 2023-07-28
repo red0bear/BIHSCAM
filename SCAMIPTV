@@ -1,0 +1,74 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a0c:f089:0:b0:626:1b70:d85a with SMTP id g9csp318102qvk;
+        Wed, 26 Jul 2023 11:11:29 -0700 (PDT)
+X-Google-Smtp-Source: APBJJlE79E3Z/i12BN5Gz78hk9tSfnajMK/+5uHrUbMIFRw9uOeABYE9DH/D17vrzYnKp2kCzdem
+X-Received: by 2002:adf:f786:0:b0:314:216d:c00e with SMTP id q6-20020adff786000000b00314216dc00emr2059471wrp.42.1690395089367;
+        Wed, 26 Jul 2023 11:11:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1690395089; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sBunjYZRDIZ4pipKxFHEy20bfowQRaW+2IGz6hHzKoI70ErL2USZY0sUmspMfWKKq+
+         5NkAPkPxKNgeieqCZuHJXhdFRcrsNaZ/3h9tHCmDJmMGO8eAxJwVx9ro0Vj051ajAap6
+         Kw48gzEXClHot+9Nngh4Es4dJhMdC9eU6fo+R1xoq6OszGtthN5ZOB5uuVTEXY34mQ3H
+         P4jKUITfgbul4KSe6bykkeD/exlMLffg8d5sFGYeh7Oat9hVnMutmMoNjHSptbBLdiX6
+         j/hF6MlzhulTBx6RveDXSgKG+8BVc19BsL4Y29ZKwOESnQP/xn7LoyQDyscDiCSaCco2
+         W+HQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=ui-outboundreport:message-id:date:organization:reply-to
+         :content-transfer-encoding:mime-version:to:subject:from
+         :dkim-signature;
+        bh=CcX/i0gGixkx/Sd5AtwbYDnZ203ILTVUyLM7XXkia2Y=;
+        fh=xsb+Q+SzFOtynxVUqt7ICiQJXZgH+1+DFmIPweXXiwM=;
+        b=TQPX1wT2c6SIRICpv/8kg6b+Km1CyoIgzvTV7WYWeC/U8U6JXUNNoCHMRCkDUzh77i
+         mwZZ1GsL11w91wAAnlfjqBxEcZUrJb5A6mLSEWJqtbUaIZ+wo52PCW9V7KPpxpGS4Ky9
+         66hWbe/myQIuRT1szu+zJT62lJzSIueeW//F/CKndI8LwjFUyOERLuTYdDxQ0JVi5BAl
+         qMVFPSFr2P1HtF1fBlasWTYK6Lbi7xwiZW2hkNhuXVH7ypbjweMBYmf4VB4PKlm/xF/m
+         LADWGXuqWrkjws3ym5+f36I81I1q+GCLXBOJfi9dLxaMonY+X9Vaaf8MPhrd88c+PcF8
+         PB6Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmx.net header.s=s31663417 header.b=kzqBkUtI;
+       spf=pass (google.com: domain of slumovdakaglut95@gmx.net designates 82.165.159.14 as permitted sender) smtp.mailfrom=slumovdakaglut95@gmx.net;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmx.net
+Return-Path: <slumovdakaglut95@gmx.net>
+Received: from mout-xforward.gmx.net (mout-xforward.gmx.net. [82.165.159.14])
+        by mx.google.com with ESMTPS id x3-20020adfdd83000000b003142a6808c0si7569050wrl.153.2023.07.26.11.11.29
+        for <fefe2560@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 26 Jul 2023 11:11:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of slumovdakaglut95@gmx.net designates 82.165.159.14 as permitted sender) client-ip=82.165.159.14;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmx.net header.s=s31663417 header.b=kzqBkUtI;
+       spf=pass (google.com: domain of slumovdakaglut95@gmx.net designates 82.165.159.14 as permitted sender) smtp.mailfrom=slumovdakaglut95@gmx.net;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmx.net
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=gmx.net; s=s31663417; t=1690395088; x=1690999888; i=slumovdakaglut95@gmx.net; bh=CcX/i0gGixkx/Sd5AtwbYDnZ203ILTVUyLM7XXkia2Y=; h=X-UI-Sender-Class:From:Subject:To:Reply-To:Date; b=kzqBkUtIomBQEU6QCSb7aa8kAyAusR7LjnGRIxRm546rbLH3sJJIV/9ENknKpZDstaUu7Li 4+PybQsfWcbXsqfKwvuna4gqKvQVirAjvg17L62FpHjuwLL+huWMPMnzCsvcXsuma3nWdlhXn 9BYQIiJHHY1u0VSmV1EXKITibNJyOeul3Bu9/ezeYL7lXfKdIDzUfFSpHuUDy7n+6zxufcylS +HAKvMzHwNFvju1vbXg8Q4z75u/R0lzy9UkOoEYnjruAe485eZoX8vk7iBzLC72kR3QVUR9xk 59LH6Pb/g7cyYWU99HtcGew1KfyfBNR0r5HSz50Ni3pj+QnBC1aQ==
+X-UI-Sender-Class: 724b4f7f-cbec-4199-ad4e-598c01a50d3a
+Received: from 196.120.94.180 ([196.120.166.61]) by mail.gmx.net (mrgmx005 [212.227.17.190]) with ESMTPSA (Nemesis) id 1MgvrL-1px7KX2Tsb-00hKqR for <fefe2560@gmail.com>; Wed, 26 Jul 2023 20:11:28 +0200
+From: IPTV <slumovdakaglut95@gmx.net>
+Subject: This Offre IP-TV For You With Low Price
+To: fefe2560 <fefe2560@gmail.com>
+Content-Type: text/plain; charset=utf-8
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Reply-To: IPTV <adilouzougat@gmail.com>
+Organization: IPTV
+Date: Wed, 26 Jul 2023 19:11:28 +0100
+Message-ID: <1N1OXZ-1pjFHv3fMB-012sOr@mail.gmx.net>
+X-Provags-ID: V03:K1:uV+YOjBQDTrNzsigni1uzIYDsPdkX3uBuT9BNIckzgyjrVgBmUV 4r6hCcEoFx4siYqYKOQMs5abw9zzg7hX48qsBAnE3EAur0YShcAna4auIQDNMc6nRc9ZscT iYpFnBAR67ftpZGC4vn+3spgRBSQAHMpLcNesUAJrZl2ddp+xkyS3jrkiT+Fs8dfuqOg+kQ KnvUcnDqFykIpkzMWdPfA==
+X-Spam-Flag: YES
+UI-OutboundReport: junk:10;M01:P0:+tmzGDh0AO8=;LD7owTFu0n+1dTyi64q+1prw/dcey RxfIUyhfhvrDb/GXSoySa8eTXnr4y38HvfIBWo/CD+2dBJzvd18IZv2+hf9TO5/iW27fPt15P 6y+Gn6kELJZ4jwNCjA9p+D2TDuyW30SCeDexIhw/kzK5xeuP51nKmgz3OcDKdUtE141VcR9ti qsK7uJYfu0uAu/X4rUPXjy9Jzkwr+CR0Gf/4XLPlFtSzqHukBjjmFaYh0PeEhvpU3y1flc2oJ 9LNyuAvG60nwvtbntABYDbbh//Togtdw1+jgUxHcfouxs1L4iEuTND78fLwfJw/fS/1GmvkOC ZjCHMjq1c4tuy05ruK/yADgxiSlghxaf8PN+ratIrLVrBLEJW3J56wCaXA6jXU0nWqU9qgJxL 2vCAApLtprtPs7P1i+a5b5+J89H0NxpSvRbC+xksQjf4L911Xh6TcTfd9V8HrWMF8N7bjyw9c ZmCB4O/H/WYEq1VKXbjiLeCQGFAy2SlhU4kDmCo0Sw4pS29DcM5wlZ26zsUdh7v9deySBbmvI 07wlfQNFPPocvevethCVoLLB5xXH5YOVJxqWfkn3uQLmNk360DinkQoVRd7atTzZcN2zr81Ee H3jHT0ZQ2rSKh0wwB8qEn1YMcsajk2JX8kraT4ZNEdtn+68X9eJ5JiuSA2b4KGQebY2pSEnCo 7QotxfZcBjVLtEPO5hQi0S/ba9BBKlXCPDL4ANLL5931HlvJlimBEse5GFL7dJwhz8IeIAdo0 tQYjriwKkf50HdfaJyDXc70DX3dgeDUz8sVHSwjNAPd9ZM6cnEexzg0yU1f6PJbx4OzjgA+wP q5UB6mmRHQMBrxxZtmvJFiOvT0PD8W629MlRKN1GFXXhb3Auu/lH2jrzO4vzdH/cUo9GgyqwQ mZi6nWp2MrfC9771LCzVBwwzNzJ4wC9Kp/RAsEnwcXHfx2i0axMtZrcXl+Alj9QHxXp2gqpZR KzylvFqt81Xo3AcXzr1YLT7BoujaQUR0NNUHtrmlp6Zmhd2jRvyVECGj6j7N2tTntiuZJhowM i/A9jnTs8DSle1Ge/caqaZubV/sSSK4m3U3Kt
+
+IPTV
+
+Need to pay less and see more than 17,000 channels worldwide?
+* SPORT CHANNEL (your live sports matches)
+* SERIES CHANNELS
+* MOVIE CHANNELS
+* DOCUMENTARY CHANNELS
+* NEWS CHANNEL
+* ANY OTHER CHANNELS
+
+Contact us on our website:
+
+ingoads.net
+
+https://wa.me/212667763718
+
