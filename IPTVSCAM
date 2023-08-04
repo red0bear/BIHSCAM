@@ -1,0 +1,103 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a0c:f054:0:b0:626:1b70:d85a with SMTP id b20csp1204833qvl;
+        Thu, 3 Aug 2023 13:36:20 -0700 (PDT)
+X-Google-Smtp-Source: APBJJlGh6oElwdIEkysaBy7+HyB+yApAPrLzIyWqocwKo+ztaYOiS1AOo3EG6rzNQgku+3gk5Qex
+X-Received: by 2002:aa7:d58b:0:b0:522:50b9:a177 with SMTP id r11-20020aa7d58b000000b0052250b9a177mr8775309edq.39.1691094980338;
+        Thu, 03 Aug 2023 13:36:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1691094980; cv=none;
+        d=google.com; s=arc-20160816;
+        b=meZtLNTwaFPLgLvkHJJ/42VnpVxPtlJ/Qe1MdURsbFhwN2lnrsFweCXC4rGVEQttxb
+         MMt80EMxJO9ppsNC3MErfQOdwEPUHVu8eUvYDUdC0rUcTDVTAbFX77FK/GOM4EOYlcw8
+         Ru1Yc224x9EWIvj2vEUvUPR9PvkFk6V+Xv2AqwChkbu+d6pq/8YsJajHWOmijGW2hrnC
+         IdZ6h6iptMR4C5V8/m9fQKlP8DKiKJBQ79KURKEcgTybqCA+JDxO5B1TAsOG1Z6GYbo6
+         7ViXj/u1Btt2CwSn61mSxhwiah7ogD88C6uXAKtD42pNPdFIZ4YmpcNf5jso0R9yJIXY
+         sMpg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=ui-outboundreport:message-id:date:reply-to:mime-version:to:subject
+         :from:dkim-signature;
+        bh=ifmiEv+rtWkXpteGb/kscsxE8Kbx/1aQwJ/1EpXKnu8=;
+        fh=tCX3hM+pURoqGdYhAQjT784LPinzP+FWUaqlPDypiks=;
+        b=K20C3Txg2BlHI4KniJy7oLeGIzxwZ1D/ormse/2fJP+rtDCXTGKuIOAxVKFnSAP8xk
+         SZgb1/TACgVYfa1Tef6hKVfLKLlUHAnBHoEmTcuYtXg8dxSpf9KF1Qm2wR47vuRKCmI5
+         qC6fhMyc2r3EsxlqZXngY8O/HPo4DPQZqbE9Y/SI8ZlysuLKHQrRZHyktuBCbuuGtyr3
+         XN6Wf7MQKRCcp8+Eb4S1CnM18rn4FJlRHR9DneZZ1LuxmGQyYwtItz91QWX9nBtfwlwN
+         Jpe9yxOASkZXKBZILGpBRGNID2VNUBbrRFKTjoJeQUwAOkSOLI2HOUsuUOzsSEHLEjFs
+         cbIQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmx.de header.s=s31663417 header.b=Z349OC2K;
+       spf=pass (google.com: domain of elizabethbarlow292@gmx.de designates 82.165.159.42 as permitted sender) smtp.mailfrom=elizabethBarlow292@gmx.de;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmx.de
+Return-Path: <elizabethBarlow292@gmx.de>
+Received: from mout-xforward.gmx.net (mout-xforward.gmx.net. [82.165.159.42])
+        by mx.google.com with ESMTPS id x9-20020aa7d389000000b005223cdb920esi390556edq.209.2023.08.03.13.36.20
+        for <fefe2560@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 03 Aug 2023 13:36:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of elizabethbarlow292@gmx.de designates 82.165.159.42 as permitted sender) client-ip=82.165.159.42;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmx.de header.s=s31663417 header.b=Z349OC2K;
+       spf=pass (google.com: domain of elizabethbarlow292@gmx.de designates 82.165.159.42 as permitted sender) smtp.mailfrom=elizabethBarlow292@gmx.de;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmx.de
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=gmx.de; s=s31663417; t=1691094979; x=1691699779; i=elizabethbarlow292@gmx.de; bh=ifmiEv+rtWkXpteGb/kscsxE8Kbx/1aQwJ/1EpXKnu8=; h=X-UI-Sender-Class:From:Subject:To:Reply-To:Date; b=Z349OC2KLODthABEg/QPAyf/lWU/ewLpRCg8BN+amB6e+zxXr1ujFtqziN0WihZzYRb70As /k2mgKtoJO+AHZIsIMekzvjg0PwkOw8CXV3MzpYDDv8T8T3OXsnFXzOx5JdGxJm8Z6NP36Eaj gHhq/if/FCr7cn3qXdOX3FRXiGarxCBj+Rnp4ZrwZnuGw7q0O+VayS8y7SpKT/q5doO0CnnU/ Z03zrX/Qikcr4/SlSR+L3+YibbvAjUSfrano9Ydz4zBMI+4XFTy2+0Dr0zwQmlP3UCy6AQIpF BjWQjQyUKQbNRmnjz6jHynb1i/mFQaKT9XhIX1X1ONF2/NN1LlCw==
+X-UI-Sender-Class: 724b4f7f-cbec-4199-ad4e-598c01a50d3a
+Received: from 196.120.166.29 ([196.75.115.53]) by mail.gmx.net (mrgmx105 [212.227.17.168]) with ESMTPSA (Nemesis) id 1M1Hdq-1qQ0652fhC-002nz0 for <fefe2560@gmail.com>; Thu, 03 Aug 2023 22:36:19 +0200
+From: IPTV <elizabethBarlow292@gmx.de>
+Subject: Would you like to pay less and watch more than 17,000 channels worldwide?
+To: fefe2560 <fefe2560@gmail.com>
+Content-Type: multipart/alternative; boundary="TxNefUIUO1SoiOW3VO=_QDmGtdoId2PGTF"
+MIME-Version: 1.0
+Reply-To: Dino Iptv <adilouzougat@gmail.com>
+Date: Thu, 3 Aug 2023 22:36:18 +0200
+Message-ID: <1MqJmF-1q6fmy3LhD-00nNC7@mail.gmx.net>
+X-Provags-ID: V03:K1:fBTXA86o3APwA86RIbF2ewMACyIfeHy9ZcwzxnlwnKdGKZUfjy3 kTq1QenNwHaO6rJtB7mLNSvJe3ds5p8E9rqmSo2VIOCBemd6gJiQqdNKcu35dNsU17xMJY5 692/bT5VYgEHMYBIy1kxrI7HDdb+SMaFtoOMilzWrBwRem6qbLsI1t92bCB7gGFzxHszHLV kF70h7hAGxlMDRRBaQgVA==
+X-Spam-Flag: YES
+UI-OutboundReport: junk:10;M01:P0:D7PAuj0/s44=;Scf7iVZLSu8rMghZYgtIun2BUVzNg 4UBumRH7p07ZdOT4SvUB0vxgMopJhs66MVbRiwq/rR4DbiGP56hs92WLl8ZN2x9p2rv4OUE/C ISOuVygHBlazFsQ6s8zmUXtBVQOMKDOgizf6RJIjvjj83WYEYv3AcNRZAzFqcYKCBauBEY9z8 hb4h57mN122aGawzRHMOpOL0iTpTtUvV+1wa0wKtaui1C3ftyD4n2Pm9iBqaFZKqwiwyAPdF6 Y84HHa5MInrZP7sogPV7KhVeYumOhtj7JBXODkXmGEy+fKwKi1zRuF72mxCxMRNqSMcNBRxdl Zjm5h0FYBxNzheWLD/8we/KXH3rj7GxAc1/wtf9p0HeVqUb40d7rlVChBWMJRr450mnQ1mNTx NavGAMdNQERHHo06zzEk2x9gTdXgh/6rDDzNI8yaxaqSLMoZfqyJ4wGJ0fby0lfbqnxKgLEvp YTpiZ87n83jj+ETHrcGGCD4Ef2BCwY9recqmusxNUUEJ5m3qea4Gl6m9V+9EUNA6hcSq0It1W fEo7dd9xo8A7AbdsM+fbs/c2Az2NuVwE0/BP+snK8WwCZBcf+Bum/BWbf9uMx4i0+NVPbzamX KnO3h1m13RsPwp2pVAfGkqNGRRJBwR54nMsMm30o7lPwktXtPb4JhxJ+p2cmTgFG7bZ5tqZpU I1irShE0yEnhRwQi/n16Ie7TW6avfhMlmEsPiIigcr8uvwNHLRWT6FgnSvXQ0mb9O+mh56RpC 9Uwp36h3rYo1EOz7BWSHmNwPTkdmZtd7Xl4fpEcPzfDR/JtLHSxVtjUSqvNylChvtAX8m9mOa rRH1i/W5ZdTqShRXOhrrUK5cg/UgS1aIUtCT571rCCswX//Rj6z92lcJnLT6Wirf+lPQ1ZqX5 huuTvQyo7Qw8OhODphmujKNuHfoSPxftlFdWh1qgsBRcMY8TTWeJJqr2jYE2V9Lg5F5yy44i1 8kDwTT5Ii9Ll/Pcyob5FMdEYHeRcCnn9hyJou4uHvh8gNRl8Rk183mwZph8iiOwNIjv39+qXM POnQ+lwlWozejZxlc5dFUtbzIBPMD0sonE2Mf
+
+--TxNefUIUO1SoiOW3VO=_QDmGtdoId2PGTF
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+IPTV service.
+
+Would you like to pay less and watch more than 17,000 channels worldwide?
+
+* SPORTS CHANNEL [Bein Sports. Sky Sports. NFL. Formula 1 ...]
+
+* SERIES CHANNELS [ Netflix . hulu Amazon Prime. apple tv ...]
+
+* MOVIE CHANNELS [ Oppenheimer . Fast & Furious X. Barbie 2023...]
+
+* DOCUMENTARY CHANNELS [National Geographic . Free documentary...]
+
+* NEWS CHANNEL [ Euronews . BBC . Sky News...]
+
+* ALL OTHER CHANNELS...
+
+Contact us on our website:
+
+ouziptv.com
+
+https://wa.me/212613994728
+
+
+--TxNefUIUO1SoiOW3VO=_QDmGtdoId2PGTF
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+</head>
+<body><p>IPTV service.</p><p>Would you like to pay less and watch more than=
+ 17,000 channels worldwide?</p><p>* SPORTS CHANNEL [Bein Sports. Sky Sports=
+. NFL. Formula 1 ...]</p><p>* SERIES CHANNELS [ Netflix . hulu Amazon Prime=
+. apple tv ...]</p><p>* MOVIE CHANNELS [ Oppenheimer . Fast &amp; Furious X=
+. Barbie 2023...]</p><p>* DOCUMENTARY CHANNELS [National Geographic . Free =
+documentary...]</p><p>* NEWS CHANNEL [ Euronews . BBC . Sky News...]</p><p>=
+* ALL OTHER CHANNELS...</p><p>Contact us on our website:</p><p>ouziptv.com<=
+/p><p><a href=3D"https://wa.me/212613994728">https://wa.me/212613994728</a>=
+</p></body></html>
+
+
+--TxNefUIUO1SoiOW3VO=_QDmGtdoId2PGTF--
