@@ -1,0 +1,340 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a05:6214:11ab:b0:651:5f52:c509 with SMTP id u11csp903825qvv;
+        Mon, 28 Aug 2023 12:32:04 -0700 (PDT)
+X-Received: by 2002:a05:600c:d8:b0:3fe:e812:4709 with SMTP id u24-20020a05600c00d800b003fee8124709mr20010727wmm.12.1693251124652;
+        Mon, 28 Aug 2023 12:32:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1693251124; cv=none;
+        d=google.com; s=arc-20160816;
+        b=h4SaJdpKQnk/wN+/vVNT30gYii7DDgDBMzvon7DOuWF9mo2nqPmfvfOyL+tl+jmpEw
+         ZVkInUZ0ICtMNL1q1I8QvBKDc8ld6zgRRq5UdwOgvqn+1VxHTbJITtmYfujOSn00dGYS
+         UMk234Ibz2EuBl6gl9u2fPrIGNBxE5NGfX16WlrOycHkcTpbLg91m4ChKLzmO7EcdiK6
+         pfHnQ3w+xst0GsPcpKtpgmh0ehOHX3ZkIcvaRHYpuaTsttK40ev9kh8eZNH/MPSLS/6h
+         CzLmNnm55XO+l7aA6FKZtrPuiklwlu+jPIxbn3LvyIg8wVzTOhQxOz+WlohC6UWgKpGr
+         LhOQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-id:date:message-id:mailing-list:sender:list-unsubscribe
+         :subject:precedence:content-disposition:mime-version:to:list-help
+         :list-subscribe:from:list-unsubscribe-post:dkim-signature;
+        bh=zxWPy5j/YKvGKjMOCo+bBw3u34hSeH2lJYFCtwsqxnY=;
+        fh=x9Sd09vfe0ltHY5goUmqfW3CInPWawWSEuMYhREYdvI=;
+        b=K/4oMUGWEIMtq4vF2mPxmXQGpWDaBv9o/6HEWrjiFwX6S8vF4o0xvYyoRE780h8q1m
+         IxXEZ+9YLqWO4wcginOEajmDLU3Gg+O7IqrG7A3OIV/hHHsaI9AIRwSS5w9eO1aEGaFB
+         cjFnASfUvI9UNoE+JAAvBwptevCb6D5f37yNL5pl1ioloxJEQvQ5hQCYxsQYX9tAl5tC
+         l81TPl3sak14mntHXi6UuecUDR9H5P15t8OvUdg+THKcPjdJXH55thwi7/WhmyVi1v4W
+         8SM3sxirKLGtvrJ3j2xTjHhOjrLFRPeDzXLSfnfX2rUDMii864f85mXbZSAnmK3iACcO
+         EfrQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@6637111m-liceulcfrarad-ro.20221208.gappssmtp.com header.s=20221208 header.b=XTjgl65C;
+       spf=pass (google.com: domain of 11495951518msmz.50517205@liceulcfrarad.ro designates 209.85.220.101 as permitted sender) smtp.mailfrom=11495951518MsMZ.50517205@liceulcfrarad.ro;
+       dmarc=fail (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <11495951518MsMZ.50517205@liceulcfrarad.ro>
+Received: from mail-sor-f101.google.com (mail-sor-f101.google.com. [209.85.220.101])
+        by mx.google.com with SMTPS id y19-20020a05600c20d300b003fef8272b24sor400222wmm.6.2023.08.28.12.32.04
+        for <fefe2560@gmail.com>
+        (Google Transport Security);
+        Mon, 28 Aug 2023 12:32:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 11495951518msmz.50517205@liceulcfrarad.ro designates 209.85.220.101 as permitted sender) client-ip=209.85.220.101;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@6637111m-liceulcfrarad-ro.20221208.gappssmtp.com header.s=20221208 header.b=XTjgl65C;
+       spf=pass (google.com: domain of 11495951518msmz.50517205@liceulcfrarad.ro designates 209.85.220.101 as permitted sender) smtp.mailfrom=11495951518MsMZ.50517205@liceulcfrarad.ro;
+       dmarc=fail (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=6637111m-liceulcfrarad-ro.20221208.gappssmtp.com; s=20221208; t=1693251124; x=1693855924;
+        h=list-id:date:message-id:mailing-list:sender:list-unsubscribe
+         :subject:precedence:content-disposition:mime-version:to:list-help
+         :list-subscribe:from:list-unsubscribe-post:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=zxWPy5j/YKvGKjMOCo+bBw3u34hSeH2lJYFCtwsqxnY=;
+        b=XTjgl65CLoRv4pDPfOMMBwzJeZRJ3Xzj2F3PqJf8APBGSMm9eJ0D7y+xAaok7ih5tk
+         goGRUIPqmRlG5WwO0BE+MViBnUlr0447ByEe4M2AY4CxMY6Kfb+N6pX0/QDwwGbyp8+5
+         okvbjSUi9WyFUZQ0slFLNwuaqQBbnab4vohsZY4WIRM+3WIjD95bOvgmt1svlt6qR9IM
+         UtrjFBZJAYNJJ5gmblau+kVEv8M7OEUkMF6lc/68ql7c/SvPVCmFI+Deoxk97TwE0hLo
+         bVCIIHqLiDLsMB846QSD4ikm6OM3BQHWgLbinYFXc1RrdDZe2QimIYiX1y5IG4nNIOBG
+         e8FQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1693251124; x=1693855924;
+        h=list-id:date:message-id:mailing-list:sender:list-unsubscribe
+         :subject:precedence:content-disposition:mime-version:to:list-help
+         :list-subscribe:from:list-unsubscribe-post:x-gm-message-state:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=zxWPy5j/YKvGKjMOCo+bBw3u34hSeH2lJYFCtwsqxnY=;
+        b=NxxLriJFcpC9lzhqw9ox40nNCQZAQq+jUYvWtZD7iLu0nYQCma8i1DUkyGKLT4qwb3
+         TabcMuuu8gAtNxn080e0x/z2KgU0/n5wRaeX9Zv4PqhDmKMNLonLHH8y7sZ91cJFUEnp
+         QHrU1E255SJriXUVTpanJ+BT9WBNSMNzldW63apWga6NUBWYAdA7rPBXeilFmHfkXf3T
+         2cClXL1HH/rh2FIPEqHTLA80MWF8b0iHydAO4h993KRr4CUk/qWzwbejC/69m1WkLKU1
+         r6U5MK1BlBrDNJAabQysJwcLaCMaBsllWbfxZr9/W6YCM7QyivrwViogeUY6NJm5UR7t
+         qHxg==
+X-Gm-Message-State: AOJu0Yza0hnbiE0krVNTNIXvsoCfHTzP5CfJtvfaagRkqxS7DMEm1fwH A3a6p6m347BGAfqDD/JYVsNtV0TPMDQJuN1cohRXPB2guqCTVkQubDcwq6G+
+X-Google-Smtp-Source: AGHT+IEuh1sNeU6LsHFVfGqyVCf1Y0P6xBsVYrBzeMG7UK943Px8TNo5vqbWnqz7KX9i1k4mn+XhBLiE97xV
+X-Received: by 2002:a05:6512:2203:b0:4fe:2efa:b847 with SMTP id h3-20020a056512220300b004fe2efab847mr24453114lfu.23.1693249802232;
+        Mon, 28 Aug 2023 12:10:02 -0700 (PDT)
+Return-Path: <11495951518MsMZ.50517205@liceulcfrarad.ro>
+Received: from legardaeskola.com ([57.128.26.74])
+        by smtp-relay.gmail.com with ESMTPS id z2-20020ac24182000000b004fe48d0a9f3sm1014927lfh.52.2023.08.28.12.10.01
+        for <fefe2560@gmail.com>
+        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Mon, 28 Aug 2023 12:10:02 -0700 (PDT)
+X-Relaying-Domain: liceulcfrarad.ro
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+From: Pending Package <fefe2560.........................................@gmail.com>
+List-Subscribe: <https://puzz.biglist.com/do/sub/news/81606225421/tjjv81f5nz/17733/0>
+List-Help: <https://puzz.biglist.com/help/>
+To: <fefe2560@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Disposition: inline
+Precedence: bulk
+Subject: Package6637111
+List-Unsubscribe: <https://puzz.biglist.com/do/unsub/news/81606225421/tjjv81f5nz/17733/0>,<mailto:news-cunsub-tjjv81f5nz-81606225421-17733-bl2797@puzz.g.liceulcfrarad.ro>
+sender: pnLKfK2Rsjyy0kSBpbeh-fefe2560=gmail.com@6637111m.liceulcfrarad.ro
+X-Bl-Legal-Notice: <https://www.BIGLIST.com/legal/>
+Mailing-List: <https://puzz.biglist.com/help/>
+Message-Id: <309308439053002.Ala4VGaYs@puzz.biglist.com>
+Date: 
+List-Id: <news.puzz.biglist.com>
+
+<bR>
+<br>
+<BR>
+<bR>
+<cENter>
+
+<imG SRC="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/16e3342b-f87d-468a-bcb7-e1bd307a3a14/r6ge4168erg4er6g56454G8ER7GER6GER74G0RGE84ERGG6-FEZGKLKRGERG65RGEFEZF.png" useMAp="#">
+
+<Map NaME="">
+    <area TaRGEt="" Alt="" tItlE="" hreF="https://proxy.qualtrics.com/proxy/?url=http%3A%2F%2Fgalapanos.shop&token=JZq4zpDSJokAj%2FaycZBCKxCtGaELaqEWHLVGPPHWZtc%3D#cl/191012_smd/120/460456/6817/60104/851486" cOoRdS="0,1,694,743" SHape="RecT">
+    <aReA TarGeT="" alt="" TItle="" HREf="https://proxy.qualtrics.com/proxy/?url=http%3A%2F%2Fgalapanos.shop&token=JZq4zpDSJokAj%2FaycZBCKxCtGaELaqEWHLVGPPHWZtc%3D#un/191012_smd/120/460456/6817/60104/851486" COordS="241,772,479,819" sHape="REcT">
+</Map>
+</CEnter>
+<ObjeCT>
+<tITlE>
+</CeNTer>
+<oBJEcT>
+<TItLE>
+<APpLEt>
+<H2> oii1at23ay8xyghuonmzt9ygayuvl7et0tbhyb07u5gudkfu3xha1 </H2>
+<H2> oii1at23ay8xyghuonmzt9ygayuvl7et0tbhyb07u5gudkfu3xha1 </H2>
+<H2> oii1at23ay8xyghuonmzt9ygayuvl7et0tbhyb07u5gudkfu3xha1 </h2>
+<H2> oii1at23ay8xyghuonmzt9ygayuvl7et0tbhyb07u5gudkfu3xha1 </H2>
+
+<h2> oii1at23ay8xyghuonmzt9ygayuvl7et0tbhyb07u5gudkfu3xha1 </H2>
+<h2> oii1at23ay8xyghuonmzt9ygayuvl7et0tbhyb07u5gudkfu3xha1 </H2>
+<Div dIr=ltrdata-sETdIr=false sTyLE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">eaokrldshqqmdflmapshkc4zsmkk61gvme</dIv>
+<div dir=ltrdata-setDir=false StYLE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">vegxatx9ozfymeto3egagetxeoqxyuvqb4ge3acwijzhkrbv4avk25pu20pk9n2twbubgucdxnmvz</DIv>
+<div DIr=ltrdata-setdIR=false sTyLE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">1yzqziw6ui8ap2twqgyi8drkenu6zuvr5utlinm9wweewvil3hcr3laovejw0y9amiwhpxymxcwtf48j6</div>
+<DIV dIR=ltrdata-sEtDIr=false Style="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">avageoocinfff3jon8xngeghrsfnxxjrtsagxoocwm8ywtilx4qrmsli8rw5ctpyzwq</DiV>
+<div DiR=ltrdata-sEtDiR=false stYle="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">nhnldiakhvc6i3snhdptvwz4lfvpe6r96i3rof5clk2xb5nbihzi5rky0g53ykbur</diV>
+<diV DIr=ltrdata-setDiR=false stYLe="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">qrcprh31wwa4gbzyhobjtq5h1xg8bkuweufq48y4tiqfsmoaaecsjvb7p2kmkkqiovn9d4md4816</dIv>
+<DIv dIr=ltrdata-sETdIR=false StyLE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">jlthbuuyjzqsqnbcwnvbj7desdilzlqwumpl7k19qdka</diV>
+<Div DIr=ltrdata-setdIR=false StYLe="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">st4pykqyoqlw4lfuxq1jaxxbk3dpl4cteca11upffpnt5fgzcalvjwp3etoitur6hynwznw5aflu61jch74ow7fgyytyq4hfg</div>
+<dIv dIR=ltrdata-sEtDIr=false STylE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">8a49zal26nkaeklxbxjxmn2kv6hwr61riot6ljffd9kogcg4kuzmcy20e4ad9s</DIV>
+<dIV DiR=ltrdata-sEtdiR=false styLe="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">199sueirrbzfmnv11ahlsosqrp0dveeou7kkqdxh6kabkrkkpctekhzghnrf2kpvxp</DIv>
+
+<diV Dir=ltrdata-setdir=false StyLE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">nivamxch6y8tq1af4qvk3qgj3ghdwxgztnfzsfhcagsmdrhc3y3x</DiV>
+<DiV Dir=ltrdata-setdir=false sTyLe="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">l5yci5uxkmkyusrxqsow2ha7vprty2danlnooszhz</dIv>
+<Div Dir=ltrdata-setdir=false StYLE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">fdd1g3gm4acbtpxntpzamx51fbvqzjjdsl6c7nnqbnvzyxfk93n7nsj</DIv>
+<div Dir=ltrdata-setdir=false style="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">ltodkmidtelvs1vo96xayfumeyh4fsgsffxzxaa8deizlpot7lgai406uqiwiorut6zmwe4plbc3nzthacy1rrna1su</DIV>
+<dIV Dir=ltrdata-setdir=false STyLE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">hvijfscqfgmishgobyidyj2ywyr5plma1crl0wdniddkzcigot</div>
+<DiV DiR=ltrdata-SeTDir=false STYle="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">cjzymvngoae5cpaj1wjptbdwljfuhczewvpyiud02ejrymndl1wya4sakilelslj8gpbt2xrzsa</DIv>
+<diV dIR=ltrdata-sEtDir=false StYLE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">3p2z41stzeol0hosu6htpmics3gyrjpzqounrz21bhwnugwwfdlrp21u8jvyaaam0</DIv>
+<dIV DIr=ltrdata-setdIR=false StYLE="height:2px;max-height:2px;overflow-y:hidden ;color:#ffe">sm7p8uv8ghgkh5biypuvpkrahf0ssstgsfol0jkzk1zyerarhptqnydgodlyhwo00pou30ogitkf9tspn8lc6km</DIv>
+
+----==mimepart_Eg8qHNmyD55x9wEsHp_mgJU0caCaXBmN38fQjHWlAyHlqnqhUiCbFVZs2PO
+Content-Type: multipart/parallel; boundary="_-------yzTpfEAEFzdI1hU.PDjsRuPNmE-1770183187yzTpfEAEFzdI1hU.PDjsRuPNmE=:"
+
+--_-------yzTpfEAEFzdI1hU.PDjsRuPNmE-1770183187yzTpfEAEFzdI1hU.PDjsRuPNmE=:
+Content-Type: multipart/alternative; boundary="_----------=bollinyzTpfEAEFzdI1hU.PDjsRuPNmE"
+
+
+
+--_----------=bollinyzTpfEAEFzdI1hU.PDjsRuPNmE
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: Hexa
+
+
+
+
+--_----------=IXtl8QB_--==mimepart_Eg8qHNmyD55x9wEsHp_mgJU0caCaXBmN38fQjHWlAyHlqnqhUiCbFVZs2PO
+Content-Type: text/html; charset=utf-8
+
+
+
+MNCPSRlmzbigf-328
+
+--_----------=bollinyzTpfEAEFzdI1hU.PDjsRuPNmE
+Content-Type: text/html; charset=utf-8
+
+
+
+--_----------=bollinyzTpfEAEFzdI1hU.PDjsRuPNmE--
+--_-------yzTpfEAEFzdI1hU.PDjsRuPNmE-1770183187yzTpfEAEFzdI1hU.PDjsRuPNmE=:--
+----==mimepart_Eg8qHNmyD55x9wEsHp_mgJU0caCaXBmN38fQjHWlAyHlqnqhUiCbFVZs2PO
+Content-Type: text/html;
+Content-Transfer-Encoding: Hexa
+
+
+
+----IIEHhtoS;5ALiCa
+
+GWt--SujFJ--XxD---------------------------------------XJt--zQezb--aEj
+
+
+xFW--dwbuU--BJL---------------------------------------ooK--XkzkC--rHm
+
+Bonjour xCLBl LZkty,
+
+
+
+
+----d4kOE0c1;isu05s
+
+
+----vf8tDDRg;Pmtksp
+
+
+----7iyQxFTe;LyTnvP
+
+
+QJt--nFpqP--EEA---------------------------------------Pxs--Wiedx--BRf
+
+PtT--ZaglJ--Brb---------------------------------------vuO--DZtct--OKU
+
+
+
+----OZ2n33R2;yKeR58
+
+lyh--pcigx--UET---------------------------------------iXv--ZvSlJ--qtE
+
+
+----mNrbi9Wa;vlFAsc
+
+You can manually confirm your account by pasting the following code into the empty field at
+
+ 
+Dear hGwnM,
+
+To continue your application for ConsignO Cloud please confirm your email address.
+
+Confirm your email address. 
+
+Border
+We respect your privacy and will not divulge your personal information to any third parties.
+Do not reply to this message. This return email address is not valid and you will not receive a response. 
+
+***********************************
+
+Confirm Your Email
+ 
+Hey Smiles Davis,
+ 
+We received a request to set your HireClub email to hello@. If this is correct, please confirm by clicking the button below.
+ 
+Confirm Email 
+
+https:///tHMCRScLs
+
+----SWsxiNK9;K50nQX----soWzBbbM;5hKI10
+----AcTOkSbr;ApChlG
+
+----emBk2jXE;PLFpzb----v8p97Imq;Ga2hiY
+
+
+
+ 
+Welcome to your new Microsoft 365 E5 instant sandbox
+
+Your new Microsoft 365 instant sandbox comes pre-provisioned with Microsoft Teams, SharePoint, Outlook, and Office. It also includes licenses for 24 test users plus one admin, and the latest Microsoft 365 apps for your PC and Mac, including Power Apps, Power BI, Enterprise Mobility + Security, Office 365 Advanced Threat Protection, and Azure Active Directory.
+
+In addition, you get pre-installed sample data, including the new Teams sample data pack, which simulate a small corporate environment to help you build solutions across the Microsoft 365 platform. This includes:
+
+    Microsoft Graph user, mail, and calendar data - 16 sample users with user data and content to help you model your solutions. This includes user mailboxes, calendar events, and integration into a Teams developer environment with simulated chats and team memberships.
+    Teams sample data pack with the following customized developer environment:
+        App sideloading pre-configured.
+        Five sample teams, channels, tabs, and chat sessions built around the 16 sample users.
+        App Studio / Teams Developer Portal pre-installed and pinned to help you streamline the creation of your Teams app manifest and app package, plus the card editor and a React control library.
+    SharePoint Framework sample data – Choose from six site templates that you can install and evaluate as custom solutions for your organization (with one pre-installed). 
+
+Next steps
+
+Go to your Microsoft 365 Developer Program dashboard to manage your sandbox subscription and get personalized recommendations based on your preferences.
+
+Explore documentation and training for:
+
+    Microsoft Teams
+    Microsoft Graph
+    Office Add-ins for Excel, Word, Outlook, and moe
+    SharePoint Framework
+    Power Apps 
+
+Reminder: Your Microsoft 365 E5 subscription is for development purposes only. It can be revoked at any time if it is used for purposes other than development. For more information, review the Microsoft 365 Developer Program Terms and Conditions.
+
+Thank you for your membership in the Microsoft 365 Developer Program.
+
+The Microsoft 365 Developer Program Team
+ Hello cLEjU,
+
+SHOW. SHARE. SELL. SCHEDULE.
+
+ Advanced AI technology is your virtual team with automated multi‑tasking while you're behind the camera.
+ 
+
+
+
+
+ Save 50% off all plans right now.
+ 
+
+
+ Zenfolio has built a community of more than a half million photographers. Join us today and save 50%. 
+ 
+We're here for you.Have questions? Reach out to our amazing support team who are photographers just like you and experts on all things Zenfolio.
+
+
+GtA--NTUVk--AEW---------------------------------------dTq--gLpgQ--ktV
+
+Hi cEo Yn,
+
+Thanks for subscribing and going your own way!
+
+We promise to keep you up to date with the latest on everything TGP ENX including news, tips and stories – everything you need delivered straight to your inbox.
+EXPERIENCE  h: 
+
+Thank you for joining the FXPTU & WZLKY newsletter. We know life with horses can be non-stop, but now you can relax as everything you need to know from the equestrian world is sent directly to your inbox. If you can’t wait until our next update, visit our website for the latest news, reports, features and much more.
+VISIT vQly & Wg: 
+
+Thank you for subscribing to VjF!
+
+We’re excited to have you as part of our community. gT covers all breeds and riding disciplines, and our main interest is providing important information about uyzyc in the most interesting and enjoyable way possible.
+
+
+----x9PrUzZF;d5fu2v
+
+
+----2K6S7ORi;rB7GaJ
+
+----lbQGFIsN;eieNKK
+
+
+ <SzETzz> </>
+<> </>
+
+
+kRY--CtcCK--HDR---------------------------------------Ujx--PJcha--zpL
+
+
+wGt--MGlDl--wGG---------------------------------------qaA--Hdqbh--Tis
+----PIb8oLDH;UjYDfA
+
+----myc8bCE4;bTMUvu
+
+Start a Photography Business...and Save 50%.
+ 
+
+
+ Gas is nearly $6 a gallon. Milk is $6 a gallon. But you can start a photography business to earn income for as little as $3 a month. Whether you're getting started or getting busier this summer season, save 50% now.
+
+
+mil--Oyrvy--LIF---------------------------------------pyq--mxEsQ--eUC
+
+
+lAW--JnouB--rKk---------------------------------------acb--DQTxW--SWw
