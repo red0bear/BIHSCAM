@@ -1,0 +1,412 @@
+hahahaha , those ""smarter guys""
+
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a05:6214:11ab:b0:651:5f52:c509 with SMTP id u11csp1649431qvv;
+        Tue, 29 Aug 2023 16:20:42 -0700 (PDT)
+X-Received: by 2002:a9d:4d10:0:b0:6b9:6a43:1f7c with SMTP id n16-20020a9d4d10000000b006b96a431f7cmr550126otf.26.1693351242585;
+        Tue, 29 Aug 2023 16:20:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1693351242; cv=none;
+        d=google.com; s=arc-20160816;
+        b=q0lWryOlR+ckN6Rw6Gj/BFhJaKUGNmZIcFWfU2Ben6Gi+keAOp3IoO+TcbA8JB4BJO
+         FV+Gu4wpBL2KmFojHqytPjwz9lR/7RebA+et9tlxRaUVZNqhuWpn0xCSt1+9vfHHD6E1
+         OpBgIBHSqLFLDGjl0J1ZcHZdvPeK1Gx7JxeBpTON359f0MRiM9MWRDbwzqOSg26P2Rm7
+         mH5JprCWquq6/K0vFWq76oQjeiU0zwWHZNjVUldcYUrfTXtbdymuJ2DwJ+7uxWg5tk2s
+         5Og6WsWfSxQtqsuh1kZw0ziQcwCFbWAPTj5fOfAe2i7xeZSb4l+KN0Y8QqEpQvBwgOyd
+         UdXg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:feedback-id:list-unsubscribe
+         :messageid:errors-to:message-id:subject:reply-to:from:to:date
+         :dkim-signature;
+        bh=YQRycilM/yPNvYOOPuwUyNYmBBOy9kYHzPnw1c7I/rY=;
+        fh=b4t685KoR0nNIzbOLGQivUZiftCPpkcS5z2d1xkpGa0=;
+        b=ya5kWrrjwDLc5zS4ZUIMShmrejeeJyncNFJtUgYWIlQ10+GZAkgO4emVcAVaLQpYir
+         H+ip3bVSwBvfDeY5UyT8d8lGkjOj5dFXs6JttNZV7OzcnNUxoPwaQdUaYt4y+u9qtIjp
+         jWhyt/6E0B3XbrJo6GlQjo1o/dw+stkEhmO2tAmh36kSuklpzWH33rs6i4mHY4Dwlm0w
+         J+rQHgS97pdsbV+FG8qwns0CiZ9PYM/KGN5kdN/EaGb6HPUNCXACEGYoDVqHJg8xVnXs
+         bLAgfoVL0+pMIZT85ymKUZG9DRJ388VQYmWAp1PlECdsELcFQsrR+rluzfw9yWPK+ydB
+         mWgA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@inboxnews2-com-br.20221208.gappssmtp.com header.s=20221208 header.b=rJhf1rON;
+       spf=pass (google.com: domain of cliente13@inboxnews2.com.br designates 209.85.220.65 as permitted sender) smtp.mailfrom=cliente13@inboxnews2.com.br
+Return-Path: <cliente13@inboxnews2.com.br>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id e4-20020a9d4904000000b006bcb5d84b34sor4375988otf.14.2023.08.29.16.20.42
+        for <fefe2560@gmail.com>
+        (Google Transport Security);
+        Tue, 29 Aug 2023 16:20:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of cliente13@inboxnews2.com.br designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@inboxnews2-com-br.20221208.gappssmtp.com header.s=20221208 header.b=rJhf1rON;
+       spf=pass (google.com: domain of cliente13@inboxnews2.com.br designates 209.85.220.65 as permitted sender) smtp.mailfrom=cliente13@inboxnews2.com.br
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=inboxnews2-com-br.20221208.gappssmtp.com; s=20221208; t=1693351241; x=1693956041; dara=google.com;
+        h=content-transfer-encoding:mime-version:feedback-id:list-unsubscribe
+         :messageid:errors-to:message-id:subject:reply-to:from:to:date:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=YQRycilM/yPNvYOOPuwUyNYmBBOy9kYHzPnw1c7I/rY=;
+        b=rJhf1rONZUjOosdLkj8uQ68Rd16a1f2Of9AfgCqaQvDbBkIZ5/xvDBVx4lCs6+1slJ
+         NWZ25QPPmNPKL9avQ6o5ua0laYjkAwJAnE603ZdvgJ6gW9JzTUBKUpJ3gIray3faU1A0
+         0dEdOPQafPrCz32/JBjMmB/6/Ych+dL5J8nT7o59fmKidyLkoyYQjirlZTKq7fbCo9G0
+         I01WpyPTPfRTaENRyt8An0oG7U+L00d4ROudPEVQj7u/+qu/dicSxZiUhP5CpKhvBvWD
+         VnSGuNlbFrmPFVTpuhhIdtSKJM9Pe7mgAHT/IwzuAKz/JTMPs8CFMFRMR+fXDeg3yesw
+         /XnA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1693351241; x=1693956041;
+        h=content-transfer-encoding:mime-version:feedback-id:list-unsubscribe
+         :messageid:errors-to:message-id:subject:reply-to:from:to:date
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=YQRycilM/yPNvYOOPuwUyNYmBBOy9kYHzPnw1c7I/rY=;
+        b=T0/SdwC/Qhs0n9RoPlLdgN1CTZzIHXS0jSxHDJJkaGeQYeMHqybrKCadulmdgKljL4
+         yt4oEDCEBMi3Ln9eRb+EAo3B84y8SRiQIRx9g/zHTu2zngCtoLqrHhapsmZOMiGJZP3P
+         Dl+Rg5ugEae0FryTi/Cj6QmoiQFdZ2IolmeSJTFcplHNQUnqXYEz+J6yBOMp1P4anLZG
+         wbbAE5ykmHYiwr9EOF8SAOYAJB2kPthIIKcVoJJHZSiW8VPIslSbyg6t7JYaK4CiYwpa
+         RpDzwuRW0WeYy0SUz8Db4sUeH8C//CrRRf1Wv8l25Mcher4B5g3wZouB5NlxSx36GUBr
+         d68Q==
+X-Gm-Message-State: AOJu0YxkNyd4DrQrMAnW2aJRyzs6E0z1TeO+gYdJ6nrLm3sB7A+tBgaN FWF11lo6VIq/W6yazNfi+1AEfjzYievfyAs1Dm7Zog==
+X-Google-Smtp-Source: AGHT+IEBGPyjKT6Y3ZieddWHDDaVNUNMJBf3CATVxTfjx7h/Db2B67zSKHHgP8wu/jW/uORdr+zZ7w==
+X-Received: by 2002:a05:6870:392c:b0:1bb:b172:4bd5 with SMTP id b44-20020a056870392c00b001bbb1724bd5mr620188oap.18.1693351241454;
+        Tue, 29 Aug 2023 16:20:41 -0700 (PDT)
+Return-Path: <cliente13@inboxnews2.com.br>
+Received: from inboxnews2.com.br (rev140.inboxmarketing.com.br. [186.226.76.140])
+        by smtp.gmail.com with ESMTPSA id gy18-20020a056870289200b001c4b473581fsm6088639oab.12.2023.08.29.16.20.24
+        for <fefe2560@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 29 Aug 2023 16:20:28 -0700 (PDT)
+Date: Tue, 29 Aug 2023 20:20:21 -0300
+To: Fefe2560 <fefe2560@gmail.com>
+From: "Totun Impressoras Inteligentes - Manutenção e Locação de Impressoras" <cliente13@inboxnews2.com.br>
+Reply-To: "Totun Impressoras Inteligentes - Manutenção e Locação de Impressoras" <claudio@totun.com.br>
+Subject: Pacotes para Manutenção de Impressoras
+Message-ID: <74EJ2OcyWfyvPoIbF48l7p6WhEt6EBVYM2HIQPw9Oc@inboxnews2.com.br>
+X-Mailer: Inbox Marketing 05/2011-08/2023
+X-ListMember: cliente13@inboxnews2.com.br
+Errors-To: cliente13@inboxnews2.com.br
+X-CampCrtl: #XCRTL$#2121144&515987&385#XCRTL$##X_D_CRTL$#2023-08-29 20:20:20#X_D_CRTL$#
+MessageID: C2121144T515987H202020
+X-MessageID: C2121144T515987H202020
+X-Mailer: Inbox Mail Marketing 05/2011-08/2023
+X-Campaign: 2121144
+X-campaignid: 2121144
+X-AntiAbuse: inboxnews2.com.br
+List-Unsubscribe: <mailto:cliente13@inboxnews2.com.br>,<https://inboxnews2.com.br/api/getout/uid/29a7877627385a71e70a9a30833cc604>
+Feedback-ID: 2121144:C2121144T515987H202020:515987:InboxMail
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1_74EJ2OcyWfyvPoIbF48l7p6WhEt6EBVYM2HIQPw9Oc"
+Content-Transfer-Encoding: 8bit
+
+--b1_74EJ2OcyWfyvPoIbF48l7p6WhEt6EBVYM2HIQPw9Oc
+Content-Type: text/plain; charset=us-ascii
+
+This is a plain-text message body
+
+--b1_74EJ2OcyWfyvPoIbF48l7p6WhEt6EBVYM2HIQPw9Oc
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DISO-8859-=
+1">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<title>Pacotes para Manuten=C3=A7=C3=A3o de Impressoras</title>
+</head>
+<body bgcolor=3D"#F2F2F2">
+<div id=3D"header"><p style=3D"text-align: center;"><span style=3D"color: #=
+3c3c3c; font-family: Verdana, sans-serif; text-align: center;">Caso n&atild=
+e;o esteja visualizando este e-mail, <a href=3D"https://inboxnews2.com.br/a=
+pi/visualizar/camp/e2e46e7d69ca942086f614a45089f8a6/cont/381c1db81b5e9af992=
+0edec4b7e78c03">veja aqui.</a></span></p></div><div id=3D"body"><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><center>
+<table id=3D"bodyTable" style=3D"border-collapse: collapse; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; width: 100%; height: 100%; margin: 0; padding: 0; backgroun=
+d-color: #fefefe;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center">
+<tbody>
+<tr>
+<td id=3D"bodyCell" style=3D"mso-line-height-rule: exactly; -ms-text-size-a=
+djust: 100%; -webkit-text-size-adjust: 100%; width: 100%; height: 100%; mar=
+gin: 0; padding: 0; border-top: 0;" valign=3D"top" align=3D"center">
+<table style=3D"border-collapse: collapse; width: 50%;" cellspacing=3D"0" c=
+ellpadding=3D"0" border=3D"0">
+<tbody>
+<tr style=3D"height: 10px;">
+<td class=3D"section1Column" style=3D"background-color: transparent; border=
+-top: 0px none; border-bottom: 0px none; padding-top: 0px; padding-bottom: =
+0px; width: 100%; height: 10px;" valign=3D"top" align=3D"center"><!-- [if (=
+gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+<tr style=3D"height: 1525px;">
+<td class=3D"section1Column" style=3D"background-color: transparent; border=
+-top: 0px none; border-bottom: 0px none; padding-top: 0px; padding-bottom: =
+0px; width: 100%; height: 1525px;" valign=3D"top" align=3D"center"><!-- [if=
+ (gte mso 9)|(IE)]><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"650" style=3D"width:650px" class=3D"sectionContainerIE"><tr><td va=
+lign=3D"top" align=3D"center" width=3D"650" style=3D"width:600px;"><![endif=
+]-->
+<table class=3D"sectionContainer" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; width: 100%; max-width: 600px !important; backgro=
+und-color: #ffffff;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%;" valign=3D"top">
+<table class=3D"columnContainer" style=3D"width: 614.5px; border-collapse: =
+collapse;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td class=3D"columnContainerCell" style=3D"font-size: 16px; line-height: 11=
+0%; font-family: Helvetica, Arial, sans-serif; color: #666666; width: 612.5=
+px;" valign=3D"top">
+<table style=3D"border-collapse: collapse !important; width: 80%; margin-le=
+ft: auto; margin-right: auto;" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0">
+<tbody>
+<tr>
+<td style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 9px 18px 9px 18px;" bg=
+color=3D"transparent" align=3D"center"><a href=3D"https://inboxnews2.com.br=
+/api/redirect/url/54e36c5ff5f6a1802925ca009f3ebb68/camp/e2e46e7d69ca942086f=
+614a45089f8a6/cont/381c1db81b5e9af9920edec4b7e78c03"><img border=3D'0' src=
+=3D"https://inboxnews2.com.br/painel/imagem/s/f/164/t/164.jpeg" caption=3D"=
+false" width=3D"700" height=3D"703" /></a></td>
+</tr>
+</tbody>
+</table>
+<table style=3D"border-collapse: collapse !important; width: 100%;" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px; line-height: 1=
+50%; font-family: Helvetica, Arial, sans-serif; color: #666666; padding: 9p=
+x 18px; word-break: break-word !important;" class=3D"padding" bgcolor=3D"tr=
+ansparent" align=3D"left">
+<div class=3D"fusion-title title fusion-title-1 fusion-sep-none fusion-titl=
+e-size-two fusion-border-below-title" style=3D"margin-top: 15px; margin-bot=
+tom: 15px;">
+<h2 class=3D"title-heading-left" style=3D"margin: 0;"><span style=3D"color:=
+ #333333;">Conhe&ccedil;a a Totun</span></h2>
+</div>
+<div class=3D"fusion-title title fusion-title-2 fusion-sep-none fusion-titl=
+e-size-three fusion-border-below-title" style=3D"font-size: 28px; margin-to=
+p: 0px; margin-bottom: 40px;">
+<h3 class=3D"title-heading-left" style=3D"margin: 0; font-size: 1em; color:=
+ #89919f;"><span style=3D"color: #333333;">N&oacute;s oferecemos o que h&aa=
+cute; de melhor em impress&atilde;o e manuten&ccedil;&atilde;o de computado=
+res h&aacute; mais de 10 anos.</span></h3>
+</div>
+<div class=3D"fusion-text">
+<p style=3D"text-align: justify;">Oferecer solu&ccedil;&otilde;es inteligen=
+tes em impress&atilde;o, promover a inova&ccedil;&atilde;o, aumentar a qual=
+idade dos servi&ccedil;os e realizar constantes redu&ccedil;&otilde;es de c=
+ustos.</p>
+<p style=3D"text-align: justify;">Possu&iacute;mos uma carteira de 200 clie=
+ntes espalhados no Centro-Oeste.</p>
+<p style=3D"text-align: justify;">Com nossos servi&ccedil;os proporcionamos=
+ maior controle dos custos com impress&atilde;o, pois todas as impressoras =
+possuem contadores, que geram extratos de impress&atilde;o que podem ser ti=
+rados a qualquer momento; garantindo ao cliente controle total sobre o seu =
+consumo real.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"componentContainerButton" style=3D"background-color: transp=
+arent; min-width: 100%; border-collapse: collapse; width: 100%;" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; padding: 9px 18px 9px 18px;" class=3D"componen=
+tContainerCellButton" valign=3D"top" align=3D"center">
+<table class=3D"componentBlockButton" style=3D"border-collapse: separate !i=
+mportant; border: 0px none #000000; border-radius: 4px; background-color: #=
+0774a3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust:=
+ 100%; -webkit-text-size-adjust: 100%;" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0">
+<tbody>
+<tr>
+<td class=3D"componentBlockCellButton" style=3D"font-family: Arial, Helveti=
+ca, sans-serif; font-size: 16px; padding: 14px; mso-line-height-rule: exact=
+ly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign=3D"=
+middle" align=3D"center"><b><span style=3D"color: #ffffff;"><a href=3D"http=
+s://inboxnews2.com.br/api/redirect/url/54e36c5ff5f6a1802925ca009f3ebb68/cam=
+p/e2e46e7d69ca942086f614a45089f8a6/cont/381c1db81b5e9af9920edec4b7e78c03" s=
+tyle=3D"color: #ffffff;">ACESSE NOSSO SITE</a></span></b></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"border-collapse: collapse !important; width: 100%;" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 18px; padding-bott=
+om: 18px;" bgcolor=3D"transparent" align=3D"left"></td>
+</tr>
+</tbody>
+</table>
+<table class=3D"componentContainerButton" style=3D"background-color: transp=
+arent; min-width: 100%; border-collapse: collapse; width: 100%;" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; padding: 9px 18px 9px 18px;" class=3D"componen=
+tContainerCellButton" valign=3D"top" align=3D"center"></td>
+</tr>
+</tbody>
+</table>
+<table style=3D"border-collapse: collapse !important; width: 100%;" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px; line-height: 1=
+50%; font-family: Helvetica, Arial, sans-serif; color: #666666; padding: 9p=
+x 18px; word-break: break-word !important;" class=3D"padding" bgcolor=3D"tr=
+ansparent" align=3D"left">
+<div class=3D"fusion-title title fusion-title-12 fusion-sep-none fusion-tit=
+le-center fusion-title-size-three fusion-border-below-title" style=3D"margi=
+n-top: 15px; margin-bottom: 15px;">
+<h3 class=3D"title-heading-center" style=3D"margin: 0px; text-align: center=
+;">ENDERE&Ccedil;O</h3>
+</div>
+<div class=3D"fusion-text">
+<p style=3D"text-align: center;">RUA DOS PALMARES N. 78 Qd. 04 LT. 18 JARDI=
+M VILA BOA<br /> <b>CEP:</b> 74.360-400, Goi&acirc;nia &ndash; Goi&aacute;s=
+.</p>
+<div class=3D"heading heading-with-icon icon-left">
+<p class=3D"content-box-heading" style=3D"font-size: 32px; line-height: 37p=
+x; text-align: center;"><span style=3D"font-size: 14pt;">Telefones : 62 996=
+86-1016<br />contato@totun.com.br | totun.com.br<br /></span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- [if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+<tr style=3D"height: 16.9px;">
+<td class=3D"section1Column" style=3D"background-color: transparent; border=
+-top: 0px none; border-bottom: 0px none; padding-top: 0px; padding-bottom: =
+0px; width: 100%; height: 16.9px;" valign=3D"top" align=3D"center"><!-- [if=
+ (gte mso 9)|(IE)]><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"650" style=3D"width:600px" class=3D"sectionContainerIE"><tr><td va=
+lign=3D"top" align=3D"center" width=3D"650" style=3D"width:650px;"><![endif=
+]--><!-- [if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</center></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div><div id=3D"footer">    <p style=3D"color: #606060; font-family:=
+ Helvetica, Arial, sans-serif; font-size: 11px; line-height: 16.5px; text-a=
+lign: center;">Sr.(a) fefe2560&nbsp;Proteja a Natureza, fa&ccedil;a uma Com=
+unica&ccedil;&atilde;o Ecologicamente Correta - Plante essa ideia!&nbsp;<br=
+>Para garantir o recebimento deste email cadastre em seu catalago de endere=
+&ccedil;os (fefe2560@gmail.com).<br>Caso deseje cancelar o recebimento de n=
+ossa newsletter <a href=3D"https://inboxnews2.com.br/api/getout/uid/29a7877=
+627385a71e70a9a30833cc604">cancele sua inscri&ccedil;&atilde;o</a>.<br>D&ua=
+cute;vidas entre em contato conosco: | &nbsp;facebook.com/inboxemailmarketi=
+ng &nbsp;| &nbsp;comercial@inboxmail.com.br</p>
+<p style=3D"color: #606060; font-family: Helvetica, Arial, sans-serif; font=
+-size: 11px; line-height: 16.5px; text-align: center;"><br><img style=3D"wi=
+dth: 200px;" src=3D"http://inboxnews2.com.br/painel/imagem/s/f/1/inbox-logo=
+2.png"><br><span>POL&Iacute;TICA DE PRIVACIDADE<br> <br> Caso queira saber =
+mais informa&ccedil;&otilde;es sobre nossa pol&iacute;tica de privacidade c=
+onsulte o regulamento por meio do site ou, em caso de d&uacute;vidas, entre=
+ em contato atrav&eacute;s do nosso formul&aacute;rio. De acordo com as pr&=
+aacute;ticas de &oacute;rg&atilde;os regulamentadores da pol&iacute;tica da=
+ Internet, n&oacute;s mantemos o compromisso de proteger toda e qualquer in=
+forma&ccedil;&atilde;o. Tamb&eacute;m n&atilde;o vendemos ou distribu&iacut=
+e;mos seu cadastro a terceiros, em respeito ao consumidor. Esperamos que ap=
+roveite nosso informativo.<br> <br> ATITUDE SUSTENT&Aacute;VEL<br> <br> N&a=
+tilde;o imprima este e-mail, pense na sua atitude com o meio ambiente. Se a=
+char conveniente repassar o e-mail a algu&eacute;m, encaminhe o mesmo atrav=
+&eacute;s de sua ferramenta de e-mail.</span></p>    <img src=3D"https://in=
+boxnews2.com.br/api/view/camp/e2e46e7d69ca942086f614a45089f8a6/cont/381c1db=
+81b5e9af9920edec4b7e78c03" /></div>
+
+</body>
+</html>
+
+--b1_74EJ2OcyWfyvPoIbF48l7p6WhEt6EBVYM2HIQPw9Oc--
