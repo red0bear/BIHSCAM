@@ -1,0 +1,131 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a0c:e001:0:b0:651:5f52:c509 with SMTP id j1csp1615045qvk;
+        Sun, 10 Sep 2023 11:16:48 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFrg84Zrn3/F5+t8ZQomrkHT6gM3mkJl7pFxRedZ1PnPfDZ++72nX+mLXSDOWZKd8N02mU5
+X-Received: by 2002:a05:600c:4f46:b0:402:f5c2:c6d9 with SMTP id m6-20020a05600c4f4600b00402f5c2c6d9mr6523177wmq.37.1694369808122;
+        Sun, 10 Sep 2023 11:16:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1694369808; cv=none;
+        d=google.com; s=arc-20160816;
+        b=J5L22lLgcvYE9CowkHsxTkkozLVv/AbY+MjT1nOdyoFA08d/r1qEAHAxmNAGhtvV/R
+         n8IxLXTJTvKk/dhnW+f8M0KKkfA8SBy6mBE1Hy1fGm//GoJGtYAMsmB8Fh+X8FyL3F9V
+         Co+OpQoMdc+NkSR1ZIlZFqXd4JKcRK7ubD7YP5fseBJSo2BdMFVYJyUjjI3Zw86xuR5x
+         A0+j4FslOkkfYZ6eCQceEcPEK6hccFCZ80/bXTxx4injy0n9UTATSVqsML4MDEEJlZZ5
+         sEN9Amf11Zr2XVrPo/e1khA06fsRifvkAj/5brpDOx9erMgtrfSG79F3Md0Z+xNw9fOU
+         4mmw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:in-reply-to:date:mime-version;
+        bh=LbHS8MruCn+Cgeoo3R1ZUUjLHq+ljyK+Aed8PeBOafo=;
+        fh=KIExv90yLDjbkawcj98YIwOhVSBmz5HPLi1Tg/S4R3U=;
+        b=ItYGDr6Hg2cLYFw/aiHzLxC9eQgCA0djqAbW77PJapxERrIJdbK6KnRVQDZnwz5kgW
+         b13/q5+YU5WhZxfvvwj+kbV4GUW/qHzfmISZwQj1ucDCsD3yPEx+GENEX8S1syGviTU7
+         +MPcXc10cZmU9nQZGKGyFJua/Elsx3e1uZHT7DDKB0yjjUe8oHjJ8TLrrES2+i3NiyB5
+         KnIdf01OWNzL9HX057eu94KV1A62Uk7/uc0cfq+Mj8G0UJvHtpHBGIolnI+rQoPQ/P2G
+         35LBH4tKCTvg5un1iFEdfLYLlUFf6kVbMYgpIVm39TMc7jt2JCTwyM9hVqfcyI8lyGVU
+         kQ6g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of return@chat.natura.net designates 192.142.110.25 as permitted sender) smtp.mailfrom=return@chat.natura.net
+Return-Path: <return@chat.natura.net>
+Received: from aprilaverybooks.carrd.co (howard.lalocavida.com. [192.142.110.25])
+        by mx.google.com with ESMTP id p11-20020a05600c358b00b00402d1691a18si2918257wmq.209.2023.09.10.11.16.47
+        for <fefe2560@gmail.com>;
+        Sun, 10 Sep 2023 11:16:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return@chat.natura.net designates 192.142.110.25 as permitted sender) client-ip=192.142.110.25;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of return@chat.natura.net designates 192.142.110.25 as permitted sender) smtp.mailfrom=return@chat.natura.net
+Return-Path: <return@chat.natura.net>
+MIME-Version: 1.0
+Date: Sun, 10 Sep 2023 14:16:47 -0400 (EDT)
+In-Reply-To: <njcwxejpulkvbup@howard.lalocavida.com>
+Message-ID: <AC7000000018A2710FC44E2FC0Eboardri_mkt_prod2@news.am.elementbrand.com>
+Subject: A encomenda LZ8948391235932AU sofreu um atraso.
+From: FEDEX <teamsupport-Fefe-8345550772231502742724210560143687242085154591518554502431365306@questionprov362961107682128606.com>
+To: fefe2560@gmail.com
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<title></title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css"/><!--<![endif]-->
+
+</head>
+<body style="background-color: #fff;">
+
+<table style="background-color: #fff;text-align:center;" width="100%">
+
+<tr>
+<td style="width:100%;">
+<b style="font-family:arial black;font-size:50px;color:#3C0089;">Fed</b><b style="font-family:arial black;font-size:50px;color:#FF6213;">Ex</b><b style="color:#FF6213;">Ⓡ</b>
+</td>
+</tr>
+</table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000; width: 600px; margin: 0 auto;" width="600">
+
+<tr>
+<td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
+<table border="0" cellpadding="10" cellspacing="0" class="heading_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tr>
+<td>
+<h1 style="margin: 0; color: #000000; direction: ltr; font-family: 'Roboto Slab', Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 32px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">Tentativa de entrega falhada</span></h1>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="10" cellspacing="0" class="paragraph_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
+<tr>
+<td>
+<div style="color:#101112;direction:ltr;font-family:'Roboto Slab', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:19.2px;">
+<p style="margin: 0; margin-bottom: 16px;">Caro(a) senhor(a),</p>
+<p style="margin: 0; margin-bottom: 16px;">A entrega da encomenda <strong>LZ8948391235932AU</strong> não foi efectuada pelo nosso motorista. Seleccione uma nova data de entrega para esta encomenda e evite que a encomenda seja devolvida ao vendedor.</p>
+<p style="margin: 0;">Esta é uma encomenda valiosa e requer uma taxa de manuseamento.</p>
+</div>
+</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td>
+<div align="center" class="alignment"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href = "https://storage.googleapis.com/q0a9e6o6m8d6j4h7/l3i0e7l1w1l2y4c0.html#ob9ixo?dVHqZHccT8JBcyN5CcdcJZcKcFH0hcRY6cbbb4V" style="height:41px;width:203px;v-text-anchor:middle;" arcsize="10%" stroke="false" fillcolor="#4d148c"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ff6600; font-family:Arial, sans-serif; font-size:16px"><![endif]--><a href = "https://storage.googleapis.com/q0a9e6o6m8d6j4h7/l3i0e7l1w1l2y4c0.html#ob9ixo?dVHqZHccT8JBcyN5CcdcJZcKcFH0hcRY6cbbb4V" style="text-decoration:none;display:inline-block;color:#ff6600;background-color:#4d148c;border-radius:4px;width:auto;border-top:0px solid transparent;font-weight:600;border-right:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;padding-top:5px;padding-bottom:5px;font-family:'Roboto Slab', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;text-align:center;mso-border-alt:none;word-break:keep-all;" target="_blank"><span style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:normal;"><span style="word-break: break-word; line-height: 32px;">Definir nova data de entrega</span></span></a><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tr>
+<td class="pad" style="width:100%;">
+<div align="center" class="alignment" style="line-height:10px"><img src="https://pbs.twimg.com/media/F5qWUzOXcAEj1Ln?format=webp&name=small" style="width:30%;" /></div>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="10" cellspacing="0" class="button_block block-5" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tr>
+<td>
+<div align="center" class="alignment"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href = "https://storage.googleapis.com/q0a9e6o6m8d6j4h7/l3i0e7l1w1l2y4c0.html#ob9ixo?dVHqZHccT8JBcyN5CcdcJZcKcFH0hcRY6cbbb4V" style="height:41px;width:203px;v-text-anchor:middle;" arcsize="10%" stroke="false" fillcolor="#4d148c"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ff6600; font-family:Arial, sans-serif; font-size:16px"><![endif]--><a href = "https://storage.googleapis.com/q0a9e6o6m8d6j4h7/l3i0e7l1w1l2y4c0.html#ob9ixo?dVHqZHccT8JBcyN5CcdcJZcKcFH0hcRY6cbbb4V" style="text-decoration:none;display:inline-block;color:#ff6600;background-color:#4d148c;border-radius:4px;width:auto;border-top:0px solid transparent;font-weight:600;border-right:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;padding-top:5px;padding-bottom:5px;font-family:'Roboto Slab', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;text-align:center;mso-border-alt:none;word-break:keep-all;" target="_blank"><span style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:normal;"><span style="word-break: break-word; line-height: 32px;">Definir nova data de entrega</span></span></a><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></div>
+</td>
+</tr>
+</table>
+
+
+<table style="background-color: #fff;text-align:center;" width="100%">
+
+<tr>
+<td style="width:100%;">
+<b style="font-family:arial black;font-size:50px;color:#3C0089;">Fed</b><b style="font-family:arial black;font-size:50px;color:#FF6213;">Ex</b><b style="color:#FF6213;">Ⓡ</b>
+</td>
+</tr>
+</table>
+
+
+<p style = "text-align: center; font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif; font-size: 13px;"> <br> <br>
+El anunciante no gestiona su suscripción. <br>
+  Si prefiere no recibir más comunicaciones, anule la suscripción <a href="https://storage.googleapis.com/q0a9e6o6m8d6j4h7/l3i0e7l1w1l2y4c0.html#ob9ixo?dVHqZHfcT8JBcyN5CcdcJZcKcFH0hcRY6cbbb4V"> aquí </a> <br>
+  O escriba a: 6101 Long Prairie Rd,Ste 744 #511, Flower Mound, TX, 75028 <br>
+<br>
+  </p>
+</body>
+</html>
