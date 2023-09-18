@@ -1,0 +1,99 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a0c:da08:0:b0:655:fc4d:7fa with SMTP id x8csp2048903qvj;
+        Mon, 18 Sep 2023 05:49:35 -0700 (PDT)
+X-Received: by 2002:a25:aa02:0:b0:d81:504f:f883 with SMTP id s2-20020a25aa02000000b00d81504ff883mr8107971ybi.8.1695041375023;
+        Mon, 18 Sep 2023 05:49:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1695041374; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Vveld+nuoO5jPh+3d3t7UdNwzdypj+ZRnPJugXLWHpaqYIW+L2HXq5r+UOmMbGbBoB
+         u65UrQt21YO4+FPoM/Ax7uGWQtXQpeAp4uzwBwBxrUEd+kd+bQpmUAd1hbx0oknx2xQu
+         jCyIohUjbY8GlSQK41+ZU6Gdyy2lKEYqF8HR1aTLglPn/rva1r/5i3psnvRrxHLVS2+E
+         13TQiL/vNcQAF4GSQqwAAae9RTibHyv95ahLr3i6IJ6NLMJcYKnjARuRurReuhckuUcp
+         xTUGKkyWMr9rbobSYIR+QHmzPs5PoHpKczfIW7ubDmOkpEonWO3ew/KfWB44cMrjsWze
+         nX9w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=EDHvwrOOImzXuihobQXJO1YNpPIcRfIu0QWT5AGwuO8=;
+        fh=Pr2plYkJn0ovdHybgHvE53243CPsqSX0NRPDPDnAMwQ=;
+        b=EzdZknxjB1I3Y0CQbFadgRl4mqFP9sKyzfhyykAlxQwY101vd1G5RKY3K625Ic1Oxj
+         uUl5t9ZjFa0vefG1GaWqtRYF62pwnu0EiJPllRjkpkwnmSBgosidYGIpAbFDJ2jli1E0
+         v8vDKEThw3vTWhVwE2+C8+MiMrps9QvdCX1mz5kaxaXSNVP2iWxx25lgg3tVuxDu1h63
+         B5kkbXgjOSt1ILB7PDF1vWpu8Pc9RpoLNDWA6ygb9RWpqiGpSwyiuezG13efZcWcSKnI
+         12sKUGJWFBsmyN/6Zquxhh646mxkbOpvdCY3T4IUrWPVOnKi9iJO1ex+XTxt41R94cmM
+         6LEA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=fe7ptVwC;
+       spf=pass (google.com: domain of aubreymasseyjrlj2856@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=aubreymasseyjrlj2856@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <aubreymasseyjrlj2856@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 62-20020a251041000000b00d8163e6735bsor2678808ybq.15.2023.09.18.05.49.34
+        for <fefe2560@gmail.com>
+        (Google Transport Security);
+        Mon, 18 Sep 2023 05:49:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of aubreymasseyjrlj2856@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=fe7ptVwC;
+       spf=pass (google.com: domain of aubreymasseyjrlj2856@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=aubreymasseyjrlj2856@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1695041374; x=1695646174; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=EDHvwrOOImzXuihobQXJO1YNpPIcRfIu0QWT5AGwuO8=;
+        b=fe7ptVwCVD6AjrgDeEdX+H8BogddhQGwUiG/lMjpx0MamUsiuAppeQZcG16sbcooV4
+         K/JpMaNiabqECkcQ86D7uO1cCnnIumcs8EdAQZS/2iYgoHLszki2DOa64YT7z4F5tchb
+         UM55TPwrjP8hwpYkJL4a+Iv1gmKXGy4DSpg6uAONFcvo1eZ9UGu7THUFbhkRq9BlPLBM
+         1x2UqqpET6CQE7mUzKSwR9Vz2lv+F1Ky0ldqzlUB0EuSRj1w7dQ67Jb2BpGjK3miLxoo
+         aLDuvm6J7KlCYGTyaoKGpfsbJZ7fKEiE9Hc0BOTcPclsjV1ze13sZdDnYIXyOP71rnCK
+         60Ww==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1695041374; x=1695646174;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=EDHvwrOOImzXuihobQXJO1YNpPIcRfIu0QWT5AGwuO8=;
+        b=p3RVqC4WhUzy4A1FgDpVbw+QgVbSdwImPXMzAGPJ6WG96yqpT0QFo8iylGUic2qAki
+         Y1Nx5kpAtQ9SNLqZDqNGtSr8kdo/zyKB2hSm/Z/Dgt8eO0s+ruHtGyNopJ2O5uVZ27r3
+         s44hE6uYo2kixCtNt2myBHd9iG3yUh0Thd2YMDGSjpoptH5dc3OaxHMX2021NS9W14DM
+         9nWKmY+IYBGYFQ+K/F3wvH9qhoz0dOHGGa3iAbwJG1aXQ7P2Md1miwbD75UUHOPg+5OH
+         d6N+VbhS6NW++49wbt9FJ1qBHSc9IctnYQ5JIZp+9G/ABlugfWdzR+4ecrzVIdkWBpVt
+         T9FQ==
+X-Gm-Message-State: AOJu0Ywp+Gqt3xGrvR0CeXLXViC9w9AxG7Speb79QRCZAUrUIxDHi9tp c/aTUXPbx4f4EoaogpwWlIXKebmJQfG0NQrsbA==
+X-Google-Smtp-Source: AGHT+IEtSw9CAI8qESnlhYYln49Fmac0MUgtIv/TNCL37Wb513hzsDG7+dUtXcRRisP3mCrlJcvV8EFxRd9DQrKi1aI=
+X-Received: by 2002:a5b:70b:0:b0:d7a:c0b8:f171 with SMTP id g11-20020a5b070b000000b00d7ac0b8f171mr8541625ybq.37.1695041373501; Mon, 18 Sep 2023 05:49:33 -0700 (PDT)
+MIME-Version: 1.0
+From: "Billing Team_A3#R" <aubreymasseyjrlj2856@gmail.com>
+Date: Mon, 18 Sep 2023 12:49:22 +0000
+Message-ID: <CAKzow0A2DDhgMKE-Xp0pVuumEPbzg4EYmJBVV72fvbOca_i2Lg@mail.gmail.com>
+Subject: INV-278
+To: undisclosed-recipients:;
+Content-Type: multipart/mixed; boundary="000000000000f3171f0605a19214"
+Bcc: fefe2560@gmail.com
+
+--000000000000f3171f0605a19214
+Content-Type: multipart/alternative; boundary="000000000000f3171d0605a19212"
+
+--000000000000f3171d0605a19212
+Content-Type: text/plain; charset="UTF-8"
+
+4356789-96-6-7145265376
+
+
+
+Thank u
+
+--000000000000f3171d0605a19212
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">4356789-96-6-7145265376<div><br></div><div><br></div><div><br></div><div>Thank u</div></div>
+
+--000000000000f3171d0605a19212--
+--000000000000f3171f0605a19214
+Content-Type: application/pdf; name="2347689-898625463.pdf"
+Content-Disposition: attachment; filename="2347689-898625463.pdf"
+Content-Transfer-Encoding: base64
+Content-ID: <f_lmovun750>
+X-Attachment-Id: f_lmovun750
+
+
+--000000000000f3171f0605a19214--
