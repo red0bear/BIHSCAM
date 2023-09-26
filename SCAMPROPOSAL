@@ -1,0 +1,97 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a05:6214:2cd4:b0:65b:e2:5407 with SMTP id lf20csp1425665qvb;
+        Tue, 26 Sep 2023 02:11:29 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHjy3msopl6y64i9ZUlCPIfENwHtDb812zVu1QlagW+8sfBN+74Cq1ri7qXrifEFmBqngCT
+X-Received: by 2002:aa7:c252:0:b0:523:2e0e:5462 with SMTP id y18-20020aa7c252000000b005232e0e5462mr6277724edo.42.1695719488726;
+        Tue, 26 Sep 2023 02:11:28 -0700 (PDT)
+Return-Path: <epimentel@ipca.pt>
+Received: from EUR04-VI1-obe.outbound.protection.outlook.com (mail-vi1eur04on0714.outbound.protection.outlook.com. [2a01:111:f400:fe0e::714])
+        by mx.google.com with ESMTPS id cw5-20020a056402228500b00533c4d2099bsi6210901edb.366.2023.09.26.02.11.17
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 26 Sep 2023 02:11:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of epimentel@ipca.pt designates 2a01:111:f400:fe0e::714 as permitted sender) client-ip=2a01:111:f400:fe0e::714;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ipca.pt header.s=selector2 header.b=mFL3cVxd;
+       arc=fail (DNS record missing);
+       spf=pass (google.com: domain of epimentel@ipca.pt designates 2a01:111:f400:fe0e::714 as permitted sender) smtp.mailfrom=epimentel@ipca.pt;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=ipca.pt
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=WB7fEL8aWZqAOqhgJf1b4TFNJY7PDEwztjq+MsDelpZGOvkKbyZF27TmPMNb0tnvHPJBEvtKjF2MEGonPCfJn72YqfYaDid5g13n2hgvGhSbt0mWtxj3pJjd0f1XpkP4x5o6ZW4HRV4pGNbkrQbVJbs7ahKQgtPULmeMnKcgWhM3MZvpOQZzFtts3E7Vi2OC2NqIDtHlB1W21XPYZxSXHwNzkclwdWWGQlOSG9aGyx5H7O+//xOP/Ocl7h0EGQS705IvmTHiievaiC9v8WGL5fcAfwFm0rTSxMfOtmQ45pCZhGxpAcOYjbW1OGFIUX4BPztTinWXNB+orP/JXZ8H9w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1; bh=x5BXecCjMD1Z7u/71y90LCFVr49saKMQGPGJqI81snA=; b=SM27PxIpVHu9HRvzEWTDEZum8SSobVEBBoTmYXPxMVWnvGqRUnmBbzxjaq+7hgT2iQacoYijbCAVDu0q1Ehj3iS8znibpmt7TQ8TqeCNpOJCV67xv83rT3mrYIfpyVhSQTi1VNRSqJaeWUHQOlu74VrjMEMSEDXlOQVFaZiC5Bx6/9Oxy6w6hIydoh/+fwRd20Kq3lmhfGFQkiBy1gFEThg9kwt44CmhjJDYJR5nCnFxFprQct15P0R8DWrQINKcUZQBV8zM+wDJ5TLfQ3XUukeWh88mGrKLZqVVnq02w+TzzB2sN2krFkIHXwecXaUYyvMILdW56ERqEvcZSl3ecg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=ipca.pt; dmarc=pass action=none header.from=ipca.pt; dkim=pass header.d=ipca.pt; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ipca.pt; s=selector2; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=x5BXecCjMD1Z7u/71y90LCFVr49saKMQGPGJqI81snA=; b=mFL3cVxdBm9yM2SEAtPF6TlnC8AGWeU0oBHMhNO10rVU7uuyqmCVGkTqXqIWzN8XvxUJAnIFOkbH/JTRsdC3LikdKlADjJ19g7PFP8vtfQcEKuudve8H551S6dY3HbckJsiqWODUv2cy6df0+tVpjEbh44vUeK9E9aqDHG+Smcg=
+Received: from VI1PR07MB4797.eurprd07.prod.outlook.com (2603:10a6:803:70::26) by DB9PR07MB9857.eurprd07.prod.outlook.com (2603:10a6:10:4c8::9) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6813.28; Tue, 26 Sep 2023 09:10:43 +0000
+Received: from VI1PR07MB4797.eurprd07.prod.outlook.com ([fe80::2957:e645:5509:4014]) by VI1PR07MB4797.eurprd07.prod.outlook.com ([fe80::2957:e645:5509:4014%6]) with mapi id 15.20.6813.027; Tue, 26 Sep 2023 09:10:43 +0000
+From: "Eduardo José de Sousa Pimentel" <epimentel@ipca.pt>
+Subject: Checking
+Thread-Topic: Checking
+Thread-Index: AQHZ8FkHDvavh3D0vEqEZHHjBZ2rgg==
+Date: Tue, 26 Sep 2023 09:10:42 +0000
+Message-ID: <VI1PR07MB47974780600E5F0B33D1F3E2ACC3A@VI1PR07MB4797.eurprd07.prod.outlook.com>
+Accept-Language: pt-PT, en-US
+Content-Language: pt-PT
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: dkim=none (message not signed) header.d=none;dmarc=none action=none header.from=ipca.pt;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: VI1PR07MB4797:EE_|DB9PR07MB9857:EE_
+x-ms-office365-filtering-correlation-id: 7746ae1e-317b-489c-4421-08dbbe7075eb
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: U4+eFWtiyH4mCCTQbzIVP+CmV42NcMHG9UgsJFR/GDOZiPJJKJEQd2Xqvp6E34ZzCtzZk1t7FtYT1AMmUjCa/CpQrVhZVKfFqob8LbkxVJwyIxY7mtf2LW0yjwx89ToeAaMiXojl3D8FPcKFwrvYGXuyVGOjG3gXTMkLfamISa1OuuEWPcyfDibd4ULBkAdqgHjm3myg8BsXqWB6JRlOMDln5ECktaT9qs1dvr7qlCzFwvxL5iR1Sbv/2UKQ+qG733qmLuvOYaLvNOkSyeWHRfg0obhJSQtlorJKlQxPdnKKmXuuFLtdrR05XcM73p9vZrOUfFEojTuzQSuroPO9X4xN2O2G6eKfEPjKSpCM+OvsgLbnpMw4FNdLUsN6quwY7PAxnGLl02dowPt3j52DQMI1R+lUjM3+nfGoZd0avFT/fK6GAoToLYgS/7lMg1PnzNgoFhaUv2oHZ35UtYVPUzxJIF5CQOJgujO+b70PqYeu5wDz/NemqwGfaAfFsPUxSrJgmUwV8qJmz5OMdPMZaTnqR795VuErwR4xfN5SizHmx+LYwoYx47V7Vm+cwTOtv+bulvYVz8Di7QfyQzZnO0uSfN12mj9GytwKI2We8hbGbOQ5NxI6Rwj2s3gZnTFzCd2SfchoBzByiBMt2X09hg/UJQqTbeirEFOvyCZA4HQ=
+x-forefront-antispam-report: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:VI1PR07MB4797.eurprd07.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230031)(396003)(366004)(136003)(39860400002)(376002)(346002)(230922051799003)(451199024)(109986022)(1800799009)(186009)(7416002)(19627405001)(26005)(7366002)(7276002)(66446008)(41320700001)(2906002)(316002)(55016003)(786003)(41300700001)(52536014)(5660300002)(8676002)(7406005)(7116003)(8936002)(7336002)(558084003)(76116006)(86362001)(89122003)(76576003)(33656002)(7696005)(88732003)(66476007)(91956017)(66946007)(6506007)(64756008)(66556008)(71200400001)(9686003)(38070700005)(122000001)(38100700002)(478600001)(3480700007);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: ZUewnl11+Juk8i2K+fbW3+NYb38fmbn6C2qiTNcW2Bf+Cq+cViydV1kN0CG4hY6GNN7H70BKKAHJHJ2aXuaWR7tScLej09KN+VJK3/8M2LZ2g5iiV6r1n0Qx/DGmpDs9EfI54VjKC7eKuc3A0pN9ij1oA5OWCHD58Tl42/ffhFvq22CKLTPvyM6qlAahkOxO+V6lZ425FrZOjQuaKV8Wt24Jy89llQmzWX2PjNUBtdUrZRKuBFiRqg1ViqCKumxek62gesRTbwrYrCGu8A7DGMeGTGvhubLurttqOYpElXC0JJu+g8d6N27ryj89Ud7a8nTZEoFrnpyZpIhEayPlcoJhzorL6Y6J+9kxgSuFnyY7jPmU5/AmhcqcP1rus9wmz8ip5pb1UJGs3UwemrsJFZAsaG+KnC98OOQODpmDps/+k21ahmJ3QJJuphN27rxqpRn6gIhcm6zQR0wl1b9QKYLujgsrowioYDVcYCimkGBv2IIiVPSc0ClWdQSCfYtLZ1KotRkWqOu5K0C68t9DpC2kNyXIttEjgOIk0bBgITZdjBYbFa/jvpPDknZcxwHLzFFgVMgD5nSY6AF5RJ7UdenEVQT8m3XMBON9TMxZHqRlxyRa5TKx8gaUK8MmIXQXrtNdLiJSMIxEkI7GU8CQZxjNo1yoUb1ah+nfjh7dng00Mv3QM93jYG/1vJpS8gNySuDq3J5RVid79jNKFqDQi4otFT2aikH636Ym+s/WL41RxVV1ez9PTjfgPszrsR26AsgCfVLwyP1hnjLGSkg4wyirO5BqRWmJDFNXsqz2t4XeaJiSh4DydZG+HvfHr7w4FiIzar3q0NRoYJqaotdlghuVTYQNl7HXDRluWVOhbyt/ACD+WKv8N9j9ICye715iGgjEc+GwukoOfkTiq6XBAIOkdb47WSYvRY7Ka+Ft2gFJpsFoCKNkxGg7iWPaNmdtFUF9yLbpboEdcR7crFaHiqCOZoWW9yW/bUU972gal0LMPtR1Sz0E2iWqEehJgIfZ3Am6OvTJN5Krg8Hnco0ofDUKg2b/a+RfUy9RbKCB/SFl4XFoVHYc+6wIU+9kjW50HFKAV7XlSQ7GlF1hbVvTvdWWxq7E94kRdMRuHqmqEdU0Cq4Cwf2eDJoFCPCoLit0IRpPte0IiZExbzkUUdfBKW5+gDngMz7g0OVIsYF/4oZfCO+0In6cLQk6hCIxUBZVEWrEHfGHviZNWGaROirvEmD7WsdPyyLhcPDXhvBVbCGH2/wXv78Ri06cPTuG5Zqi4Jk3IyHQ/ad2aXh6Gs9Yp9/CZTr9Po52WbRq0ltBlRO4Hvm+HpqwfjFeklD5QWeO3y2sQ1GSuxTCf75AUuX/BLla9kJUufw89uz+V1ZctYF9B50/ZjEhCxa80AzXlD7hvX9SdnFw5MuK1YOV2uM4puI3aeAh1V/95yv5XaUyW+VHruQn4cPO+f7NJ9OWIJffk42s1xo9eo0+VTKueuhwLbHPMfDBMcafousXTCr059LC205zhqUQj8mV4V62nr6dHdzgL0SM9fmJ09nor6+Bg6wORHplhSFnAB9Vw4XudpU=
+Content-Type: multipart/alternative; boundary="_000_VI1PR07MB47974780600E5F0B33D1F3E2ACC3AVI1PR07MB4797eurp_"
+MIME-Version: 1.0
+X-OriginatorOrg: ipca.pt
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: VI1PR07MB4797.eurprd07.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7746ae1e-317b-489c-4421-08dbbe7075eb
+X-MS-Exchange-CrossTenant-originalarrivaltime: 26 Sep 2023 09:10:42.6470 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: dcd9e721-82cd-480a-bf8d-d918cac6e650
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: GXjtPBoSwijtZ1aLFBstRIVdnNHRPIjCAMUXouLTyVwUenAGEnTnm5EAWI5b2S2JYwkz1N32lN49m7PGjuijRQ==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB9PR07MB9857
+
+--_000_VI1PR07MB47974780600E5F0B33D1F3E2ACC3AVI1PR07MB4797eurp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Good morning.
+I wanted to ask if you were still using this email.
+My boss wants to share an international business proposal with you.
+
+Eduardo
+
+--_000_VI1PR07MB47974780600E5F0B33D1F3E2ACC3AVI1PR07MB4797eurp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<span style=3D"margin:0px;font-size:12pt">Good morning.</span></div>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<div style=3D"margin:0px;font-size:12pt">I wanted to ask if you were still =
+using this email.</div>
+<div style=3D"margin:0px;font-size:12pt">My boss wants to share an internat=
+ional business proposal with you.<br>
+</div>
+<div style=3D"margin:0px;font-size:12pt"><br>
+</div>
+<span style=3D"margin:0px;font-size:12pt"><b>Eduardo</b></span><br>
+</div>
+</body>
+</html>
+
+--_000_VI1PR07MB47974780600E5F0B33D1F3E2ACC3AVI1PR07MB4797eurp_--
