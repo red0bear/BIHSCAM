@@ -1,0 +1,540 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a0c:e00b:0:b0:65b:e2:5407 with SMTP id j11csp2383130qvk;
+        Tue, 3 Oct 2023 19:57:51 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGyvNCOGT9J3JViniwtdvDhLI7wr0sDhWsUw6DBYHYdMZj//JAKWIp/UKRv994P0mLJQZpR
+X-Received: by 2002:a2e:9dcc:0:b0:2bd:2240:8376 with SMTP id x12-20020a2e9dcc000000b002bd22408376mr847273ljj.14.1696388270705;
+        Tue, 03 Oct 2023 19:57:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1696388270; cv=none;
+        d=google.com; s=arc-20160816;
+        b=bDjc/orCnFI+EK8o2l5mLSdLPj2NaM14Z3gnrVPhjCQcatk3mPtvZhHCKNxS3lyBlU
+         eKVJtnSVEQ1+d3PwqR5BrFJgxtxxSqnvVN7/4J0kTwVUa8OL6sKO6I92HcEortc1xgwL
+         38MO9D494RGgqwyGJdkZcSW0eIvP2gdX3SH0qZg27grE30KGRHGT2EdKb/VzDZIgZYHm
+         BsCPM9QP2i7f1GlEQbSXR1CWrJcCHgxSDmwh+sUosCh110BmhVYYkoMTA/u92Ob7yOTJ
+         sV+9wFU0vg/bWsByS+bNn+mrNIBfo0GFBqbcdtQVsPbHfkr0pogzDjnoh/CUkbgjcGbg
+         zK6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:list-unsubscribe:precedence:reply-to:subject:message-id
+         :mime-version:from:date:dkim-signature:dkim-signature;
+        bh=4WWBfuHNtZrveASq3lhS6qiii+z89J3EJDfEzcDZpHY=;
+        fh=KIExv90yLDjbkawcj98YIwOhVSBmz5HPLi1Tg/S4R3U=;
+        b=N3QEV5mWAOVdCV4wfoS9hFYqPsG1R16gWc3a/JoMxaU1qOV3NUZ/X+eJPqCMT2LHbd
+         DJpgBu7s9dTx4yV6ye/2CvLdCr0/jYyaHItGVNLcrnk2JEhHvdySDLPVp6eEuD1G3MvU
+         uUGdZHm1frJH/ux8wrUDZw7kBpejbQ7g54xFcPQ7bJYwmXjVTuMtm1Ulox119mmwM55p
+         5f8EcetWJyDn9Y0o1QX9GepM1S66PrvPugxQ0mHUSf1i4leH8BDVnBA6r7dM8mwxkWQB
+         XEF8FbrgFFinjLaemylpMM5HRBY/QWGUiRH0eZY8wsVRpu4SjprImjOnx8xYEsZVPimS
+         52JA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@desenvolvimento1.com header.s=s1 header.b=NLywNP87;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=RMQtojQU;
+       spf=pass (google.com: domain of bounces+37894665-cec5-fefe2560=gmail.com@em896.desenvolvimento1.com designates 149.72.123.24 as permitted sender) smtp.mailfrom="bounces+37894665-cec5-fefe2560=gmail.com@em896.desenvolvimento1.com"
+Return-Path: <bounces+37894665-cec5-fefe2560=gmail.com@em896.desenvolvimento1.com>
+Received: from s.wrqvtbkv.outbound-mail.sendgrid.net (s.wrqvtbkv.outbound-mail.sendgrid.net. [149.72.123.24])
+        by mx.google.com with ESMTPS id a7-20020a2e8607000000b002b6d0c9a61esi2735182lji.240.2023.10.03.19.57.49
+        for <fefe2560@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 03 Oct 2023 19:57:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+37894665-cec5-fefe2560=gmail.com@em896.desenvolvimento1.com designates 149.72.123.24 as permitted sender) client-ip=149.72.123.24;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@desenvolvimento1.com header.s=s1 header.b=NLywNP87;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=RMQtojQU;
+       spf=pass (google.com: domain of bounces+37894665-cec5-fefe2560=gmail.com@em896.desenvolvimento1.com designates 149.72.123.24 as permitted sender) smtp.mailfrom="bounces+37894665-cec5-fefe2560=gmail.com@em896.desenvolvimento1.com"
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=desenvolvimento1.com; h=content-type:from:mime-version:subject:reply-to:list-unsubscribe: x-feedback-id:to:cc:content-type:from:subject:to; s=s1; bh=4WWBfuHNtZrveASq3lhS6qiii+z89J3EJDfEzcDZpHY=; b=NLywNP87hnEImtfGOm+PlNKYqspJ3b2O3jXpuuh23eMK/nxQ3+UVZgNQG0xyV5gSWvYk rLpT07HYMbVVBw/QB9rqTGbI4rGmDKbVyjwV6zabFhlK6pSelt3CaGVpBtx/ElVf7DaoEB RPgn9I8OG2q6dzh657vMRNyDUtHVy7RDlcl54ZVFPGq+pyj54lhLRuDorNSs/tB8RzIJl1 yevEdCChlBWNrxb0tz6n4RIS1B2D3Hg+6IiC+EWA191jh2BVkcB9Rh6KWPeuvHNYVxUIon IEYPUS6jzu/6fp86/Mz5yfW2IvhABFy0pM3EOyJJ0IXBSfWtf9Kx5dbguyMSXrtQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info; h=content-type:from:mime-version:subject:reply-to:list-unsubscribe: x-feedback-id:to:cc:content-type:from:subject:to; s=smtpapi; bh=4WWBfuHNtZrveASq3lhS6qiii+z89J3EJDfEzcDZpHY=; b=RMQtojQUp5zFGoT7vJq/9g9USTvU73Q7uFGTvEzNmqxASlIoW4IWcbJL5KSbzyCzAtB8 EUUL9QBI6gBTd57nfRhTqFRHeGaHL5NZyAfMmFfnXaLLxnTzRUNMT/s5a2K7hBwElx5BaT Ef3/E8woj+kAba+F/peX4SKVcPgUbK8xw=
+Received: by filterdrecv-57bfc579f-x28vr with SMTP id filterdrecv-57bfc579f-x28vr-1-651CD4AB-13
+        2023-10-04 02:57:47.915354167 +0000 UTC m=+9444999.441650909
+Received: from Mzc4OTQ2NjU (unknown) by geopod-ismtpd-0 (SG) with HTTP id flduDPqVRyqhGNhXoLY_Sw Wed, 04 Oct 2023 02:57:47.896 +0000 (UTC)
+Content-Type: multipart/mixed; boundary=0e702afcfdff786793bd9a00e4c1d1eb39737144747b8ca385aeaa967dd6
+Date: Wed, 04 Oct 2023 02:57:47 +0000 (UTC)
+From: "Locaweb Servicos de Internet S/A" <noreply@desenvolvimento1.com>
+Mime-Version: 1.0
+Message-ID: <flduDPqVRyqhGNhXoLY_Sw@geopod-ismtpd-0>
+Subject: Seu site será bloqueado em breve
+Reply-To: locaweb.financeiro@localhosting01.com
+X-Acelle-Subscriber-Id: d47536b0cb4a1
+X-Acelle-Customer-Id: 651431754084f
+X-Acelle-Message-Id: 1696388267466091.651cd4abaa24b@desenvolvimento1.com
+X-Acelle-Sending-Server-Id: 651cc3f6c74a5
+Precedence: bulk
+List-Unsubscribe: <https://em.locawe3.com/c/d47536b0cb4a1/unsubscribe/MTY5NjM4ODI2NzQ2NjA5MS42NTFjZDRhYmFhMjRiQGRlc2Vudm9sdmltZW50bzEuY29t>
+X-Acelle-Campaign-Id: 651cc3f6c74a5
+X-Feedback-ID: 37894665:SG
+X-SG-EID: aX4wT2JfwNMmUu24mfJKfyvO/0+YkJpC7Cow4FGFLVhMr1AZIx2qPRxywy1hhyRrtllxfx/yPc/yuf1GeHqZ44+jSP97dR/FfKEsMqmoap05d0NumJ/XP7F6HU5JNoNpwjzzH2aTNQzbDNgzfVlO3xXx4/Z4OA0vPm95Ltck+xgyGskedpSkmz8diKZ8AoKFle6gKuX/oL1E/IuwZgRDgfsx04SpZ0cV1e/IMkBdfyvFbWN5EvlGYbxVsrnl1ewffMCT8YMxd9+10JB04w9h7YQywazD743hCEAWJUmo9r4=
+X-SG-ID: N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi/K3G15yh8B0CFOspNc9xyltKjiO8dffetjaLjROdpYwkBrGv4nqjvxIG2c+WqNVNDVZ7mL2RKViKt9xVN+guydtki/dX2bBANzcAbN6njxPCfhD2sPkm+PEI0dJ1/oQXlc=
+To: fefe2560@gmail.com
+X-Entity-ID: qKpls1fwmaRTuVuGq3ZHGg==
+
+--0e702afcfdff786793bd9a00e4c1d1eb39737144747b8ca385aeaa967dd6
+Content-Type: multipart/alternative; boundary=051562e1e3c6ca1437f937e83df2a4ea263936bc9a02afeef7acbbcfb60e
+
+--051562e1e3c6ca1437f937e83df2a4ea263936bc9a02afeef7acbbcfb60e
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=iso-8859-1
+Mime-Version: 1.0
+
+https://u37894665.ct.sendgrid.net/ls/click?upn=3DyBao8b1gP8a2u3nhQq2x1qidYO=
+aurimAbQAIwhq6lvVlDVlbxRQVB1pqRp0KchXmYP_6_bKEQIpCcD7COB-2F9sbmoN2IaXHv0ran=
+VIb9PgsPeyUwx3dV-2BBW-2FqeJ4U-2BShb6p2Y4I-2BZgHXetvfPnDNJzaBnZV0dcZAV6Dba6b=
+xB7HvGQydW-2FD5cv1o7Yma-2Bq9lQE5YdwZsYKmQhECbDORLpB6n2nejdBa7iJ-2F2LSfymvF7=
+yHSgd7e4TRfE3tGs4ffPWOvK8CN23ub0Tin1ve9binsJqTV6WUK4XJ46LHDm4488YLrtsvjaqEu=
+tfgv8LIGi4Nq8rC1Ge-2BFbzXHL-2Bon2ZTkVkPJ3TOgbJ0c2mh7Eys0VmoSw-2FFCZjQVZtgVS=
+PiUrQPD1Q7TiFzWHMQ5Rfn-2FzcclymkVw-3D-3D=09Central de Atendimento
+
+SEU SITE SER=C1 BLOQUEADO EM BREVE
+
+Ol=E1 tudo bem ?
+Meu nome =E9 Marcelo Matos do setor financeiro da Locaweb, quero lhe inform=
+ar que a sua hospedagem de site anual da sua empresa expirou, segue abaixo =
+os dados da fatura.
+
+J=E1 =E9 possivel efetuar o pagamento da fatura em aberto, segue em anexo o=
+ boleto ou QR Code do PIX abaixo para pagamento.
+
+Evite o bloqueio do seu site!
+
+CASO TENHA ALGUM PROBLEMA PARA VISUALIZAR AS IMAGENS DESTE EMAIL, INSIRA O =
+MESMO NA SUA CAIXA DE ENTRADA OU MARQUE COMO "N=C3O SPAM".
+
+_______________________________
+
+Fatura: LOCAWEB202334881208
+Cliente: fefe2560@gmail.com
+Servi=E7o: Hospedagem de site empresas anual (12 meses)
+Valor: R$ 369,90 / anual
+Per=EDodo: 21/09/2023 a 20/09/2024Vencimento: 28/09/2023
+________________________________
+
+Ah, s=F3 pra te lembrar: o banco demora at=E9 2 dias =FAteis para nos infor=
+mar que o pagamento foi realizado. Pedimos a sua compreens=E3o. :)
+
+Pagamento (Boleto Banc=E1rio)
+
+Pagamento via boleto banc=E1rio em anexo.
+
+Caso n=E3o consiga visualizar o boleto em anexo ao email segue o n=FAmero d=
+o c=F3digo de barras para copiar e colar:
+
+74593.10046 27222.012000 01044.594719 1 94930000036990
+
+ou PIX:
+
+Ficou com alguma d=FAvida? Consulte a nossa [Wiki](https://u37894665.ct.sen=
+dgrid.net/ls/click?upn=3D9Ts9ZrZpOqlRDK3RkY6kuS7prcfGOp8KEbxBrkUm2nBgwFcDMq=
+GX9ppDxsIMqNaK-2FnE-2FF38D2bPvzBZA9-2BjKzD2qyjETrUsN-2BT-2FM3nf9FXA-3DM3go_=
+bKEQIpCcD7COB-2F9sbmoN2IaXHv0ranVIb9PgsPeyUwx3dV-2BBW-2FqeJ4U-2BShb6p2Y4I-2=
+BZgHXetvfPnDNJzaBnZV0dcZAV6Dba6bxB7HvGQydW-2FD5cv1o7Yma-2Bq9lQE5YdwZsYKmQhE=
+CbDORLpB6n2nejdBa7iJ-2F2LSfymvF7yHSgd7e4TRfE3tGs4ffPWOvK8Ck0Tu79MzZCO-2BXMR=
+EDuiYCqj10n-2F0PwzTZX-2Fw8A5EMn-2BaRLdwDP3k91W84eLRi8IEUHiKeeWXtChqE4Hz2mzZ=
+xJJVGGVhVAO8xGtyCoZgseuoF4T7ZofhT0mkOVTiAKmRZUBYrBwp1T3apdrfZmE1bw-3D-3D
+
+At=E9 logo!
+
+Equipe Locaweb
+
+https://u37894665.ct.sendgrid.net/ls/click?upn=3DyBao8b1gP8a2u3nhQq2x1qidYO=
+aurimAbQAIwhq6lvWvk7KhM8LwL-2FXNxYDIQbitrrlD_bKEQIpCcD7COB-2F9sbmoN2IaXHv0r=
+anVIb9PgsPeyUwx3dV-2BBW-2FqeJ4U-2BShb6p2Y4I-2BZgHXetvfPnDNJzaBnZV0dcZAV6Dba=
+6bxB7HvGQydW-2FD5cv1o7Yma-2Bq9lQE5YdwZsYKmQhECbDORLpB6n2nejdBa7iJ-2F2LSfymv=
+F7yHSgd7e4TRfE3tGs4ffPWOvK8C6Kmr6d8AtTBe5WL0rE8O1aTJd7XdkT-2Bifm-2BtRFOeO57=
+1aNtBLI84MlraYVkvcwPbnssQiJXS0uPSwXdGbHR4lLQDTv7-2FBw-2FhmiqCVwB3TmtEiqT-2B=
+810xVTL-2FT-2FIwzss8P6WKAY0TGMbyrmPvQHpIEA-3D-3D
+
+N=E3o enviamos boleto banc=E1rio por correio em sua resid=EAncia=09[This is=
+ a tracking pixel][X-Client-Message-Id: 1696388267466091.651cd4abaa24b@dese=
+nvolvimento1.com]
+--051562e1e3c6ca1437f937e83df2a4ea263936bc9a02afeef7acbbcfb60e
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=iso-8859-1
+Mime-Version: 1.0
+
+<!DOCTYPE html><html lang=3D"pt" xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+
+</head>
+<body>
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=
+=3D"height: 1930px">
+<tbody>
+<tr style=3D"height: 22px">
+<td style=3D"background-color: #d72741;height: 22px;width: 651.023px">=A0</=
+td>
+</tr>
+<tr style=3D"height: 113px">
+<td height=3D"113" style=3D"background-color: #283542;height: 113px;width: =
+651.023px">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"1%" height=3D"60" align=3D"center">=A0</td>
+<td width=3D"45%" align=3D"left"><a href=3D"https://u37894665.ct.sendgrid.n=
+et/ls/click?upn=3DyBao8b1gP8a2u3nhQq2x1qidYOaurimAbQAIwhq6lvVlDVlbxRQVB1pqR=
+p0KchXmmZgF_bKEQIpCcD7COB-2F9sbmoN2IaXHv0ranVIb9PgsPeyUwx3dV-2BBW-2FqeJ4U-2=
+BShb6p2Y4I-2BZgHXetvfPnDNJzaBnZV0dcZAV6Dba6bxB7HvGQydW-2FD5cv1o7Yma-2Bq9lQE=
+5YdwZsYKmQhECbDORLpB6n2nejdBa7iJ-2F2LSfymvF7yHSgd7e4TRfE3tGs4ffPWOvK8C5WZbe=
+j6l093gl6w9fRofh1gAB-2B-2B7CKG-2FTIFy1Xbs1xdt26Lr08d9-2BooP8ITEH7Tm436sJUgX=
+4BInlCkaZKZC-2Fuv-2F7bJVpoAyJiRnlIt1vVgDuIagVfN-2FO-2BUsw-2F-2FxxAW8m-2FPCX=
+FEZm0-2Bx27WV0m93ng-3D-3D"><img src=3D"https://webhosting001.com/img/logo.p=
+ng" width=3D"130"></a></td>
+<td width=3D"42%" align=3D"right" valign=3D"middle" style=3D"font-family: A=
+rial, Helvetica, sans-serif;color: white"><strong>Central de Atendimento </=
+strong></td>
+<td width=3D"9%" align=3D"right"><img src=3D"https://webhosting001.com/img/=
+monitor.png" width=3D"39" height=3D"35"></td>
+<td width=3D"3%">=A0</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"height: 32px">
+<td height=3D"32" bgcolor=3D"#FFFFFF" style=3D"height: 32px;width: 651.023p=
+x">=A0</td>
+</tr>
+<tr style=3D"height: 39px">
+<td bgcolor=3D"#FFFFFF" style=3D"height: 39px;width: 651.023px">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"3%">=A0</td>
+<td width=3D"97%" style=3D"color: #253543;font-family: Arial, Helvetica, sa=
+ns-serif;font-size: 18px"><img src=3D"https://webhosting001.com/img/aspas.p=
+ng" width=3D"21" height=3D"17"> <strong>SEU SITE SER=C1 BLOQUEADO EM BREVE<=
+/strong></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"height: 22px">
+<td bgcolor=3D"#FFFFFF" style=3D"height: 22px;width: 651.023px">=A0</td>
+</tr>
+<tr style=3D"height: 229px">
+<td height=3D"176" bgcolor=3D"#FFFFFF" style=3D"height: 229px;width: 651.02=
+3px">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"3%">=A0</td>
+<td width=3D"94%" style=3D"color: #253543;font-family: Arial, Helvetica, sa=
+ns-serif">
+<p><span style=3D"font-size: 10pt">Ol=E1 tudo bem ?</span><br><span style=
+=3D"font-size: 10pt">Meu nome =E9 Marcelo Matos do setor financeiro da Loca=
+web, quero lhe informar que a sua <strong>hospedagem de site anual da sua e=
+mpresa expirou</strong>, segue abaixo os dados da fatura.</span></p>
+<p><span style=3D"font-size: 10pt">J=E1 =E9 possivel efetuar o pagamento da=
+ fatura em aberto,<strong> segue em anexo o boleto ou QR Code do PIX </stro=
+ng>abaixo para pagamento.</span></p>
+<p><span style=3D"font-size: 10pt"><strong>Evite o bloqueio do seu site!<br=
+><br></strong><span style=3D"font-size: 13.3333px">CASO TENHA ALGUM PROBLEM=
+A PARA VISUALIZAR AS IMAGENS DESTE EMAIL, INSIRA O MESMO NA SUA CAIXA DE EN=
+TRADA OU MARQUE COMO "N=C3O SPAM".</span><strong><br></strong></span></p>
+</td>
+<td width=3D"3%" style=3D"color: #253543;font-family: Arial, Helvetica, san=
+s-serif">=A0</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"height: 219px">
+<td bgcolor=3D"#FFFFFF" style=3D"height: 219px;width: 651.023px">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"3%">=A0</td>
+<td width=3D"94%" style=3D"color: #253543;font-family: Arial, Helvetica, sa=
+ns-serif">
+<p>_______________________________</p>
+<p><span style=3D"font-size: 10pt"><strong>Fatura:</strong> LOCAWEB20233488=
+1208</span><br><span style=3D"font-size: 10pt"><strong>Cliente: </strong>fe=
+fe2560@gmail.com</span><br><span style=3D"font-size: 10pt"><strong>Servi=E7=
+o:</strong> Hospedagem de site empresas anual (12 meses)</span><br><span st=
+yle=3D"font-size: 10pt"><strong>Valor:</strong> R$ 369,90 / anual </span><b=
+r><span style=3D"font-size: 10pt"><strong>Per=EDodo</strong><strong>:</stro=
+ng> 21/09/2023 a 20/09/2024<br></span><span style=3D"font-size: 10pt"><stro=
+ng>Vencimento</strong><strong>:</strong> 28/09/2023</span><br>_____________=
+___________________</p>
+</td>
+<td width=3D"3%" style=3D"color: #253543;font-family: Arial, Helvetica, san=
+s-serif">=A0</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"height: 22px">
+<td bgcolor=3D"#FFFFFF" style=3D"height: 22px;width: 651.023px">=A0</td>
+</tr>
+<tr style=3D"height: 249px">
+<td bgcolor=3D"#f8f6f5" style=3D"height: 249px;width: 651.023px">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"3%">=A0</td>
+<td width=3D"94%" align=3D"center" style=3D"color: #253543;font-family: Ari=
+al, Helvetica, sans-serif;font-size: 12px">
+<p><img src=3D"https://webhosting001.com/img/pagamento.png" width=3D"600" h=
+eight=3D"173"><br>Ah, s=F3 pra te lembrar: o banco demora at=E9=A0<strong>2=
+ dias =FAteis</strong>=A0para nos informar que o pagamento foi realizado. P=
+edimos a sua compreens=E3o. :)</p>
+</td>
+<td width=3D"3%" style=3D"color: #253543;font-family: Arial, Helvetica, san=
+s-serif">=A0</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"height: 22px">
+<td bgcolor=3D"#f8f6f5" style=3D"height: 22px;width: 651.023px">=A0</td>
+</tr>
+<tr style=3D"height: 560px">
+<td bgcolor=3D"#e6e7e8" style=3D"height: 560px;width: 651.023px">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"3%" height=3D"46">=A0</td>
+<td width=3D"94%" align=3D"center" style=3D"color: #253543;font-family: Ari=
+al, Helvetica, sans-serif">
+<p><strong>Pagamento (Boleto Banc=E1rio)</strong></p>
+</td>
+<td width=3D"3%" style=3D"color: #253543;font-family: Arial, Helvetica, san=
+s-serif">=A0</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"3%" bgcolor=3D"#e6e7e8">=A0</td>
+<td width=3D"94%" align=3D"left" bgcolor=3D"#e6e7e8" style=3D"color: #25354=
+3;font-family: Arial, Helvetica, sans-serif;font-size: 12px">=A0</td>
+<td width=3D"3%" bgcolor=3D"#e6e7e8" style=3D"color: #253543;font-family: A=
+rial, Helvetica, sans-serif">=A0</td>
+</tr>
+<tr>
+<td bgcolor=3D"#e6e7e8">=A0</td>
+<td align=3D"left" bgcolor=3D"#e6e7e8" style=3D"color: #253543;font-family:=
+ Arial, Helvetica, sans-serif;font-size: 12px">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"10%"><img src=3D"https://webhosting001.com/img/iconboleto.png"=
+ width=3D"47" height=3D"34"></td>
+<td width=3D"90%">
+<p>Pagamento via <strong>boleto banc=E1rio em anexo.</strong><br><br>Caso n=
+=E3o consiga visualizar o boleto em anexo ao email segue o n=FAmero do c=F3=
+digo de barras para copiar e colar: <br><br><strong></strong></p>
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<div class=3D"page" title=3D"Page 1">
+<div class=3D"section">
+<div class=3D"layoutArea">
+<div class=3D"column">
+<p class=3D"p1"><strong>74593.10046 27222.012000 01044.594719 1 94930000036=
+990</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong><br>ou PIX:<br><br><img src=3D"https://webhosting001.com/img/qrc=
+ode365.jpg" width=3D"180" alt=3D""><br></strong></p>
+<p><strong>=A0</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td bgcolor=3D"#e6e7e8" style=3D"color: #253543;font-family: Arial, Helveti=
+ca, sans-serif">=A0</td>
+</tr>
+<tr>
+<td>=A0</td>
+<td align=3D"left" style=3D"color: #253543;font-family: Arial, Helvetica, s=
+ans-serif;font-size: 12px"></td>
+<td style=3D"color: #253543;font-family: Arial, Helvetica, sans-serif">=A0<=
+/td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"height: 168px">
+<td bgcolor=3D"#FFFFFF" style=3D"height: 168px;width: 651.023px">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"3%">=A0</td>
+<td width=3D"94%" style=3D"color: #253543;font-family: Arial, Helvetica, sa=
+ns-serif">
+<p><br>Ficou com alguma d=FAvida? Consulte a nossa <a href=3D"https://u3789=
+4665.ct.sendgrid.net/ls/click?upn=3D9Ts9ZrZpOqlRDK3RkY6kuS7prcfGOp8KEbxBrkU=
+m2nBgwFcDMqGX9ppDxsIMqNaK-2FnE-2FF38D2bPvzBZA9-2BjKzIPvO-2BNUFaojPwtqSwoXP0=
+A-3D0gN6_bKEQIpCcD7COB-2F9sbmoN2IaXHv0ranVIb9PgsPeyUwx3dV-2BBW-2FqeJ4U-2BSh=
+b6p2Y4I-2BZgHXetvfPnDNJzaBnZV0dcZAV6Dba6bxB7HvGQydW-2FD5cv1o7Yma-2Bq9lQE5Yd=
+wZsYKmQhECbDORLpB6n2nejdBa7iJ-2F2LSfymvF7yHSgd7e4TRfE3tGs4ffPWOvK8ChwRZrqHT=
+rnpA1-2FmgDNp3tKPQdythuBjJAJj-2F703m5HmF8g1cy-2FGxMKIh-2F7zFzRSjPC4W6zrZSra=
+-2BY-2BJdWhDblYrzCfi4pLVOOC-2FghvRGN8JZzGFFfBXPEpxXVMiSeUyEy3lBgjldRC-2FoNk=
+Zd-2BWNNQA-3D-3D">Wiki</a>.</p>
+<p>At=E9 logo!</p>
+<p><strong>Equipe Locaweb</strong></p>
+</td>
+<td width=3D"3%" style=3D"color: #253543;font-family: Arial, Helvetica, san=
+s-serif">=A0</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"height: 22px">
+<td bgcolor=3D"#FFFFFF" style=3D"height: 22px;width: 651.023px">=A0</td>
+</tr>
+<tr style=3D"height: 201px">
+<td bgcolor=3D"#424e62" style=3D"height: 201px;width: 651.023px">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"97%" align=3D"right">
+<p>=A0</p>
+<p><a href=3D"https://u37894665.ct.sendgrid.net/ls/click?upn=3DyBao8b1gP8a2=
+u3nhQq2x1qidYOaurimAbQAIwhq6lvVlDVlbxRQVB1pqRp0KchXmKWA__bKEQIpCcD7COB-2F9s=
+bmoN2IaXHv0ranVIb9PgsPeyUwx3dV-2BBW-2FqeJ4U-2BShb6p2Y4I-2BZgHXetvfPnDNJzaBn=
+ZV0dcZAV6Dba6bxB7HvGQydW-2FD5cv1o7Yma-2Bq9lQE5YdwZsYKmQhECbDORLpB6n2nejdBa7=
+iJ-2F2LSfymvF7yHSgd7e4TRfE3tGs4ffPWOvK8CuflGPz-2Bz-2BtewZV0fS2Bx4ALRPiDI5cG=
+jU6NaNo8-2BnAzR-2FnPUiMSDr0uhw4BGb-2BOINgJd7dCZD5ECz6nusDiCX7N8AZJjCR89MZD8=
+BvFcFRDLjyrfbzd0fC6XhZ9zhxcbK1vYZGmW-2FL-2Bvg-2Bh6lZUm-2FA-3D-3D"><img src=
+=3D"https://webhosting001.com/img/logo.png" width=3D"127"></a></p>
+<p>=A0</p>
+</td>
+<td width=3D"3%">=A0</td>
+</tr>
+<tr>
+<td height=3D"30" align=3D"center" valign=3D"middle" bgcolor=3D"#FFFFFF" st=
+yle=3D"color: #253543;font-family: Arial, Helvetica, sans-serif;font-size: =
+11px">N=E3o enviamos boleto banc=E1rio por correio em sua resid=EAncia</td>
+<td bgcolor=3D"#FFFFFF">=A0</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<img alt=3D"This is a tracking pixel" src=3D"https://em.locawe3.com/p/MTY5N=
+jM4ODI2NzQ2NjA5MS42NTFjZDRhYmFhMjRiQGRlc2Vudm9sdmltZW50bzEuY29t/open" width=
+=3D"0" height=3D"0" style=3D"visibility:hidden"><img src=3D"https://em.loca=
+we3.com/images/transparent.gif" data=3D"X-Client-Message-Id: 16963882674660=
+91.651cd4abaa24b@desenvolvimento1.com" alt=3D"X-Client-Message-Id: 16963882=
+67466091.651cd4abaa24b@desenvolvimento1.com" width=3D"0" height=3D"0" style=
+=3D"visibility:hidden"><img src=3D"https://u37894665.ct.sendgrid.net/wf/ope=
+n?upn=3Dm3psdV5u0VKz9oWaj9V2R1OMU5yIK2pw2ZIWcq0zZyMZfyBuGszhCucDvxBZNhCV5zw=
+yitV28DeciE2XAc1GaUvzV-2FkatzX8Ji8Hm38QlTLgMN5DTnZThn-2FKja16T8-2Fr6gvo5q-2=
+FVtGu8bh8J2L8NT7yaI5jOIdYt6ve5r79mIB-2BHt2Mu17Pb3xa0t3ggmcDSrsn06-2BylyOoz0=
+gI3nTk839QPtNVqvO3Y62-2Bp557qQmM-2FxVGefn5SA1AZS-2FrAaCs2lT7QhkORoiAKY4-2Fw=
+pgi815qLXSQ1UUG5SUHuKBH-2FsuWFAvrKwzMMMteWz6bJWETgNRfZ1N8-2BgqWa0uDgpUlqqw-=
+3D-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !=
+important;width:1px !important;border-width:0 !important;margin-top:0 !impo=
+rtant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !i=
+mportant;padding-top:0 !important;padding-bottom:0 !important;padding-right=
+:0 !important;padding-left:0 !important;"/></body>
+</html>
+--051562e1e3c6ca1437f937e83df2a4ea263936bc9a02afeef7acbbcfb60e--
+--0e702afcfdff786793bd9a00e4c1d1eb39737144747b8ca385aeaa967dd6
+Content-Disposition: attachment; filename="32C05FEF-98FD-4778-AF5E-AD1735FC8F4F.jpg"
+Content-Transfer-Encoding: base64
+Content-Type: image/jpeg; name="32C05FEF-98FD-4778-AF5E-AD1735FC8F4F.jpg"
+
+
+--0e702afcfdff786793bd9a00e4c1d1eb39737144747b8ca385aeaa967dd6
+Content-Disposition: attachment; filename="LOCAWEB72023-34881208.pdf"
+Content-Transfer-Encoding: base64
+Content-Type: application/pdf; name="LOCAWEB72023-34881208.pdf"
+
+
+--0e702afcfdff786793bd9a00e4c1d1eb39737144747b8ca385aeaa967dd6--
