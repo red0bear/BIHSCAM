@@ -1,0 +1,99 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a0c:e012:0:b0:65b:e2:5407 with SMTP id j18csp1144700qvk;
+        Sat, 28 Oct 2023 12:54:26 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEG62gzCZBeY4LkCw+e29MXXAWd1MbyO0AKCjeCLFuHjJ5emNeVIxzC+yameRAyQfJaQzdu
+X-Received: by 2002:a05:6a00:248b:b0:68f:bb02:fdf with SMTP id c11-20020a056a00248b00b0068fbb020fdfmr8200828pfv.27.1698522866298;
+        Sat, 28 Oct 2023 12:54:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1698522866; cv=none;
+        d=google.com; s=arc-20160816;
+        b=k8mDmcW4WQso4XQfNH7KVUM24Qdg/0JGu/VfCvP9JsGALJVXUZIws800ZfzzpSdyJn
+         GlGbQGeoI63eZGmXIg+msqFKcOiZVL9W0TX2dFJUTN2uBYhITutK/YXNn79lmXZwyOzG
+         i22BrDq4BA/BIYA6cYcDhQVc3gA9G93PsHBlOMhIa/LJXjJzSOO0kFqdSF8xg5jcm3oa
+         qjrqo6XTLNtKIIsQIfO/giL/W8YxtetSmOcdfXuz7Hfd9wQLOJfyh/X1hXlVA0TbTMKq
+         X4cH9j/42vRGjdpdUTe1ylVJ+T+S4jPm6Mye3UD3senYFWBkU3BDzU+R35zsxAStYxmm
+         vwIQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=thread-topic:thread-index:mime-version:subject:message-id:from:date
+         :dkim-signature;
+        bh=1gKf2skXMclIEfh+W33RKVSP40sUkNnwUzO3kkw/Pvw=;
+        fh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
+        b=Ix5EYnxYYA7EviALkQkvcFlfKfacQKldVH2WfEW/DcCQLzpd9Mxn/XXg+jkwk/Qjyx
+         xq8luYXGXT9XKOzYORUcd6m7qOOOoAKkUsJHiqj5KE0XaVqQnODV2dCTIweufu2EBxER
+         FtW5QyjzS/JMJslmxPDWUAtYXlVjPfucDDe42GbiDdWK5piyhghk55mo/Sx/wY3RrWGO
+         lQmX4MJsQ3bSBl0bnP1smQzV3ve5z6K1N4QiaEQYn+rWc7++aw7F3M8axAXSF9K99JKb
+         XM+wffpGT9tHT9OPbeABZLFrxwcbj2UmvUBtVpsnJidFZBZHRWZmtDd4mXbNlHuC2rVZ
+         UlIw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bacgiang.gov.vn header.s=mail header.b=rwuvVSuZ;
+       spf=pass (google.com: domain of khobac_hiephoa_vt@bacgiang.gov.vn designates 103.164.245.233 as permitted sender) smtp.mailfrom=khobac_hiephoa_vt@bacgiang.gov.vn;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=bacgiang.gov.vn
+Return-Path: <khobac_hiephoa_vt@bacgiang.gov.vn>
+Received: from esmtp.bacgiang.gov.vn (mail.bacgiang.gov.vn. [103.164.245.233])
+        by mx.google.com with ESMTPS id x19-20020a631713000000b005ad1edab539si2740193pgl.319.2023.10.28.12.54.25
+        for <fefe2560@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 28 Oct 2023 12:54:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of khobac_hiephoa_vt@bacgiang.gov.vn designates 103.164.245.233 as permitted sender) client-ip=103.164.245.233;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bacgiang.gov.vn header.s=mail header.b=rwuvVSuZ;
+       spf=pass (google.com: domain of khobac_hiephoa_vt@bacgiang.gov.vn designates 103.164.245.233 as permitted sender) smtp.mailfrom=khobac_hiephoa_vt@bacgiang.gov.vn;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=bacgiang.gov.vn
+Received: from esmtp.bacgiang.gov.vn (localhost.localdomain [127.0.0.1]) by esmtp.bacgiang.gov.vn (Proxmox) with ESMTP id E6CB64C74A3; Sun, 29 Oct 2023 00:01:08 +0700 (+07)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=bacgiang.gov.vn;
+	 h=cc:content-type:content-type:date:from:from:message-id :mime-version:reply-to:subject:subject:to; s=mail; bh=1gKf2skXMc lIEfh+W33RKVSP40sUkNnwUzO3kkw/Pvw=; b=rwuvVSuZ5KF/uNrU90zk6NZ2TC GSoWnR4A14rYl5mjwjibXRBUpqumH/HLVjzaTxFqElHQUGqBoy0LG6eHv4pPu5Ge 1fcOlxhom9ofwvN9Pc9sucDatEMw7XKyohp7Jy5cwHQG/pKHQWrHdszcKwi4FWZK zEm2SfRCA091D9U9pBDfOsm5g4n9HsAc4GFDMA7e3NqZOmn7RqUV46npf7JzfpWa 2s1Zhq2AiYfjuKMSpIXWeTFGWrmpssAk9RTI+tBq7AjYMDL+91lo0C4/Ytu9F/Qx TWyF3coQnr0xQ2MjRvssAbW7UnmOogln48PVnpe5/YdlmsbzLnJHdBhscRhQ==
+X-Virus-Scanned: amavis at smtp.bacgiang.gov.vn
+Date: Sat, 28 Oct 2023 23:57:55 +0700 (ICT)
+From: Carlos <khobac_hiephoa_vt@bacgiang.gov.vn>
+Message-ID: <1865717808.3668255.1698512275105.JavaMail.zimbra@bacgiang.gov.vn>
+Subject: 
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_c7b8c572-1155-43f0-b116-1e5207c2168a"
+X-Originating-IP: [10.9.11.211]
+X-Mailer: Zimbra 8.8.15_GA_3901 (ZimbraWebClient - GC118 (Win)/8.8.15_GA_3895)
+Thread-Index: mBL/pZIfMGBDMRqyCbo3xe/gtcekXA==
+Thread-Topic: 
+X-RBL-Sophos: clean
+X-RBL-Sophos: clean
+X-Sophos-IBS: success
+X-CTCH-PVer: 0000001
+X-CTCH-Spam: Bulk
+X-CTCH-VOD: Unknown
+X-CTCH-Flags: 0
+X-CTCH-RefID: str=0001.0A702F21.653D358A.002E,ss=3,sh,re=0.000,recu=0.000,reip=0.000,cl=3,cld=1,fgs=0
+X-CTCH-Score: 0.000
+X-CTCH-ScoreCust: 0.000
+X-CTCH-Rules: 
+X-Sophos-smtpxy-version: 1.0.6.3
+X-Sophos-AV-Policy: default-smtp-av
+
+--=_c7b8c572-1155-43f0-b116-1e5207c2168a
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Voc=C3=AA recebeu $ 2.500.000,00 da Funda=C3=A7=C3=A3o de Caridade Carlos S=
+lim Helu Foundation. Seu endere=C3=A7o de e-mail foi escolhido online duran=
+te uma pesquisa aleat=C3=B3ria. Por favor, entre em contato comigo o mais r=
+=C3=A1pido poss=C3=ADvel atrav=C3=A9s de (ceo.carloshelu77@gmail.com), para=
+ que eu saiba que seu endere=C3=A7o de e-mail =C3=A9 v=C3=A1lido. Repito, c=
+opie este e-mail (ceo.carloshelu77@gmail.com) e entre em contato comigo dir=
+etamente apenas se voc=C3=AA quer que eu atenda voc=C3=AA rapidamente e rec=
+eba seus fundos de doa=C3=A7=C3=A3o.=20
+
+--=_c7b8c572-1155-43f0-b116-1e5207c2168a
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"font-family: arial, helvetica, sans-serif; font-s=
+ize: 12pt; color: #000000"><div><br></div><div><br></div><div data-marker=
+=3D"__SIG_PRE__">Voc=C3=AA recebeu $ 2.500.000,00 da Funda=C3=A7=C3=A3o de =
+Caridade Carlos Slim Helu Foundation. Seu endere=C3=A7o de e-mail foi escol=
+hido online durante uma pesquisa aleat=C3=B3ria. Por favor, entre em contat=
+o comigo o mais r=C3=A1pido poss=C3=ADvel atrav=C3=A9s de (ceo.carloshelu77=
+@gmail.com), para que eu saiba que seu endere=C3=A7o de e-mail =C3=A9 v=C3=
+=A1lido. Repito, copie este e-mail (ceo.carloshelu77@gmail.com) e entre em =
+contato comigo diretamente apenas se voc=C3=AA quer que eu atenda voc=C3=AA=
+ rapidamente e receba seus fundos de doa=C3=A7=C3=A3o.</div></div></body></=
+html>
+--=_c7b8c572-1155-43f0-b116-1e5207c2168a--
