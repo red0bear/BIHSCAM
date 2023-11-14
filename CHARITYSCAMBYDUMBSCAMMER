@@ -1,0 +1,92 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a0c:e04e:0:b0:65b:e2:5407 with SMTP id y14csp1947951qvk;
+        Tue, 14 Nov 2023 07:37:11 -0800 (PST)
+X-Received: by 2002:a62:e418:0:b0:6be:23dd:d62c with SMTP id r24-20020a62e418000000b006be23ddd62cmr10193718pfh.2.1699976231030;
+        Tue, 14 Nov 2023 07:37:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1699976231; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ClZjT5YNDtAtsP77dRfDvTy1uPgIu7byPP31to+cKledBiyd5x+LgFMq1C2vzWZ1Il
+         r4WYhhDtr8ZLQ79n+u+ObMtkBKR6kNB+Y8pkPW746QBtIGDX1BltVFORh6PDVCxw1g/g
+         sr7bL4omP+TVE50A6+ILVtJ/CmBb+rW0DxnymOVREipwcEMgATUuuLQKBjaoi7vRujZ+
+         eWHuSPzAOBWezNz2braAFFUymSMUGUP1XO2H1btboyHqONyicbzy0s3KwH7G5tvyqinE
+         A4CCRP0ctLkOjcgkBogeZ89KmkbYY7aWK3Bap/Eb7aap/MhDIDsRNihfttO2r/0fTxtb
+         GqpQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=Lwxfrnincb6sSR1pXV8WbXORFWjlyBN12Uxsfri2suo=;
+        fh=Pr2plYkJn0ovdHybgHvE53243CPsqSX0NRPDPDnAMwQ=;
+        b=DA3b9nVF7QsCYdBgXvM31FkPU9/CK1alHfNx5ezzdJy0AH4iH3CBO81As7jZM0GLua
+         8CDDp88hmdBzceKBr2kcHe6aaN25Xu/Rn1v4ZRUb23OvCM/l53cqPgmxQem4SVrBTTRv
+         vwhOmflruMwRnviSuCL9g7RZ7GaNbYrhTdp0ElRD6+SMoKL0jKGzoZxChLpU5gXCHZ1J
+         teJfhBUWIQ6v3w12j3bKaSe8RlpEHfX664uTJzerwwvWBzSZR3o4OgM2BwhdmPy0bA29
+         yqTXwxB+KX+KC5n2QZrClYEVJ0B8Phd5KlTJtr5uKtjCCdEa+yPxA4u51Vzp5lganIDt
+         F66Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=dWFiH0tg;
+       spf=pass (google.com: domain of mr.edwardadamu20@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=mr.edwardadamu20@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <mr.edwardadamu20@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id v7-20020aa78507000000b006c111c39d03sor5723200pfn.7.2023.11.14.07.37.10
+        for <fefe2560@gmail.com>
+        (Google Transport Security);
+        Tue, 14 Nov 2023 07:37:11 -0800 (PST)
+Received-SPF: pass (google.com: domain of mr.edwardadamu20@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=dWFiH0tg;
+       spf=pass (google.com: domain of mr.edwardadamu20@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=mr.edwardadamu20@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1699976230; x=1700581030; dara=google.com;
+        h=to:subject:message-id:date:from:reply-to:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=Lwxfrnincb6sSR1pXV8WbXORFWjlyBN12Uxsfri2suo=;
+        b=dWFiH0tg4TQFrznNbFCoeeuTzmikYcxIsGGwICiGAox2ENRXWlXPbikOixPXv87qKh
+         l+UHHpKfOlbYuId1Wr/dGbAj4mYCF9DYKAIafBmstNtX4qzRcIizf05LulzHfhArRr4A
+         roZEhY1GsVRH+dCnV+I0uk39OaBncqOsM98277VpRKaeA+G981htba4sajbpzaTxQ62t
+         8WHzTgwiqM9MtkykIbhL7J/NqbUAeVUFDccOroIgn2re2vMuobR4Y8/NgYFE16MjO/Vd
+         hMV3dvftl80ia/YGFmstN3dPPqDH+UQfFhlxXpO0DvZEk/xhR96utp9GHl1yv04y9xQf
+         hiVw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1699976230; x=1700581030;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Lwxfrnincb6sSR1pXV8WbXORFWjlyBN12Uxsfri2suo=;
+        b=shGLSjPr6KCjJ2Qw41jBYd6GV1lCjMQBNENZE9ZHzv4HeEu/uZCOYFHaAViZaW9laR
+         5rmjxgfrPN8zI136lAkLPN210htDs2AOHYAgAgXMneh8cA8hMQXI8296+ifuDqYC88QN
+         kGUV3LuHXUufa8PPNOMKIAetYhtvjULWQzpcJztxD2DarHdN09BkDytdbSJFrk5ia/ZR
+         5kMlL0Mq/u7vRxItHD43f+uvzaZ4khXqcm7qD15sGCmi0skdWmq/tRffPtYvJS41/8zw
+         pHlqmCWMKz9tb32j2BTimtRCQFQEp7hwbv4K8v/WNehc9bKXhnu7NqQqscFx64Eqwd1A
+         6LSQ==
+X-Gm-Message-State: AOJu0YwwN8KQQmYLz4dr4WMFkXZ7s+NkZCceL1W30ihiK1wC3WaDoUkM AljMCRaclaJFGS0TxGIqTNTfOW6E1h4yVB2Ckk4=
+X-Google-Smtp-Source: AGHT+IFcf9Vpo00bfbMDm7+ubrQ2Q8siw3biZlXT3ai6gGZDGoDaR/q+W6nBg5BIcWutIEfhnotdJzacvp9aMSM62cU=
+X-Received: by 2002:a05:6a20:8f19:b0:187:1550:aec7 with SMTP id b25-20020a056a208f1900b001871550aec7mr2073154pzk.40.1699976230232; Tue, 14 Nov 2023 07:37:10 -0800 (PST)
+MIME-Version: 1.0
+Received: by 2002:a05:7300:8ba5:b0:f4:d0c9:97b1 with HTTP; Tue, 14 Nov 2023 07:37:09 -0800 (PST)
+Reply-To: lizmrs813@gmail.com
+From: "Mrs.Liz" <mr.edwardadamu20@gmail.com>
+Date: Tue, 14 Nov 2023 16:37:09 +0100
+Message-ID: <CAHdBoQKRV6WJvupJ4PjnXofuzo-sjtBWfoW-4TqKMDdcWtWqHQ@mail.gmail.com>
+Subject: GOOD NEWS
+To: undisclosed-recipients:;
+Content-Type: text/plain; charset="UTF-8"
+Bcc: fefe2560@gmail.com
+
+ATTN:
+
+I am Mrs Liz. 70 years old, Dumb and a widow. I was married to late
+Engr. Hamilton , my late husband was from California, USA who worked
+with Shell Development Company in London for Twenty-Six years before
+he died in the year August 9th 2016 after a brief illness that lasted
+only five days. when my late husband was alive he deposited the sum of
+8.4million pounds in a Bank in Ohio USA.
+
+Following my ill health (Cancer of the Lungs), my Doctor told me that
+I may not live longer than required due to my health condition. am
+looking forward to seeing someone like you who can use this money in
+charitable works to help the needs. More details upon your response
+
+May God Bless You
+
+Mrs.Liz
