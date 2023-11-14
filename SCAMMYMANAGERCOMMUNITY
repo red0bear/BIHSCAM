@@ -1,0 +1,115 @@
+Delivered-To: fefe2560@gmail.com
+Received: by 2002:a0c:e04e:0:b0:65b:e2:5407 with SMTP id y14csp2064523qvk;
+        Tue, 14 Nov 2023 10:39:22 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IFibuCp7HAS+G0VnROkAjKaTDKw7k79eeoRqB/GwrywMAuMl3jJ5bePcWq/xwX7eHzFUlaM
+X-Received: by 2002:a17:90b:4d89:b0:280:c97:5968 with SMTP id oj9-20020a17090b4d8900b002800c975968mr11832759pjb.5.1699987162229;
+        Tue, 14 Nov 2023 10:39:22 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1699987162; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Usg7LB2YqDAfMdl9JhWCjEjtsqeQ6V+FCdmw3NP2FDM/X8kpLcOeZ65BvZTr3PL/T6
+         Sh0rHWHPExXV6IP3s/Bt/7ir4BejDajO/PET9ggXeBgcmELlvC+c76gyNM6DqhNYa4Nu
+         EAPvF+rddIoLHfZKzI5T9IFYOWz9eTVxfF36XLSCim63MOV4Fidv/3mM99i32sPHTfhf
+         1nOitjTSGBjpNP7+U2CSMRVhru+7NgksR9FrQGNDKcSdxkXPi3gq9XIzNAT7WCmJKhCj
+         5EqM19jrnSHHgmha+RqMd4+8MTHOpxxDlJxSCffZHUIyS2S0XKxyCTk1Pnt76xjf0Z+J
+         hhbg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-disposition:mime-version:message-id:subject:to:from:date;
+        bh=wWpVFaIS8jKllfLDsEt57dhD+7WLHHbEZTIWgRGbNO0=;
+        fh=KIExv90yLDjbkawcj98YIwOhVSBmz5HPLi1Tg/S4R3U=;
+        b=rEBZ5LKUuQiG37LVFPvqQrNEppVYKgpoc97FPUEr9R5P7Iu9r/veBDxYjGVaWN9EfK
+         v26pNJ2J0xGTgAhzhtZiG0rvb4cMxoRHElX4lIGztTjM2Bqrs1OyyykXnj05rSVk6Wvw
+         0nS7kjVA2Xi+C/4yYHVlxEKthqBrB4XS7/qrat4Mbk1SPqepR3ebDGo6C7LrN+Xt3Cg2
+         bsnzny6CrERnW2KY1P3Y2YsF7Q9VOoCDK6t1B8AqmFZLAuVBRpB8Kb5TXJAZoZz5TcBS
+         fjG3DJ/o24yiMqI+keQlToDfq38QOdG35CUojUbKuFEZg1X3yEnRURDkrk/N2tLtZrqW
+         7EvQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=softfail (google.com: domain of transitioning gus@torproject.org does not designate 198.252.153.129 as permitted sender) smtp.mailfrom=gus@torproject.org;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=torproject.org
+Return-Path: <gus@torproject.org>
+Received: from mx1.riseup.net (mx1.riseup.net. [198.252.153.129])
+        by mx.google.com with ESMTPS id k6-20020a17090a9d8600b00280be13ffa9si8353324pjp.132.2023.11.14.10.39.18
+        for <fefe2560@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 14 Nov 2023 10:39:18 -0800 (PST)
+Received-SPF: softfail (google.com: domain of transitioning gus@torproject.org does not designate 198.252.153.129 as permitted sender) client-ip=198.252.153.129;
+Authentication-Results: mx.google.com;
+       spf=softfail (google.com: domain of transitioning gus@torproject.org does not designate 198.252.153.129 as permitted sender) smtp.mailfrom=gus@torproject.org;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=torproject.org
+Received: from fews01-sea.riseup.net (fews01-sea-pn.riseup.net [10.0.1.109]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) (No client certificate requested) by mx1.riseup.net (Postfix) with ESMTPS id 4SVFSj6z3czDq6c for <fefe2560@gmail.com>; Tue, 14 Nov 2023 18:39:17 +0000 (UTC)
+X-Riseup-User-ID: 82244D4B88426B73B0F85AF0D5D2B00753D282867C24C917C00E420A5C1A60E4
+Received: from [127.0.0.1] (localhost [127.0.0.1])
+	 by fews01-sea.riseup.net (Postfix) with ESMTPSA id 4SVFSh70vxzJmj7 for <fefe2560@gmail.com>; Tue, 14 Nov 2023 18:39:16 +0000 (UTC)
+Date: Tue, 14 Nov 2023 15:39:10 -0300
+From: gus <gus@torproject.org>
+To: fefe2560@gmail.com
+Subject: Sobre a sua participação na Comunidade do Tor Project
+Message-ID: <ZVO-zoEEYiz2BRNN@localhost>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha512; protocol="application/pgp-signature"; boundary="EDL3g3OCg3hnzyRZ"
+Content-Disposition: inline
+
+--EDL3g3OCg3hnzyRZ
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Ol=C3=A1 Felipe Fernandes,
+
+Espero que esteja tudo bem com voc=C3=AA.=20
+
+Meu nome =C3=A9 o Gus, sou o Team Lead da Comunidade do Tor Project. Estou
+escrevendo em nome da nossa comunidade para inform=C3=A1-lo sobre uma decis=
+=C3=A3o
+importante referente a sua participa=C3=A7=C3=A3o.
+
+Ap=C3=B3s uma revis=C3=A3o das suas intera=C3=A7=C3=B5es com a equipe de de=
+senvolvimento e
+da sua participa=C3=A7=C3=A3o na nossa comunidade, conclu=C3=ADmos que a su=
+a
+participa=C3=A7=C3=A3o n=C3=A3o est=C3=A1 em conformidade com as nossas exp=
+ectativas de
+colabora=C3=A7=C3=A3o e com o C=C3=B3digo de Conduta do Tor Project:
+https://community.torproject.org/policies/code_of_conduct/
+
+Para manter a sa=C3=BAde da nossa comunidade e do projeto, =C3=A9 fundament=
+al que
+as contribui=C3=A7=C3=B5es estejam alinhadas com os nossos valores e pr=C3=
+=A1ticas.
+Infelizmente, observamos que as suas contribui=C3=A7=C3=B5es na comunidade =
+t=C3=AAm
+sido infrut=C3=ADferas e prejudicial ao trabalho dos nossos colaboradores.
+
+Diante dessas circunst=C3=A2ncias, solicitamos que voc=C3=AA encerre esse c=
+iclo e
+descontinue o seu involvmento com a nossa comunidade e projeto.
+
+Agradecemos a sua compreens=C3=A3o e desejamos sucesso em seus futuros
+projetos.
+
+Gus
+--=20
+The Tor Project
+Community Team Lead
+
+--EDL3g3OCg3hnzyRZ
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAABCgAdFiEEF1t3kw7snkfPsek8yFYM6mBCx4cFAmVTvsUACgkQyFYM6mBC
+x4fgPA/8DVgsJ//UiBDtuFtRB+OeOp9a3sodvXvAc+H+46mEf8dM1z5YRLxg5UMR
+OSWDsf1fZcJHgOxGL+3cU/wvo4gMNypVeHLVfnNTfeCjvJ/nq+/qVU1Od8bdHLGZ
+MU2PqcIMFornEPgNldt+OgOh8k7JDi9jehzjRpOqDDi6fH5/YvowMPCEnpcieatC
+tDRxZRxx/8H4WqZnaWgZqjCb/NyM91NwjqSz9UuLQsf4QNFMdasSu1QCeropMNlW
+Jfs5y7deuz2puRuKvGtEIuUFflopbz0gxRIA7FRKoFTFnUQ4Y9H9wpE/RJGU4ZTn
+EU7eGVpWL/sqwOGj88G4/bZKdT4tc1hNuKSOjQBNFciunXp1FrphPqlIVUzrCWla
+Ud+sv1UNNfp+PC4L8E6J/9rqR92ea7BR0kosiKx60IAsFYog3tbNb0DDU1Q7+nCK
+3qhACMtFSSu5A6ncrqlBcjxsZUYLgHC0avIJ9z0x84ctZ6I2gn+b93XC6DWRwNRV
+SdWMKD6QC41ksQiIMFxFcq2Lmrio6MYABXE50FWPazVVyIKrf5fXzuRmLG0/qoNE
+mtN5mLiTmwHFbLYT+oDDHjg1Ml/IArhDxx6GzNMHHl6qGf6nomZlmNvLI4+qPPnY
+TPsFbGWq/+xyxIX9AT3/jBbWGjWZkVQeX2VGPxSU6GuyH4P84UA=
+=c0Iq
+-----END PGP SIGNATURE-----
+
+--EDL3g3OCg3hnzyRZ--
